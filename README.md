@@ -42,6 +42,36 @@
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/sairam"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="sairam" /></a><a href="https://ko-fi.com/sairam"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="sairam" /></a></p><br><br>
 
+## Leetcode Badges
+
+<p align="center">
+<!--   <img src="https://leetcode.com/static/images/badges/2023/gif/2023-annual.gif" alt="Annual Badge" height="120"> -->
+  <img src="https://assets.leetcode.com/static_assets/marketing/2024-200.gif" alt="200 Days Badge" height="120">
+  <img src="https://assets.leetcode.com/static_assets/marketing/2024-100.gif" alt="100 Days Badge" height="120">
+  <img src="https://assets.leetcode.com/static_assets/marketing/2024-50.gif" alt="50 Days Badge" height="120">
+  <img src="https://assets.leetcode.com/static_assets/marketing/2023-annual.gif" alt="365 Days Badge" height="120">
+  <img src="https://assets.leetcode.com/static_assets/marketing/2023-100.gif" alt="100 Days Badge" height="120">
+  <img src="https://assets.leetcode.com/static_assets/marketing/2023-50.gif" alt="50 Days Badge" height="120">
+  <img src="https://assets.leetcode.com/static_assets/marketing/2022-50.gif" alt="50 Days Badge" height="120">
+</p>
+
+<p align="center">
+  <img src="https://leetcode.com/static/images/badges/2023/gif/2023-12.gif" alt="December 2023 Badge" height="120">
+  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-01.gif" alt="January 2024 Badge" height="120">
+  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-02.gif" alt="February 2024 Badge" height="120">
+  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-03.gif" alt="March 2024 Badge" height="120">
+  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-04.gif" alt="April 2024 Badge" height="120">
+  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-05.gif" alt="May 2024 Badge" height="120">
+  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-06.gif" alt="June 2024 Badge" height="120">
+  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-07.gif" alt="July 2024 Badge" height="120">
+  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-08.gif" alt="August 2024 Badge" height="120">
+  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-09.gif" alt="September 2024 Badge" height="120">
+</p>
+
+
+
+
+
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sairam0424&show_icons=true&locale=en&layout=compact" alt="sairam0424" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=sairam0424&show_icons=true&locale=en" alt="sairam0424" /></p>
