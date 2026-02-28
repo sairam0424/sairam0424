@@ -1,5 +1,9 @@
 <h1 align="center">Hi 👋, I'm Sairam Ugge</h1>
-<h3 align="center">Frontend & Generative AI Engineer | Full Stack Developer | Competitive Programmer</h3>
+<h3 align="center">
+Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competitive Programmer
+</h3>
+
+
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=sairam0424&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
@@ -11,14 +15,17 @@
 ---
 
 ### 🚀 About Me  
-- 🔭 Currently working on **enterprise-grade AI-powered web applications** at **Ascendion**  
-- 🛠 Architected **multi-framework code generators** reducing dev effort by **70%**  
-- 🤖 Built **agentic workflows** cutting automation cycles by **50%**  
-- 🎨 Revamped UIs for flagship products, boosting **user engagement by 40%**  
-- 🌱 Learning **Advanced Angular,Generative AI Tools**  
-- 💬 Ask me about **React, Angular, Python, Generative AI, System Design , DSA**  
+
+- 🔭 Backend Engineer at **Ascendion** building real-time, AI-native distributed systems  
+- ⚡ Re-architected platform workflows to **event-driven architecture** (Redis Streams, SSE)  
+- 🚀 Built low-latency streaming backend achieving **<150ms end-to-end updates**  
+- 🤖 Designed prompt-driven agent orchestration engine reducing planning time **30–40 mins → <10 mins**  
+- 🧠 Built GenAI wireframe + prompt-to-React generation systems reducing dev cycles by **35–45%**  
+- 🏗️ Own backend modules end-to-end (API design, caching, streaming, performance tuning)  
+- 📈 Applied distributed caching & data-structure optimizations reducing request latency by **30%**  
+- 🌱 Currently deep-diving into **advanced distributed systems & consensus protocols**
 - 📫 Reach me at **uggesairam0000@gmail.com**  
-- 📄 My Experiences: [Resume](https://bit.ly/3zuDryb)  
+- 📄 My Experiences: [Resume](http://bit.ly/4rTi7s0)  
 - ⚡ Fun fact: **I debug with coffee & music 🎵**  
 
 ---
@@ -45,25 +52,39 @@
 
 ### 🛠 Tech Stack  
 
+<!-- <p align="left">
+  <img src="https://skillicons.dev/icons?i=python,go,fastapi,flask,django,nodejs,react,nextjs,angular,typescript,tailwind,graphql,postgres,mongodb,redis,elasticsearch,kafka,docker,kubernetes,terraform,aws,azure,prometheus,grafana,linux,nginx,git" />
+</p> -->
+
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=react,angular,typescript,python,fastapi,flask,nodejs,express,django,mongodb,mysql,aws,tailwind,redux,vue,graphql,tensorflow,opencv" />
+  <img src="https://skillicons.dev/icons?i=python,go,fastapi,flask,django,nodejs,graphql,postgres,mongodb,redis,elasticsearch,kafka,docker,kubernetes,terraform,aws,azure,prometheus,grafana,linux,nginx,git,github,react,nextjs,angular,tailwind" />
 </p>
 
----
 
-### 🏆 Competitive Programming & Achievements  
-- **Google Code Jam '23:** AIR 420  
-- **Facebook Hacker Cup & Flipkart Grid:** Top ranks  
-- **Institute Rank 1** on GeeksforGeeks & InterviewBit  
 
 ---
+
+### 🏆 Competitive Programming  
+
+- 🥇 **Google Code Jam 2023 — AIR 420 (3,687 / 85,000+)**
+- 🏅 Meta Hacker Cup 2022 — Global Rank 4,048 / 70,000+
+- 🏅 Flipkart Grid 2022 — Rank 1,325 / 40,000+
+- 👨‍🏫 Mentored 250+ students in Data Structures & Algorithms
+
+---
+
 
 ### 📊 GitHub Stats  
 
+
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sairam0424&show_icons=true&theme=radical" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sairam0424&layout=compact&theme=radical" alt="Top Languages" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sairam0424&theme=radical" alt="Streak Stats" />
+
+  <img 
+    src="https://github-readme-streak-stats.herokuapp.com?user=sairam0424&theme=radical&hide_border=true" 
+    height="170"
+  />
+
 </p>
 
 ---
@@ -93,6 +114,23 @@
   <img src="https://leetcode.com/static/images/badges/2024/gif/2024-09.gif" alt="September 2024 Badge" height="110">
 </p>
 
+
+---
+
+### 📫 Connect With Me  
+
+- 💼 LinkedIn: https://linkedin.com/in/sairam0424  
+- 💻 GitHub: https://github.com/sairam0424  
+- 📧 Email: uggesairam0000@gmail.com  
+
+---
+
+### ⚡ Philosophy  
+
+I build systems that scale, stream in real time, and survive production chaos.
+
+From competitive programming to distributed systems —  
+I optimize everything.
 
 ---
 
