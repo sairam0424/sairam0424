@@ -72,11 +72,148 @@ Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competit
         <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="65" height="65" />
       <br>TypeScript
     </td>
-
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/redux.png"/>
+        <br><sub><b>Redux</b></sub>
+      </td>
+    <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/playwright.png"/>
+        <br><sub><b>Playwright</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/rabbitmq.png"/>
+        <br><sub><b>RabbitMQ</b></sub>
+      </td>
+        <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png"/>
+        <br><sub><b>Swagger</b></sub>
+      </td>
   
 </tr>
-
+    <tr>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/websocket.png"/>
+        <br><sub><b>WebSocket</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/grpc.png"/>
+        <br><sub><b>gRPC</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png"/>
+        <br><sub><b>Git</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postman.png"/>
+        <br><sub><b>Postman</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/jira.png"/>
+        <br><sub><b>Jira</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/jupyter_notebook.png"/>
+        <br><sub><b>Jupyter</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sass.png"/>
+        <br><sub><b>Sass</b></sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/firebase.png"/>
+        <br><sub><b>Firebase</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/supabase.png"/>
+        <br><sub><b>Supabase</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/material_ui.png"/>
+        <br><sub><b>Material UI</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/shadcn_ui.png"/>
+        <br><sub><b>ShadCN UI</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vue_js.png"/>
+        <br><sub><b>Vue.js</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/npm.png"/>
+        <br><sub><b>npm</b></sub>
+      </td>
+        <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/hadoop.png"/>
+        <br><sub><b>Hadoop</b></sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bun_js.png"/>
+        <br><sub><b>Bun.js</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vite.png"/>
+        <br><sub><b>Vite</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/numpy.png"/>
+        <br><sub><b>NumPy</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/pandas.png"/>
+        <br><sub><b>Pandas</b></sub>
+      </td>
+        <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tensorflow.png"/>
+        <br><sub><b>TensorFlow</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/neo4j.png"/>
+        <br><sub><b>Neo4j</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/cassandra.png"/>
+        <br><sub><b>Cassandra</b></sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bash.png"/>
+        <br><sub><b>Bash</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/loki.png"/>
+        <br><sub><b>Loki</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/gcp.png"/>
+        <br><sub><b>GCP</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/langchain_icon.png"/>
+        <br><sub><b>LangChain</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/apache_spark.png"/>
+        <br><sub><b>Apache Spark</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/matlab.png"/>
+        <br><sub><b>MATLAB</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/selenium.png"/>
+        <br><sub><b>Selenium</b></sub>
+      </td>
+    </tr>
+		
 </table>
+
+
 </div>
 
 
