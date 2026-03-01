@@ -56,9 +56,28 @@ Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competit
   <img src="https://skillicons.dev/icons?i=python,go,fastapi,flask,django,nodejs,react,nextjs,angular,typescript,tailwind,graphql,postgres,mongodb,redis,elasticsearch,kafka,docker,kubernetes,terraform,aws,azure,prometheus,grafana,linux,nginx,git" />
 </p> -->
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=python,go,fastapi,flask,django,nodejs,graphql,postgres,mongodb,redis,elasticsearch,kafka,docker,kubernetes,terraform,aws,azure,prometheus,grafana,linux,nginx,git,github,react,nextjs,angular,tailwind" />
-</p>
+<div>
+<table> <tr> <td align="center" width="96"> <!-- Animated supported --> <img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" height="65" /> <br>Python </td> <td align="center" width="96"> <!-- Possibly animated --> <img src="https://techstack-generator.vercel.app/react-icon.svg" width="65" height="65" /> <br>React </td> <td align="center" width="96"> <!-- Possibly animated --> <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" height="65" /> <br>GitHub </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=go" width="65" height="65" /> <br>Go </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" /> <br>FastAPI </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=flask" width="65" height="65" /> <br>Flask </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=django" width="65" height="65" /> <br>Django </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nodejs" width="65" height="65" /> <br>Node.js </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=graphql" width="65" height="65" /> <br>GraphQL </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=postgres" width="65" height="65" /> <br>PostgreSQL </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=dynamodb" width="65" height="65" /> <br>DynamoDB </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=mongodb" width="65" height="65" /> <br>MongoDB </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=elasticsearch" width="65" height="65" /> <br>Elasticsearch </td> <td align="center" width="96"> <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="65" height="65" /> <br>MySQL </td> <!-- <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=neo4j" width="65" height="65" /> <br>Neo4j </td> --> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=redis" width="65" height="65" /> <br>Redis </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=kafka" width="65" height="65" /> <br>Kafka </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=docker" width="65" height="65" /> <br>Docker </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=kubernetes" width="65" height="65" /> <br>Kubernetes </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=terraform" width="65" height="65" /> <br>Terraform </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=aws" width="65" height="65" /> <br>AWS </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=azure" width="65" height="65" /> <br>Azure </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=prometheus" width="65" height="65" /> <br>Prometheus </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=grafana" width="65" height="65" /> <br>Grafana </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=linux" width="65" height="65" /> <br>Linux </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nginx" width="65" height="65" /> <br>Nginx </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nextjs" width="65" height="65" /> <br>Next.js </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=angular" width="65" height="65" /> <br>Angular </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=tailwind" width="65" height="65" /> <br>Tailwind CSS </td> </tr>
+
+<tr>
+ <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="65" height="65" />
+      <br>JavaScript
+    </td>
+    <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/webpack-icon.svg" alt="icon" width="65" height="65" />
+      <br>Webpack
+    </td>
+    <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="65" height="65" />
+      <br>TypeScript
+    </td>
+
+  
+</tr>
+
+</table>
+</div>
 
 
 
