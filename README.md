@@ -285,8 +285,8 @@ Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competit
 
 I build systems that scale, stream in real time, and survive production chaos.
 
-From competitive programming to distributed systems —  
-I optimize everything.
+From competitive programming to distributed systems —  I optimize everything.
+
 
 ---
 
