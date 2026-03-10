@@ -21,7 +21,7 @@ Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competit
 - 🚀 Built low-latency streaming backend achieving **<150ms end-to-end updates**  
 - 🤖 Designed prompt-driven agent orchestration engine reducing planning time **30–40 mins → <10 mins**  
 - 🧠 Built GenAI wireframe + prompt-to-React generation systems reducing dev cycles by **35–45%**  
-- 🏗️ Own backend modules end-to-end (API design, caching, streaming, performance tuning)  
+- 🏗️ Owned backend modules end-to-end (API design, caching, streaming, performance tuning)  
 - 📈 Applied distributed caching & data-structure optimizations reducing request latency by **30%**  
 - 🌱 Currently deep-diving into **advanced distributed systems & consensus protocols**
 - 📫 Reach me at **uggesairam0000@gmail.com**  
