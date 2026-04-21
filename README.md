@@ -31,7 +31,7 @@ Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competit
 ---
 
 
-<h3 align="left">Connect with me:</h3>
+<!-- <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://codepen.io/sairam0000" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="sairam0000" height="30" width="40" /></a>
 <a href="https://dev.to/sai_ram_0000" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="sai_ram_0000" height="30" width="40" /></a>
@@ -46,6 +46,40 @@ Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competit
 <a href="https://www.hackerearth.com/@uggesairam0000" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="@uggesairam0000" height="30" width="40" /></a>
 <a href="https://auth.geeksforgeeks.org/user/uggesairam0000/profile" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="uggesairam0000/profile" height="30" width="40" /></a>
 <a href="https://www.topcoder.com/members/sairam_056" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg" alt="sairam_056" height="30" width="40" /></a>
+</p> -->
+<h3 align="left">Connect with me:</h3>
+
+<p align="left">
+  <a href="https://codepen.io/sairam0000" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" height="30"/>
+  </a>
+  <a href="https://dev.to/sai_ram_0000" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" height="30"/>
+  </a>
+  <a href="https://linkedin.com/in/sairam0424" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30"/>
+  </a>
+  <a href="https://stackoverflow.com/users/user:18016584" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" height="30"/>
+  </a>
+  <a href="https://kaggle.com/sairam0000" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" height="30"/>
+  </a>
+  <a href="https://medium.com/@uggesairam0000" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" height="30"/>
+  </a>
+  <a href="https://www.codechef.com/users/sairam_056" style="display:inline-block; margin: 0 12px;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" height="30"/>
+  </a>
+  <a href="https://www.hackerrank.com/uggesairam0000" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" height="30"/>
+  </a>
+  <a href="https://codeforces.com/profile/sairam_056" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" height="30"/>
+  </a>
+  <a href="https://www.leetcode.com/sairam_056" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" height="30"/>
+  </a>
 </p>
 
 ---
