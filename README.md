@@ -1,52 +1,57 @@
-<h1 align="center">Hi 👋, I'm Sairam Ugge</h1>
-<h3 align="center">
-Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competitive Programmer
-</h3>
-
-
+<h1 align="center">Sairam Ugge</h1>
+<h3 align="center">GenAI &amp; Backend Engineer @Ascendion · Multi-Agent LLM Orchestration · RAG · Event-Driven Backends</h3>
+<p align="center">Python · Go · FastAPI · gRPC &nbsp;|&nbsp; Open-Source AI Infrastructure &nbsp;|&nbsp; 📍 Hyderabad, India</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=sairam0424&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
-<!--   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=sairam0424&theme=gruvbox&margin-w=15&margin-h=15&no-bg=true&no-frame=true" alt="trophy" />
-  </a> -->
 </p>
 
 ---
 
-### 🚀 About Me  
+### 🚀 About Me
 
-- 🔭 Backend Engineer at **Ascendion** building real-time, AI-native distributed systems  
-- ⚡ Re-architected platform workflows to **event-driven architecture** (Redis Streams, SSE)  
-- 🚀 Built low-latency streaming backend achieving **<150ms end-to-end updates**  
-- 🤖 Designed prompt-driven agent orchestration engine reducing planning time **30–40 mins → <10 mins**  
-- 🧠 Built GenAI wireframe + prompt-to-React generation systems reducing dev cycles by **35–45%**  
-- 🏗️ Owned backend modules end-to-end (API design, caching, streaming, performance tuning)  
-- 📈 Applied distributed caching & data-structure optimizations reducing request latency by **30%**  
-- 🌱 Currently deep-diving into **advanced distributed systems & consensus protocols**
-- 📫 Reach me at **uggesairam0000@gmail.com**  
-- 📄 My Experiences: [Resume](http://bit.ly/4rTi7s0)  
-- ⚡ Fun fact: **I debug with coffee & music 🎵**  
+- 🧠 **GenAI & Backend Engineer @Ascendion** (Jun 2024 – Present) — I build multi-agent LLM systems and event-driven backends that ship to real production traffic.
+- 🤖 **Co-built and production-hardened Pensieve**, an AI process-orchestration engine — multi-agent LLM workflows, human-in-the-loop approval gates, real-time streaming, and governed LLM routing across cloud providers. *(2K+ daily users across domains.)*
+- 🧩 **AAVA Code (AI coding plugin for VS Code)** — *architected the backend* and re-architected a single-agent prototype into a multi-agent orchestration system (Main-Agent + sub-agent via crewAI flows; 150+ skills, 40+ tools, ~60 commands); also contributed to the VS Code frontend. *(3K+ daily users across 5+ client environments.)*
+- 🔁 **Co-built a prompt-driven execution engine** (LLM agent orchestration with RAG + ReAct) — raised first-pass acceptance from 65% to 85% and cut planning from 1.5h to 15min. *(1.5K+ users.)*
+- ⚙️ **Owned backend systems end-to-end** (API design, data modeling, event-driven pipelines) — a decoupled Redis Streams + SSE pub/sub replaced client polling, cutting latency to sub-150ms. *(10K+ events/day for 2.5K+ users.)*
+- 🎨 Co-built a **GenAI wireframe generator** (PRDs/sketches/prompts → production-ready UI artifacts) and a **prompt-to-React system** (wireframes → modular components + routing); also **led a React → Angular re-architecture** with an SSE-driven real-time backend that cut UI load latency ~30%.
+- 🛠️ Open-source builder — author of **[MindForge](https://github.com/sairam0424/MindForge), [Graph-Forge](https://github.com/sairam0424/Graph-Forge), [Agent-Forge](https://github.com/sairam0424/Agent-Forge), [ContextOS](https://github.com/sairam0424/ContextOS), [ag-bash](https://github.com/sairam0424/ag-bash) & more** — agent frameworks, code-intelligence engines, and AI-native tooling. *(See Featured Projects below.)*
+- 🏆 Competitive programmer — **Google Code Jam '23** (AIR 420; 3,687 / 85,000+), **Meta Hacker Cup '22**, **Flipkart GRiD '22** top tier; mentored 250–300 students in DSA.
+- 🌱 Currently going deeper on **multi-agent orchestration, RAG, and distributed-systems design**.
+- 📫 Reach me at **uggesairam0000@gmail.com** · 📄 [Resume](http://bit.ly/4rTi7s0) · 💼 [LinkedIn](https://linkedin.com/in/sairam0424)
 
 ---
 
+### 🧩 Featured Projects
 
-<!-- <h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://codepen.io/sairam0000" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="sairam0000" height="30" width="40" /></a>
-<a href="https://dev.to/sai_ram_0000" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="sai_ram_0000" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/sairam0424" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="sairam0424" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/user:18016584" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="user:18016584" height="30" width="40" /></a>
-<a href="https://kaggle.com/sairam0000" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="sairam0000" height="30" width="40" /></a>
-<a href="https://medium.com/@uggesairam0000" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@uggesairam0000" height="30" width="40" /></a>
-<a href="https://www.codechef.com/users/sairam_056" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="sairam_056" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/uggesairam0000" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="uggesairam0000" height="30" width="40" /></a>
-<a href="https://codeforces.com/profile/sairam_056" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" alt="sairam_056" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/sairam_056" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="sairam_056" height="30" width="40" /></a>
-<a href="https://www.hackerearth.com/@uggesairam0000" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="@uggesairam0000" height="30" width="40" /></a>
-<a href="https://auth.geeksforgeeks.org/user/uggesairam0000/profile" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="uggesairam0000/profile" height="30" width="40" /></a>
-<a href="https://www.topcoder.com/members/sairam_056" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg" alt="sairam_056" height="30" width="40" /></a>
-</p> -->
+Open-source AI infrastructure I build in the open — agent frameworks, code-intelligence engines, and developer tooling. Commit counts are a build-signal only; each card describes architecture and tech, not adoption.
+
+#### 🧠 Code Intelligence & Engines
+
+| Project | What it is & Tech |
+|---------|-------------------|
+| **[gRPC Microservices](https://github.com/sairam0424/gRPC-micro-services)** — *Order Processing System* | Polyglot event-driven microservices — gRPC internal RPC + REST gateway, **etcd leader election**, **ACID inventory reservations**, a **Saga orchestrator**, metric-based read routing across PostgreSQL replicas, **Debezium/WAL CDC outbox**, Bloom filters, Redis caching, **DLQ + idempotency**, and observability via Envoy L7 (OpenTelemetry/Prometheus/Grafana).<br>`Go` · `Python` · `gRPC` · `PostgreSQL` · `Kafka` · `etcd` |
+| **[Graph-Forge](https://github.com/sairam0424/Graph-Forge)** · `555 commits` | AI-native distributed code-intelligence platform — code modeled as a Neo4j knowledge graph + Chroma semantic embeddings, served by ~19 polyglot microservices over gRPC/REST. Kafka ingestion, Tree-Sitter AST parsing, full OpenTelemetry/Jaeger/Prometheus/Grafana stack via Envoy. RAG over massive codebases.<br>`Go` · `Python` · `gRPC` · `Neo4j` · `Chroma` · `Kafka` · `Next.js` |
+| **[ag-bash](https://github.com/sairam0424/ag-bash)** · `392 commits` | AI-native bash interpreter implemented entirely in TypeScript — exposed as the `@ag-bash/bash` shell engine plus an MCP server and an agent terminal bridge. Tree-sitter WASM parser, esbuild (ESM+CJS), and WASM runtimes (CPython, QuickJS, SQLite3).<br>`TypeScript` · `WebAssembly` · `MCP` · `Tree-sitter` · `pnpm` |
+
+#### 🤖 Agent Frameworks & Infrastructure
+
+| Project | What it is & Tech |
+|---------|-------------------|
+| **[MindForge](https://github.com/sairam0424/MindForge)** · `1,193 commits` | Agentic-intelligence framework for Claude Code — 174 slash commands, 154 specialized subagents, 73 skills, hooks, governance, cost-aware model routing, and true wave (parallel) execution. Streaming WebSocket SDK. Ships as `npx mindforge-cc`.<br>`Node.js` · `TypeScript` · `MCP` · `sql.js` |
+| **[Agent-Forge](https://github.com/sairam0424/Agent-Forge)** · `201 commits` | Framework-agnostic, self-improving AI agent infrastructure — a Karpathy-style propose/eval/score/commit-or-revert loop over a mutable markdown agent spec (`AGENT.md`), git-versioned, with an LLM-judge eval harness and held-out validation to guard against overfitting.<br>`Python` · `FastAPI` · `pgvector` · `Celery` · `MCP` · `Docker` |
+| **[ContextOS](https://github.com/sairam0424/ContextOS)** · `175 commits` | Intelligence layer for autonomous AI agents — SQLite/vector indexing, multi-agent orchestration, and resilience. Ships as core/CLI/MCP npm packages (`@context-os/*`) plus a spatial dashboard.<br>`TypeScript` · `SQLite` · `vector search` · `MCP` · `React` · `Three.js` |
+
+#### 🛠️ Tooling & Lab
+
+| Project | What it is & Tech |
+|---------|-------------------|
+| **[CommandVault](https://github.com/sairam0424/CommandVault)** · `139 commits` | Universal AI command manager — browse/search/organize slash commands, skills, agents, plugins, rules, and hooks across Claude Code, Cursor, Copilot, Windsurf, and Aider. Indexes 350+ items via a VS Code extension, an 18-command CLI, and a three-tier search engine.<br>`TypeScript` · `VS Code Extension` · `CLI` · `SQLite` |
+| **[Not-Humans-Lab](https://github.com/sairam0424/not-humans-lab)** · `289 commits` | Thin root workspace federating independent AI-infra sub-projects (SkillStack, Deep-Research, Agent-Hub, rate-limit-observatory) — polyglot Turborepo/pnpm + Next.js, Python (uv + Temporal + FastAPI), and Go services with a Qdrant vector store.<br>`TypeScript` · `Python` · `Go` · `Temporal` · `Qdrant` |
+
+---
+
 <h3 align="left">Connect with me:</h3>
 
 <p align="left">
@@ -84,14 +89,10 @@ Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competit
 
 ---
 
-### 🛠 Tech Stack  
-
-<!-- <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,go,fastapi,flask,django,nodejs,react,nextjs,angular,typescript,tailwind,graphql,postgres,mongodb,redis,elasticsearch,kafka,docker,kubernetes,terraform,aws,azure,prometheus,grafana,linux,nginx,git" />
-</p> -->
+### 🛠 Tech Stack
 
 <div>
-<table> <tr> <td align="center" width="96"> <!-- Animated supported --> <img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" height="65" /> <br>Python </td> <td align="center" width="96"> <!-- Possibly animated --> <img src="https://techstack-generator.vercel.app/react-icon.svg" width="65" height="65" /> <br>React </td> <td align="center" width="96"> <!-- Possibly animated --> <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" height="65" /> <br>GitHub </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=go" width="65" height="65" /> <br>Go </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" /> <br>FastAPI </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=flask" width="65" height="65" /> <br>Flask </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=django" width="65" height="65" /> <br>Django </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nodejs" width="65" height="65" /> <br>Node.js </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=graphql" width="65" height="65" /> <br>GraphQL </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=postgres" width="65" height="65" /> <br>PostgreSQL </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=dynamodb" width="65" height="65" /> <br>DynamoDB </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=mongodb" width="65" height="65" /> <br>MongoDB </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=elasticsearch" width="65" height="65" /> <br>Elasticsearch </td> <td align="center" width="96"> <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="65" height="65" /> <br>MySQL </td> <!-- <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=neo4j" width="65" height="65" /> <br>Neo4j </td> --> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=redis" width="65" height="65" /> <br>Redis </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=kafka" width="65" height="65" /> <br>Kafka </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=docker" width="65" height="65" /> <br>Docker </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=kubernetes" width="65" height="65" /> <br>Kubernetes </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=terraform" width="65" height="65" /> <br>Terraform </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=aws" width="65" height="65" /> <br>AWS </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=azure" width="65" height="65" /> <br>Azure </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=prometheus" width="65" height="65" /> <br>Prometheus </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=grafana" width="65" height="65" /> <br>Grafana </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=linux" width="65" height="65" /> <br>Linux </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nginx" width="65" height="65" /> <br>Nginx </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nextjs" width="65" height="65" /> <br>Next.js </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=angular" width="65" height="65" /> <br>Angular </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=tailwind" width="65" height="65" /> <br>Tailwind CSS </td> </tr>
+<table> <tr> <td align="center" width="96"> <!-- Animated supported --> <img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" height="65" /> <br>Python </td> <td align="center" width="96"> <!-- Possibly animated --> <img src="https://techstack-generator.vercel.app/react-icon.svg" width="65" height="65" /> <br>React </td> <td align="center" width="96"> <!-- Possibly animated --> <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" height="65" /> <br>GitHub </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=go" width="65" height="65" /> <br>Go </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" /> <br>FastAPI </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=flask" width="65" height="65" /> <br>Flask </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=django" width="65" height="65" /> <br>Django </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nodejs" width="65" height="65" /> <br>Node.js </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=graphql" width="65" height="65" /> <br>GraphQL </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=postgres" width="65" height="65" /> <br>PostgreSQL </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=dynamodb" width="65" height="65" /> <br>DynamoDB </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=mongodb" width="65" height="65" /> <br>MongoDB </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=elasticsearch" width="65" height="65" /> <br>Elasticsearch </td> <td align="center" width="96"> <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="65" height="65" /> <br>MySQL </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=redis" width="65" height="65" /> <br>Redis </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=kafka" width="65" height="65" /> <br>Kafka </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=docker" width="65" height="65" /> <br>Docker </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=kubernetes" width="65" height="65" /> <br>Kubernetes </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=terraform" width="65" height="65" /> <br>Terraform </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=aws" width="65" height="65" /> <br>AWS </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=azure" width="65" height="65" /> <br>Azure </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=prometheus" width="65" height="65" /> <br>Prometheus </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=grafana" width="65" height="65" /> <br>Grafana </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=linux" width="65" height="65" /> <br>Linux </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nginx" width="65" height="65" /> <br>Nginx </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nextjs" width="65" height="65" /> <br>Next.js </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=angular" width="65" height="65" /> <br>Angular </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=tailwind" width="65" height="65" /> <br>Tailwind CSS </td> </tr>
 
 <tr>
  <td align="center" width="96">
@@ -122,7 +123,7 @@ Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competit
         <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png"/>
         <br><sub><b>Swagger</b></sub>
       </td>
-  
+
 </tr>
     <tr>
       <td align="center" width="90">
@@ -244,17 +245,15 @@ Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competit
         <br><sub><b>Selenium</b></sub>
       </td>
     </tr>
-		
+
 </table>
 
 
 </div>
 
-
-
 ---
 
-### 🏆 Competitive Programming  
+### 🏆 Competitive Programming
 
 - 🥇 **Google Code Jam 2023 — AIR 420 (3,687 / 85,000+)**
 - 🏅 Meta Hacker Cup 2022 — Global Rank 4,048 / 70,000+
@@ -263,23 +262,22 @@ Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competit
 
 ---
 
+### 📊 GitHub Stats
 
-### 📊 GitHub Stats  
+<div align="center">
 
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=sairam0424&show_icons=true&count_private=true&include_all_commits=true&theme=radical&hide_border=true" alt="Sairam Ugge's GitHub stats" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true" alt="Top languages" />
 
+<br/>
 
-<p align="center">
+<img src="https://github-readme-streak-stats.herokuapp.com?user=sairam0424&theme=radical&hide_border=true" alt="GitHub streak" />
 
-  <img 
-    src="https://github-readme-streak-stats.herokuapp.com?user=sairam0424&theme=radical&hide_border=true" 
-    height="170"
-  />
-
-</p>
+</div>
 
 ---
 
-## 🏅 LeetCode Badges  
+## 🏅 LeetCode Badges
 
 <p align="center">
   <img src="https://assets.leetcode.com/static_assets/marketing/2024-200.gif" alt="200 Days Badge" height="110">
@@ -289,7 +287,7 @@ Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competit
   <img src="https://assets.leetcode.com/static_assets/marketing/2023-100.gif" alt="100 Days Badge" height="110">
   <img src="https://assets.leetcode.com/static_assets/marketing/2023-50.gif" alt="50 Days Badge" height="110">
   <img src="https://assets.leetcode.com/static_assets/marketing/2022-50.gif" alt="50 Days Badge" height="110">
-</p>  
+</p>
 
 <p align="center">
   <img src="https://leetcode.com/static/images/badges/2023/gif/2023-12.gif" alt="December 2023 Badge" height="110">
@@ -304,27 +302,24 @@ Backend & Distributed Systems Engineer | GenAI Infrastructure Builder | Competit
   <img src="https://leetcode.com/static/images/badges/2024/gif/2024-09.gif" alt="September 2024 Badge" height="110">
 </p>
 
+---
+
+### 📫 Connect With Me
+
+- 💼 LinkedIn: https://linkedin.com/in/sairam0424
+- 💻 GitHub: https://github.com/sairam0424
+- 📧 Email: uggesairam0000@gmail.com
 
 ---
 
-### 📫 Connect With Me  
+### ⚡ Philosophy
 
-- 💼 LinkedIn: https://linkedin.com/in/sairam0424  
-- 💻 GitHub: https://github.com/sairam0424  
-- 📧 Email: uggesairam0000@gmail.com  
-
----
-
-### ⚡ Philosophy  
-
-I build systems that scale, stream in real time, and survive production chaos.
-
-From competitive programming to distributed systems —  I optimize everything.
-
+> I build systems that scale, stream in real time, and survive production chaos.
+> Multi-agent AI orchestration, event-driven backends, and open-source infrastructure are where I live — and competitive programming keeps the fundamentals sharp.
 
 ---
 
-### ☕ Support Me  
+### ☕ Support Me
 
 <p><a href="https://www.buymeacoffee.com/sairam"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="40" alt="Buy me a coffee"/></a>
 <a href="https://ko-fi.com/sairam"> <img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="40" alt="Ko-fi"/></a></p>
