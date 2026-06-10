@@ -266,7 +266,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=sairam0424&show_icons=true&count_private=true&include_all_commits=true&theme=radical&hide_border=true" alt="Sairam Ugge's GitHub stats" />
+<!-- <img height="180em" src="https://github-readme-stats.vercel.app/api?username=sairam0424&show_icons=true&count_private=true&include_all_commits=true&theme=radical&hide_border=true" alt="Sairam Ugge's GitHub stats" /> -->
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true" alt="Top languages" />
 
 <br/>
