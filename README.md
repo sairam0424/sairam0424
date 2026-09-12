@@ -35,6 +35,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 | **[Graph-Forge](https://github.com/sairam0424/Graph-Forge)** · `555 commits` | AI-native distributed code-intelligence platform — code modeled as a Neo4j knowledge graph + Chroma semantic embeddings, served by ~19 polyglot microservices over gRPC/REST. Kafka ingestion, Tree-Sitter AST parsing, full OpenTelemetry/Jaeger/Prometheus/Grafana stack via Envoy. RAG over massive codebases.<br>`Go` · `Python` · `gRPC` · `Neo4j` · `Chroma` · `Kafka` · `Next.js` |
 | **[ag-bash](https://github.com/sairam0424/ag-bash)** · `392 commits` | AI-native bash interpreter implemented entirely in TypeScript — exposed as the `@ag-bash/bash` shell engine plus an MCP server and an agent terminal bridge. Tree-sitter WASM parser, esbuild (ESM+CJS), and WASM runtimes (CPython, QuickJS, SQLite3).<br>`TypeScript` · `WebAssembly` · `MCP` · `Tree-sitter` · `pnpm` |
 
+
 #### 🤖 Agent Frameworks & Infrastructure
 
 | Project | What it is & Tech |
@@ -49,6 +50,17 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 |---------|-------------------|
 | **[CommandVault](https://github.com/sairam0424/CommandVault)** · `139 commits` | Universal AI command manager — browse/search/organize slash commands, skills, agents, plugins, rules, and hooks across Claude Code, Cursor, Copilot, Windsurf, and Aider. Indexes 350+ items via a VS Code extension, an 18-command CLI, and a three-tier search engine.<br>`TypeScript` · `VS Code Extension` · `CLI` · `SQLite` |
 | **[Not-Humans-Lab](https://github.com/sairam0424/not-humans-lab)** · `289 commits` | Thin root workspace federating independent AI-infra sub-projects (SkillStack, Deep-Research, Agent-Hub, rate-limit-observatory) — polyglot Turborepo/pnpm + Next.js, Python (uv + Temporal + FastAPI), and Go services with a Qdrant vector store.<br>`TypeScript` · `Python` · `Go` · `Temporal` · `Qdrant` |
+
+---
+
+### 📦 Open Source Packages
+
+| Package | Version | Downloads | License | Build |
+|---|---|---|---|---|
+| [`mindforge-cc`](https://www.npmjs.com/package/mindforge-cc) (npm) | [![npm](https://img.shields.io/npm/v/mindforge-cc.svg)](https://www.npmjs.com/package/mindforge-cc) | [![downloads](https://img.shields.io/npm/dm/mindforge-cc.svg)](https://www.npmjs.com/package/mindforge-cc) | ![license](https://img.shields.io/npm/l/mindforge-cc.svg) | [![CI](https://github.com/sairam0424/MindForge/actions/workflows/mindforge-ci.yml/badge.svg)](https://github.com/sairam0424/MindForge/actions/workflows/mindforge-ci.yml) |
+| [`@ag-bash/bash`](https://www.npmjs.com/package/@ag-bash/bash) (npm) | [![npm](https://img.shields.io/npm/v/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | [![downloads](https://img.shields.io/npm/dm/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | ![license](https://img.shields.io/npm/l/@ag-bash/bash.svg) | *(CI omitted — default branch currently red)* |
+| [`@context-os/core`](https://www.npmjs.com/package/@context-os/core) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | [![downloads](https://img.shields.io/npm/dm/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | *(registry `license` field is null — pending fix)* | *(CI omitted — 3 consecutive red runs)* |
+| [`trelix`](https://pypi.org/project/trelix/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/trelix.svg)](https://pypi.org/project/trelix/) | [![Downloads](https://static.pepy.tech/badge/trelix)](https://pepy.tech/project/trelix) | ![license](https://img.shields.io/pypi/l/trelix.svg) | [![CI](https://github.com/sairam0424/trelix/actions/workflows/ci.yml/badge.svg)](https://github.com/sairam0424/trelix/actions/workflows/ci.yml) |
 
 ---
 
@@ -266,40 +278,20 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 <div align="center">
 
-<!-- <img height="180em" src="https://github-readme-stats.vercel.app/api?username=sairam0424&show_icons=true&count_private=true&include_all_commits=true&theme=radical&hide_border=true" alt="Sairam Ugge's GitHub stats" /> -->
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true" alt="Top languages" />
+<img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true" alt="Top languages" />
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=sairam0424&theme=radical&hide_border=true" alt="GitHub streak" />
+<img src="https://streak-stats.demolab.com?user=sairam0424&theme=radical&hide_border=true" alt="GitHub streak" />
 
 </div>
 
 ---
 
-## 🏅 LeetCode Badges
+## 🏅 LeetCode Stats
 
 <p align="center">
-  <img src="https://assets.leetcode.com/static_assets/marketing/2024-200.gif" alt="200 Days Badge" height="110">
-  <img src="https://assets.leetcode.com/static_assets/marketing/2024-100.gif" alt="100 Days Badge" height="110">
-  <img src="https://assets.leetcode.com/static_assets/marketing/2024-50.gif" alt="50 Days Badge" height="110">
-  <img src="https://assets.leetcode.com/static_assets/marketing/2023-annual.gif" alt="365 Days Badge" height="110">
-  <img src="https://assets.leetcode.com/static_assets/marketing/2023-100.gif" alt="100 Days Badge" height="110">
-  <img src="https://assets.leetcode.com/static_assets/marketing/2023-50.gif" alt="50 Days Badge" height="110">
-  <img src="https://assets.leetcode.com/static_assets/marketing/2022-50.gif" alt="50 Days Badge" height="110">
-</p>
-
-<p align="center">
-  <img src="https://leetcode.com/static/images/badges/2023/gif/2023-12.gif" alt="December 2023 Badge" height="110">
-  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-01.gif" alt="January 2024 Badge" height="110">
-  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-02.gif" alt="February 2024 Badge" height="110">
-  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-03.gif" alt="March 2024 Badge" height="110">
-  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-04.gif" alt="April 2024 Badge" height="110">
-  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-05.gif" alt="May 2024 Badge" height="110">
-  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-06.gif" alt="June 2024 Badge" height="110">
-  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-07.gif" alt="July 2024 Badge" height="110">
-  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-08.gif" alt="August 2024 Badge" height="110">
-  <img src="https://leetcode.com/static/images/badges/2024/gif/2024-09.gif" alt="September 2024 Badge" height="110">
+  <img src="https://leetcard.jacoblin.cool/sairam_056?theme=dark&font=Baloo%202&ext=heatmap" alt="LeetCode stats" />
 </p>
 
 ---
