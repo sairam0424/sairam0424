@@ -16,7 +16,7 @@
 - 🔁 **Co-built a prompt-driven execution engine** (LLM agent orchestration with RAG + ReAct) — raised first-pass acceptance from 65% to 85% and cut planning from 1.5h to 15min. *(1.5K+ users.)*
 - ⚙️ **Owned backend systems end-to-end** (API design, data modeling, event-driven pipelines) — a decoupled Redis Streams + SSE pub/sub replaced client polling, cutting latency to sub-150ms. *(10K+ events/day for 2.5K+ users.)*
 - 🎨 Co-built a **GenAI wireframe generator** (PRDs/sketches/prompts → production-ready UI artifacts) and a **prompt-to-React system** (wireframes → modular components + routing); also **led a React → Angular re-architecture** with an SSE-driven real-time backend that cut UI load latency ~30%.
-- 🛠️ Open-source builder — author of **[MindForge](https://github.com/sairam0424/MindForge), [Graph-Forge](https://github.com/sairam0424/Graph-Forge), [Agent-Forge](https://github.com/sairam0424/Agent-Forge), [ContextOS](https://github.com/sairam0424/ContextOS), [ag-bash](https://github.com/sairam0424/ag-bash) & more** — agent frameworks, code-intelligence engines, and AI-native tooling. *(See Featured Projects below.)*
+- 🛠️ Open-source builder — author of **[MindForge](https://github.com/sairam0424/MindForge), [trelix](https://github.com/sairam0424/trelix), [Tombstone](https://github.com/sairam0424/Tombstone), [Graph-Forge](https://github.com/sairam0424/Graph-Forge), [Agent-Forge](https://github.com/sairam0424/Agent-Forge), [ContextOS](https://github.com/sairam0424/ContextOS), [ag-bash](https://github.com/sairam0424/ag-bash) & more** — agent frameworks, code-intelligence engines, production-reliability tooling, and AI-native infrastructure spanning personal projects and the **[kelvran](https://github.com/kelvran)**/**[mcpsmiths](https://github.com/mcpsmiths)** orgs. *(See Featured Projects below.)*
 - 🏆 Competitive programmer — **Google Code Jam '23** (AIR 420; 3,687 / 85,000+), **Meta Hacker Cup '22**, **Flipkart GRiD '22** top tier; mentored 250–300 students in DSA.
 - 🌱 Currently going deeper on **multi-agent orchestration, RAG, and distributed-systems design**.
 - 📫 Reach me at **uggesairam0000@gmail.com** · 📄 [Resume](http://bit.ly/4rTi7s0) · 💼 [LinkedIn](https://linkedin.com/in/sairam0424)
@@ -31,25 +31,49 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[gRPC Microservices](https://github.com/sairam0424/gRPC-micro-services)** — *Order Processing System* | Polyglot event-driven microservices — gRPC internal RPC + REST gateway, **etcd leader election**, **ACID inventory reservations**, a **Saga orchestrator**, metric-based read routing across PostgreSQL replicas, **Debezium/WAL CDC outbox**, Bloom filters, Redis caching, **DLQ + idempotency**, and observability via Envoy L7 (OpenTelemetry/Prometheus/Grafana).<br>`Go` · `Python` · `gRPC` · `PostgreSQL` · `Kafka` · `etcd` |
-| **[Graph-Forge](https://github.com/sairam0424/Graph-Forge)** · `555 commits` | AI-native distributed code-intelligence platform — code modeled as a Neo4j knowledge graph + Chroma semantic embeddings, served by ~19 polyglot microservices over gRPC/REST. Kafka ingestion, Tree-Sitter AST parsing, full OpenTelemetry/Jaeger/Prometheus/Grafana stack via Envoy. RAG over massive codebases.<br>`Go` · `Python` · `gRPC` · `Neo4j` · `Chroma` · `Kafka` · `Next.js` |
-| **[ag-bash](https://github.com/sairam0424/ag-bash)** · `392 commits` | AI-native bash interpreter implemented entirely in TypeScript — exposed as the `@ag-bash/bash` shell engine plus an MCP server and an agent terminal bridge. Tree-sitter WASM parser, esbuild (ESM+CJS), and WASM runtimes (CPython, QuickJS, SQLite3).<br>`TypeScript` · `WebAssembly` · `MCP` · `Tree-sitter` · `pnpm` |
+| **[trelix](https://github.com/sairam0424/trelix)** · `1,453 commits` | Fast, reliable code intelligence — Tree-sitter AST parsing, contextual hybrid search, adaptive query planning, call-graph expansion & LLM synthesis across 20+ languages with zero infra. Ships as a PyPI CLI plus a GitHub Action (`trelix-index-action`) for CI-based repo indexing.<br>`Python` · `Tree-sitter` · `BM25` · `CLI` |
+| **[gRPC Microservices](https://github.com/sairam0424/gRPC-micro-services)** · `316 commits` — *Order Processing System* | Polyglot event-driven microservices — gRPC internal RPC + REST gateway, **etcd leader election**, **ACID inventory reservations**, a **Saga orchestrator**, metric-based read routing across PostgreSQL replicas, **Debezium/WAL CDC outbox**, Bloom filters, Redis caching, **DLQ + idempotency**, and observability via Envoy L7 (OpenTelemetry/Prometheus/Grafana).<br>`Go` · `Python` · `gRPC` · `PostgreSQL` · `Kafka` · `etcd` |
+| **Graph-Forge** · `574 commits` *(private)* | AI-native distributed code-intelligence platform — code modeled as a Neo4j knowledge graph + Chroma semantic embeddings, served by ~19 polyglot microservices over gRPC/REST. Kafka ingestion, Tree-Sitter AST parsing, full OpenTelemetry/Jaeger/Prometheus/Grafana stack via Envoy. RAG over massive codebases.<br>`Go` · `Python` · `gRPC` · `Neo4j` · `Chroma` · `Kafka` · `Next.js` |
+| **[ag-bash](https://github.com/sairam0424/ag-bash)** · `510 commits` | AI-native bash interpreter implemented entirely in TypeScript — exposed as the `@ag-bash/bash` shell engine plus an MCP server and an agent terminal bridge. Tree-sitter WASM parser, esbuild (ESM+CJS), and WASM runtimes (CPython, QuickJS, SQLite3).<br>`TypeScript` · `WebAssembly` · `MCP` · `Tree-sitter` · `pnpm` |
 
+#### 🛡️ Production Reliability & Delivery
+
+| Project | What it is & Tech |
+|---------|-------------------|
+| **[Tombstone](https://github.com/sairam0424/Tombstone)** · `974 commits` | Production intelligence layer for feature flags at scale — blast-radius gating, circuit-breaker auto-rollback, Merkle-linked audit log, causal incident correlation ("What Changed?"), and Knight Capital–style tombstoning of stale flags. Polyglot monorepo.<br>`Go` · `Python` · `TypeScript` · `PostgreSQL` · `Redis` |
+| **[RateCap](https://github.com/sairam0424/RateCap)** · `347 commits` | Faithful open-source recreation of Stripe's four-tier rate-limiter and load-shedder architecture, built as a hybrid core-engine + sidecar system.<br>`Go` · `API Gateway` · `Distributed Systems` |
 
 #### 🤖 Agent Frameworks & Infrastructure
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[MindForge](https://github.com/sairam0424/MindForge)** · `1,193 commits` | Agentic-intelligence framework for Claude Code — 174 slash commands, 154 specialized subagents, 73 skills, hooks, governance, cost-aware model routing, and true wave (parallel) execution. Streaming WebSocket SDK. Ships as `npx mindforge-cc`.<br>`Node.js` · `TypeScript` · `MCP` · `sql.js` |
-| **[Agent-Forge](https://github.com/sairam0424/Agent-Forge)** · `201 commits` | Framework-agnostic, self-improving AI agent infrastructure — a Karpathy-style propose/eval/score/commit-or-revert loop over a mutable markdown agent spec (`AGENT.md`), git-versioned, with an LLM-judge eval harness and held-out validation to guard against overfitting.<br>`Python` · `FastAPI` · `pgvector` · `Celery` · `MCP` · `Docker` |
-| **[ContextOS](https://github.com/sairam0424/ContextOS)** · `175 commits` | Intelligence layer for autonomous AI agents — SQLite/vector indexing, multi-agent orchestration, and resilience. Ships as core/CLI/MCP npm packages (`@context-os/*`) plus a spatial dashboard.<br>`TypeScript` · `SQLite` · `vector search` · `MCP` · `React` · `Three.js` |
+| **[MindForge](https://github.com/sairam0424/MindForge)** · `1,778 commits` | Agentic-intelligence framework for Claude Code — 174 slash commands, 154 specialized subagents, 73 skills, hooks, governance, cost-aware model routing, and true wave (parallel) execution. Streaming WebSocket SDK. Ships as `npx mindforge-cc`.<br>`Node.js` · `TypeScript` · `MCP` · `sql.js` |
+| **Agent-Forge** · `209 commits` *(private)* | Framework-agnostic, self-improving AI agent infrastructure — a Karpathy-style propose/eval/score/commit-or-revert loop over a mutable markdown agent spec (`AGENT.md`), git-versioned, with an LLM-judge eval harness and held-out validation to guard against overfitting.<br>`Python` · `FastAPI` · `pgvector` · `Celery` · `MCP` · `Docker` |
+| **[ContextOS](https://github.com/sairam0424/ContextOS)** · `233 commits` | Intelligence layer for autonomous AI agents — SQLite/vector indexing, multi-agent orchestration, and resilience. Ships as core/CLI/MCP npm packages (`@context-os/*`) plus a spatial dashboard.<br>`TypeScript` · `SQLite` · `vector search` · `MCP` · `React` · `Three.js` |
+
+#### 🏢 Organization Projects — [kelvran](https://github.com/kelvran) & [mcpsmiths](https://github.com/mcpsmiths)
+
+| Project | What it is & Tech |
+|---------|-------------------|
+| **[kelvran/gateway](https://github.com/kelvran/gateway)** · `690 commits` | Unified AI infrastructure platform — LLM gateway with an embedded multi-layer cache; a separate agent-evaluation system is in development.<br>`Go` |
+| **[mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)** · `185 commits` | MCP server for querying OpenTelemetry traces across multiple observability backends (Jaeger, Tempo, Traceloop, Datadog) for LLM application debugging.<br>`Python` · `MCP` · `OpenTelemetry` |
+| **[mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)** · `64 commits` | Pre-flight query cost and result-size guardrails for AI agents across BigQuery, Snowflake, and Databricks.<br>`Python` · `MCP` |
 
 #### 🛠️ Tooling & Lab
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[CommandVault](https://github.com/sairam0424/CommandVault)** · `139 commits` | Universal AI command manager — browse/search/organize slash commands, skills, agents, plugins, rules, and hooks across Claude Code, Cursor, Copilot, Windsurf, and Aider. Indexes 350+ items via a VS Code extension, an 18-command CLI, and a three-tier search engine.<br>`TypeScript` · `VS Code Extension` · `CLI` · `SQLite` |
-| **[Not-Humans-Lab](https://github.com/sairam0424/not-humans-lab)** · `289 commits` | Thin root workspace federating independent AI-infra sub-projects (SkillStack, Deep-Research, Agent-Hub, rate-limit-observatory) — polyglot Turborepo/pnpm + Next.js, Python (uv + Temporal + FastAPI), and Go services with a Qdrant vector store.<br>`TypeScript` · `Python` · `Go` · `Temporal` · `Qdrant` |
+| **[CommandVault](https://github.com/sairam0424/CommandVault)** · `161 commits` | Universal AI command manager — browse/search/organize slash commands, skills, agents, plugins, rules, and hooks across Claude Code, Cursor, Copilot, Windsurf, and Aider. Indexes 350+ items via a VS Code extension, an 18-command CLI, and a three-tier search engine.<br>`TypeScript` · `VS Code Extension` · `CLI` · `SQLite` |
+| **[Inkforge](https://github.com/sairam0424/Inkforge)** · `103 commits` | AI-powered article generation system — notes/topic/code → human-readable Markdown articles, published to Dev.to, Hashnode, Medium & more.<br>`TypeScript` · `Anthropic` · `AWS Bedrock` |
+| **[Not-Humans-Lab](https://github.com/sairam0424/not-humans-lab)** | Umbrella docs tying together the Not-Humans-Lab suite: [daily-dose](https://github.com/sairam0424/daily-dose) (`155 commits`, AI-curated tech digest) and [nh-deck](https://github.com/sairam0424/nh-deck) (`58 commits`, Markdown slide-deck CLI), plus nh-skills *(private)*.<br>`TypeScript` · `Astro` · `CLI` |
+| **Not-Humans** · `400 commits` *(private)* | Thin root workspace federating independent AI-infra sub-projects (SkillStack, Deep-Research, Agent-Hub, rate-limit-observatory) — polyglot Turborepo/pnpm + Next.js, Python (uv + Temporal + FastAPI), and Go services with a Qdrant vector store.<br>`TypeScript` · `Python` · `Go` · `Temporal` · `Qdrant` |
+
+#### 🌐 Portfolio & Edge Projects
+
+| Project | What it is & Tech |
+|---------|-------------------|
+| **[anvilry](https://github.com/sairam0424/anvilry)** · `722 commits` | Engineering portfolio with four switchable experiences over one content source — SSG classic site, AI concierge chat (RAG-grounded, AWS Bedrock), WebGL Build Graph, and a keyboard-native developer terminal. Exposes a read-only MCP server.<br>`Next.js 16` · `React 19` · `TypeScript` · `Tailwind v4` · `R3F` |
+| **[Thunderboard-Labs](https://github.com/sairam0424/Thunderboard-Labs)** · `38 commits` | On-device TinyML on the Silicon Labs Thunderboard Sense 2 (EFR32MG12, no NPU) — an 85%-accurate IMU gesture recognizer running fully on-chip at ~87.5ms.<br>`Embedded ML` · `Cortex-M4` · `Edge Impulse` |
 
 ---
 
@@ -61,6 +85,8 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 | [`@ag-bash/bash`](https://www.npmjs.com/package/@ag-bash/bash) (npm) | [![npm](https://img.shields.io/npm/v/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | [![downloads](https://img.shields.io/npm/dm/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | ![license](https://img.shields.io/npm/l/@ag-bash/bash.svg) | *(CI omitted — default branch currently red)* |
 | [`@context-os/core`](https://www.npmjs.com/package/@context-os/core) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | [![downloads](https://img.shields.io/npm/dm/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | *(registry `license` field is null — pending fix)* | *(CI omitted — 3 consecutive red runs)* |
 | [`trelix`](https://pypi.org/project/trelix/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/trelix.svg)](https://pypi.org/project/trelix/) | [![Downloads](https://static.pepy.tech/badge/trelix)](https://pepy.tech/project/trelix) | ![license](https://img.shields.io/pypi/l/trelix.svg) | [![CI](https://github.com/sairam0424/trelix/actions/workflows/ci.yml/badge.svg)](https://github.com/sairam0424/trelix/actions/workflows/ci.yml) |
+| [`tracehub-mcp`](https://pypi.org/project/tracehub-mcp/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/tracehub-mcp.svg)](https://pypi.org/project/tracehub-mcp/) | [![Downloads](https://static.pepy.tech/badge/tracehub-mcp)](https://pepy.tech/project/tracehub-mcp) | ![license](https://img.shields.io/pypi/l/tracehub-mcp.svg) | *(mcpsmiths org project)* |
+| [`cost-guard-mcp`](https://pypi.org/project/cost-guard-mcp/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/cost-guard-mcp.svg)](https://pypi.org/project/cost-guard-mcp/) | [![Downloads](https://static.pepy.tech/badge/cost-guard-mcp)](https://pepy.tech/project/cost-guard-mcp) | ![license](https://img.shields.io/pypi/l/cost-guard-mcp.svg) | *(mcpsmiths org project)* |
 
 ---
 
