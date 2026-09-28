@@ -40,6 +40,10 @@
 
 Open-source AI infrastructure I build in the open — agent frameworks, code-intelligence engines, and developer tooling. Commit counts are a build-signal only; each card describes architecture and tech, not adoption.
 
+**trelix, live** — real terminal output, not staged: `trelix query` doing semantic search over its own retrieval-pipeline source, correctly ranking `reciprocal_rank_fusion` first for a query about RRF fusion.
+
+![trelix query demo — semantic search over its own retrieval pipeline, correctly ranking reciprocal_rank_fusion first](./assets/trelix-demo.gif)
+
 #### 🧠 Code Intelligence & Engines
 
 | Project | What it is & Tech |
