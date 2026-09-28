@@ -116,17 +116,38 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 - **kelvran** (2026-09-21 to 09-22) — 5 releases in a week (gateway v0.14.0→v0.14.2, evals v0.10.0→v0.10.1) fixing 2 CRITICAL + a HIGH-severity SSE error-swallowing bug found via back-to-back audits, alongside a live AWS Bedrock production pilot; gateway has since reached v0.15.0.
 - **mcpsmiths/cost-guard-mcp** — shipped a third query-cost engine (Databricks, 2026-09-13) and, the next day, closed a CRITICAL secret-redaction bug in a full-repo audit, raising coverage to 98.4%.
 - **mcpsmiths/tracehub-mcp v0.5.0** (2026-09-14) — a real end-to-end dry run against a live Jaeger/OTel stack caught a CRITICAL silent-data-loss bug before it reached users; now at v0.12.2.
+- **CNCF OpenFeature** — contributed Tombstone's [OpenFeature-compatible provider listing](https://github.com/open-feature/community/pull/554) to the CNCF-affiliated OpenFeature project's interested-parties registry (merged 2026-08-18).
+
+---
+
+<p align="center">
+  <a href="https://github.com/sairam0424/trelix/releases/latest"><img src="https://img.shields.io/github/v/release/sairam0424/trelix?label=trelix" alt="trelix latest release" /></a>
+  <a href="https://github.com/sairam0424/MindForge/releases/latest"><img src="https://img.shields.io/github/v/release/sairam0424/MindForge?label=MindForge" alt="MindForge latest release" /></a>
+  <a href="https://github.com/sairam0424/Tombstone/releases/latest"><img src="https://img.shields.io/github/v/release/sairam0424/Tombstone?label=Tombstone" alt="Tombstone latest release" /></a>
+  <a href="https://github.com/sairam0424/RateCap/releases/latest"><img src="https://img.shields.io/github/v/release/sairam0424/RateCap?label=RateCap" alt="RateCap latest release" /></a>
+</p>
+
+---
+
+### 📡 Recent Activity
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
 ---
 
 ### 📈 Track Record
 
+*Auto-updated weekly by [`update-track-record.yml`](.github/workflows/update-track-record.yml).*
+
+<!--START_SECTION:track-record-->
 | Metric | Value |
 |---|---|
 | Versioned releases shipped | **174** across 11 projects |
-| PRs merged (career total) | **1,911** |
+| PRs merged (career total) | **1,912** |
 | Repositories contributed to | **64** (all-time, all contribution types) |
-| Contributions (last 12 months) | **10.4K+** |
+| Contributions (last 12 months) | **10.5K+** |
+<!--END_SECTION:track-record-->
 
 ---
 
