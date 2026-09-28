@@ -96,16 +96,17 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 ### 🔌 MCP Servers
 
-Four Model Context Protocol servers, spanning shell execution, code search, distributed tracing, and query-cost guardrails:
+Five Model Context Protocol servers, spanning agent orchestration, shell execution, code search, distributed tracing, and query-cost guardrails:
 
 | Server | What it connects | Install |
 |---|---|---|
+| [`mindforge-mcp-server`](https://github.com/sairam0424/MindForge) | The MindForge engine over MCP — knowledge graph, project health, audit log | `npx mindforge-mcp-server` |
 | [`@ag-bash/mcp-server`](https://github.com/sairam0424/ag-bash) | AI-native sandboxed bash — agents get a real, observable shell | `npx @ag-bash/mcp-server` |
-| [`trelix-mcp`](https://pypi.org/project/trelix-mcp/) | Semantic code search for Claude Code, Cursor, Windsurf | `uvx trelix-mcp` |
+| [`trelix-mcp`](https://pypi.org/project/trelix-mcp/) | Semantic code search for Claude Code, Cursor, Windsurf | `pip install trelix-mcp` |
 | [`tracehub-mcp`](https://pypi.org/project/tracehub-mcp/) | Query distributed traces across Jaeger, Tempo, Traceloop, Datadog | `uvx tracehub-mcp` |
 | [`cost-guard-mcp`](https://pypi.org/project/cost-guard-mcp/) | Pre-flight cost/result-size guardrails for BigQuery, Snowflake, Databricks | `uvx cost-guard-mcp` |
 
-Also browsable on the [official MCP Registry](https://registry.modelcontextprotocol.io).
+Full details (versions, downloads, license) are in the Open Source Packages table below; also browsable on the [official MCP Registry](https://registry.modelcontextprotocol.io).
 
 ---
 
@@ -124,7 +125,7 @@ Also browsable on the [official MCP Registry](https://registry.modelcontextproto
 
 ### 📈 Track Record
 
-`174` versioned releases shipped across 11 projects · `1,910` PRs merged (career total) · `64` repositories contributed to (all-time, all contribution types) · `10.4K+` contributions in the last 12 months
+`174` versioned releases shipped across 11 projects · `1,911` PRs merged (career total) · `64` repositories contributed to (all-time, all contribution types) · `10.4K+` contributions in the last 12 months
 
 ---
 
@@ -368,7 +369,7 @@ Also browsable on the [official MCP Registry](https://registry.modelcontextproto
 - 🏅 Meta Hacker Cup 2022 — Global Rank 4,048 / 70,000+
 - 🏅 Flipkart Grid 2022 — Rank 1,325 / 40,000+
 - 👨‍🏫 Mentored 250+ students in Data Structures & Algorithms
-- 🏅 GitHub Achievements: [Pull Shark (gold)](https://github.com/sairam0424?tab=achievements), Quickdraw, YOLO, Pair Extraordinaire
+- 🏅 GitHub Achievements: [Pull Shark (gold)](https://github.com/sairam0424?tab=achievements), Pair Extraordinaire (gold), Quickdraw, YOLO
 
 ---
 
@@ -379,7 +380,7 @@ Also browsable on the [official MCP Registry](https://registry.modelcontextproto
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true&repo=kelvran/gateway%2Cmcpsmiths/tracehub-mcp%2Cmcpsmiths/cost-guard-mcp" />
   <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=default&hide_border=true&repo=kelvran/gateway%2Cmcpsmiths/tracehub-mcp%2Cmcpsmiths/cost-guard-mcp" />
-  <img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true&repo=kelvran/gateway%2Cmcpsmiths/tracehub-mcp%2Cmcpsmiths/cost-guard-mcp" alt="sairam0424's top GitHub languages by code volume, including kelvran and mcpsmiths org repos" />
+  <img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true&repo=kelvran/gateway%2Cmcpsmiths/tracehub-mcp%2Cmcpsmiths/cost-guard-mcp" alt="sairam0424's top GitHub languages by code volume" />
 </picture>
 
 <br/>
