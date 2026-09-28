@@ -49,6 +49,30 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 | **Graph-Forge** · `574 commits` *(private)* | AI-native distributed code-intelligence platform — code modeled as a Neo4j knowledge graph + Chroma semantic embeddings, served by ~19 polyglot microservices over gRPC/REST. Kafka ingestion, Tree-Sitter AST parsing, full OpenTelemetry/Jaeger/Prometheus/Grafana stack via Envoy. RAG over massive codebases.<br>`Go` · `Python` · `gRPC` · `Neo4j` · `Chroma` · `Kafka` · `Next.js` |
 | **[ag-bash](https://github.com/sairam0424/ag-bash)** · `510 commits` | AI-native bash interpreter with fork-speculation (`bash.fork()`/`bash.speculate()` — parallel speculative execution with copy-on-write branches, a capability no peer sandboxed-shell project has) — exposed as the `@ag-bash/bash` shell engine plus an MCP server and an agent terminal bridge. Tree-sitter WASM parser, esbuild (ESM+CJS), WASM runtimes (CPython, QuickJS, SQLite3).<br>`TypeScript` · `WebAssembly` · `MCP` · `Tree-sitter` · `pnpm` |
 
+<details>
+<summary><strong>How trelix actually works</strong> (simplified from <a href="https://github.com/sairam0424/trelix#how-it-works">its own repo README</a> — the real pipeline has more optional legs than this)</summary>
+
+```mermaid
+flowchart LR
+    A[Repository] --> B[Parser: 26 languages]
+    B --> C[Chunker + Embedder]
+    C --> D[(Vector + SQLite index)]
+
+    Q[User Query] --> E[Adaptive Router]
+    E --> F[Vector Search]
+    E --> G[Contextual BM25]
+    E --> H[Graph Expansion]
+    D --> F
+    D --> G
+    D --> H
+    F --> I[RRF Fusion + Rerank]
+    G --> I
+    H --> I
+    I --> J[LLM Synthesis / GraphRAG]
+```
+
+</details>
+
 #### 🛡️ Production Reliability & Delivery
 
 | Project | What it is & Tech |
@@ -153,6 +177,28 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 | Repositories contributed to | **64** (all-time, all contribution types) |
 | Contributions (last 12 months) | **10.5K+** |
 <!--END_SECTION:track-record-->
+
+---
+
+### 🛡️ Security Posture
+
+Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independent audit (branch protection, pinned dependencies, SAST, vulnerability history, and more) that requires zero setup on my end; it scans any public repo. Shown for every repo across my personal account and the kelvran/mcpsmiths orgs that OSSF has scanned so far, unfiltered — including the ones that score lower, since that's the honest picture:
+
+| Repo | OSSF Scorecard |
+|---|---|
+| [kelvran/gateway](https://github.com/kelvran/gateway) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/kelvran/gateway/badge)](https://scorecard.dev/viewer/?uri=github.com/kelvran/gateway) |
+| [ag-bash](https://github.com/sairam0424/ag-bash) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/ag-bash/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/ag-bash) |
+| [anvilry](https://github.com/sairam0424/anvilry) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/anvilry/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/anvilry) |
+| [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/mcpsmiths/cost-guard-mcp/badge)](https://scorecard.dev/viewer/?uri=github.com/mcpsmiths/cost-guard-mcp) |
+| [Inkforge](https://github.com/sairam0424/Inkforge) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/Inkforge/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/Inkforge) |
+| [RateCap](https://github.com/sairam0424/RateCap) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/RateCap/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/RateCap) |
+| [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/mcpsmiths/tracehub-mcp/badge)](https://scorecard.dev/viewer/?uri=github.com/mcpsmiths/tracehub-mcp) |
+| [trelix](https://github.com/sairam0424/trelix) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/trelix/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/trelix) |
+| [MindForge](https://github.com/sairam0424/MindForge) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/MindForge/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/MindForge) |
+| [ContextOS](https://github.com/sairam0424/ContextOS) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/ContextOS/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/ContextOS) |
+| [CommandVault](https://github.com/sairam0424/CommandVault) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/CommandVault/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/CommandVault) |
+
+*Tombstone isn't shown — OSSF hasn't scanned it yet. The largest drag on most scores here is `Code-Review: 0/10`, since these are solo-maintained repos without a PR-approval gate — accurate, not hidden.*
 
 ---
 
