@@ -377,9 +377,9 @@ Also browsable on the [official MCP Registry](https://registry.modelcontextproto
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true&repo=kelvran/gateway,mcpsmiths/tracehub-mcp,mcpsmiths/cost-guard-mcp" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=default&hide_border=true&repo=kelvran/gateway,mcpsmiths/tracehub-mcp,mcpsmiths/cost-guard-mcp" />
-  <img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true&repo=kelvran/gateway,mcpsmiths/tracehub-mcp,mcpsmiths/cost-guard-mcp" alt="sairam0424's top GitHub languages by code volume, including kelvran and mcpsmiths org repos" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true&repo=kelvran/gateway%2Cmcpsmiths/tracehub-mcp%2Cmcpsmiths/cost-guard-mcp" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=default&hide_border=true&repo=kelvran/gateway%2Cmcpsmiths/tracehub-mcp%2Cmcpsmiths/cost-guard-mcp" />
+  <img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true&repo=kelvran/gateway%2Cmcpsmiths/tracehub-mcp%2Cmcpsmiths/cost-guard-mcp" alt="sairam0424's top GitHub languages by code volume, including kelvran and mcpsmiths org repos" />
 </picture>
 
 <br/>
