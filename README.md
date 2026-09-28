@@ -34,10 +34,6 @@
 - Pushing trelix, ag-bash, and MindForge through their next hardening + release cycle
 - Growing kelvran's gateway/evals and mcpsmiths' MCP servers past solo-maintainer scale
 
-### 🤖 How I Build This
-
-Most of what's above is AI-agent tooling, and I build it with AI agents — Claude Code drives most of the day-to-day implementation. That's not a disclaimer, it's the actual workflow: every change goes through an independent review pass before merge, a test/audit gate before release, and I read and take responsibility for what ships. I hit the rough edges of agentic coding daily, which is part of why the tools here exist.
-
 ---
 
 ### 🧩 Featured Projects
@@ -125,7 +121,12 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 
 ### 📈 Track Record
 
-`174` versioned releases shipped across 11 projects · `1,911` PRs merged (career total) · `64` repositories contributed to (all-time, all contribution types) · `10.4K+` contributions in the last 12 months
+| Metric | Value |
+|---|---|
+| Versioned releases shipped | **174** across 11 projects |
+| PRs merged (career total) | **1,911** |
+| Repositories contributed to | **64** (all-time, all contribution types) |
+| Contributions (last 12 months) | **10.4K+** |
 
 ---
 
