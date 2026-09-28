@@ -22,7 +22,7 @@
 - 🔁 **Co-built a prompt-driven execution engine** (LLM agent orchestration with RAG + ReAct) — raised first-pass acceptance from 65% to 85% and cut planning from 1.5h to 15min. *(1.5K+ users.)*
 - ⚙️ **Owned backend systems end-to-end** (API design, data modeling, event-driven pipelines) — a decoupled Redis Streams + SSE pub/sub replaced client polling, cutting latency to sub-150ms. *(10K+ events/day for 2.5K+ users.)*
 - 🎨 Co-built a **GenAI wireframe generator** (PRDs/sketches/prompts → production-ready UI artifacts) and a **prompt-to-React system** (wireframes → modular components + routing); also **led a React → Angular re-architecture** with an SSE-driven real-time backend that cut UI load latency ~30%.
-- 🛠️ Open-source builder — author of **[MindForge](https://github.com/sairam0424/MindForge), [trelix](https://github.com/sairam0424/trelix), [Tombstone](https://github.com/sairam0424/Tombstone), [Graph-Forge](https://github.com/sairam0424/Graph-Forge), [Agent-Forge](https://github.com/sairam0424/Agent-Forge), [ContextOS](https://github.com/sairam0424/ContextOS), [ag-bash](https://github.com/sairam0424/ag-bash) & more** — agent frameworks, code-intelligence engines, production-reliability tooling, and AI-native infrastructure spanning personal projects and the **[kelvran](https://github.com/kelvran)**/**[mcpsmiths](https://github.com/mcpsmiths)** orgs. *(See Featured Projects below.)*
+- 🛠️ Open-source builder — author of **[MindForge](https://github.com/sairam0424/MindForge), [trelix](https://github.com/sairam0424/trelix), [Tombstone](https://github.com/sairam0424/Tombstone), Graph-Forge *(private)*, Agent-Forge *(private)*, [ContextOS](https://github.com/sairam0424/ContextOS), [ag-bash](https://github.com/sairam0424/ag-bash) & more** — agent frameworks, code-intelligence engines, production-reliability tooling, and AI-native infrastructure spanning personal projects and the **[kelvran](https://github.com/kelvran)**/**[mcpsmiths](https://github.com/mcpsmiths)** orgs. *(See Featured Projects below.)*
 - 🏆 Competitive programmer — **Google Code Jam '23** (AIR 420; 3,687 / 85,000+), **Meta Hacker Cup '22**, **Flipkart GRiD '22** top tier; mentored 250–300 students in DSA.
 - 🌱 Currently going deeper on **multi-agent orchestration, RAG, and distributed-systems design**.
 - 📫 Reach me at **uggesairam0000@gmail.com** · 📄 [Resume](http://bit.ly/4rTi7s0) · 💼 [LinkedIn](https://linkedin.com/in/sairam0424)
@@ -53,7 +53,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[MindForge](https://github.com/sairam0424/MindForge)** · `1,778 commits` | Agentic-intelligence framework for Claude Code — v12.0.0 ships 221 slash commands, 164 specialized subagents, 354 skills, 216 personas, and 35 dynamic workflows, plus hooks, governance, cost-aware model routing, and true wave (parallel) execution. Streaming WebSocket SDK. Ships as `npx mindforge-cc`.<br>`Node.js` · `TypeScript` · `MCP` · `sql.js` |
+| **[MindForge](https://github.com/sairam0424/MindForge)** · `1,786 commits` | Agentic-intelligence framework for Claude Code — v12.0.0 ships 221 slash commands, 164 specialized subagents, 354 skills, 216 personas, and 35 dynamic workflows, plus hooks, governance, cost-aware model routing, and true wave (parallel) execution. Streaming WebSocket SDK. Ships as `npx mindforge-cc`.<br>`Node.js` · `TypeScript` · `MCP` · `sql.js` |
 | **Agent-Forge** · `209 commits` *(private)* | Framework-agnostic, self-improving AI agent infrastructure — a Karpathy-style propose/eval/score/commit-or-revert loop over a mutable markdown agent spec (`AGENT.md`), git-versioned, with an LLM-judge eval harness and held-out validation to guard against overfitting.<br>`Python` · `FastAPI` · `pgvector` · `Celery` · `MCP` · `Docker` |
 | **[ContextOS](https://github.com/sairam0424/ContextOS)** · `233 commits` | Intelligence layer for autonomous AI agents — SQLite/vector indexing, multi-agent orchestration, and resilience. Ships as core/CLI/MCP npm packages (`@context-os/*`) plus a spatial dashboard.<br>`TypeScript` · `SQLite` · `vector search` · `MCP` · `React` · `Three.js` |
 
@@ -61,7 +61,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[kelvran/gateway](https://github.com/kelvran/gateway)** · `690 commits` | Unified AI infrastructure platform — LLM gateway with an embedded multi-layer cache, plus an independently-versioned `evals` subsystem (currently v0.10.1).<br>`Go` |
+| **[kelvran/gateway](https://github.com/kelvran/gateway)** · `700 commits` | Unified AI infrastructure platform — LLM gateway with an embedded multi-layer cache, plus an independently-versioned `evals` subsystem (currently v0.10.1).<br>`Go` |
 | **[mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)** · `185 commits` | MCP server for querying OpenTelemetry traces across multiple observability backends (Jaeger, Tempo, Traceloop, Datadog) for LLM application debugging.<br>`Python` · `MCP` · `OpenTelemetry` |
 | **[mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)** · `64 commits` | Pre-flight query cost and result-size guardrails for AI agents across BigQuery, Snowflake, and Databricks.<br>`Python` · `MCP` |
 
@@ -71,7 +71,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 |---------|-------------------|
 | **[CommandVault](https://github.com/sairam0424/CommandVault)** · `161 commits` | Universal AI command manager — browse/search/organize slash commands, skills, agents, plugins, rules, and hooks across Claude Code, Cursor, Copilot, Windsurf, and Aider. Indexes 350+ items via a VS Code extension, an 18-command CLI, and a three-tier search engine.<br>`TypeScript` · `VS Code Extension` · `CLI` · `SQLite` |
 | **[Inkforge](https://github.com/sairam0424/Inkforge)** · `103 commits` | AI-powered article generation system — notes/topic/code → human-readable Markdown articles, published to Dev.to, Hashnode, Medium & more.<br>`TypeScript` · `Anthropic` · `AWS Bedrock` |
-| **[Not-Humans-Lab](https://github.com/sairam0424/not-humans-lab)** | Umbrella docs tying together the Not-Humans-Lab suite: [daily-dose](https://github.com/sairam0424/daily-dose) (`155 commits`, AI-curated tech digest) and [nh-deck](https://github.com/sairam0424/nh-deck) (`58 commits`, Markdown slide-deck CLI), plus nh-skills *(private)*.<br>`TypeScript` · `Astro` · `CLI` |
+| **[Not-Humans-Lab](https://github.com/sairam0424/not-humans-lab)** | Umbrella docs tying together the Not-Humans-Lab suite: [daily-dose](https://github.com/sairam0424/daily-dose) (`156 commits`, AI-curated tech digest) and [nh-deck](https://github.com/sairam0424/nh-deck) (`58 commits`, Markdown slide-deck CLI), plus nh-skills *(private)*.<br>`TypeScript` · `Astro` · `CLI` |
 | **Not-Humans** · `400 commits` *(private)* | Thin root workspace federating independent AI-infra sub-projects (SkillStack, Deep-Research, Agent-Hub, rate-limit-observatory) — polyglot Turborepo/pnpm + Next.js, Python (uv + Temporal + FastAPI), and Go services with a Qdrant vector store.<br>`TypeScript` · `Python` · `Go` · `Temporal` · `Qdrant` |
 
 #### 🌐 Portfolio & Edge Projects
@@ -87,12 +87,12 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 - **MindForge v12.0.0** (2026-09-24) — first release cut for real external users; an independent 8-agent security/production audit closed 1 CRITICAL + 4 HIGH findings before the cutover.
 - **trelix v3.4.1** (2026-09-27) — closed a CRITICAL symlink-following vulnerability that could leak local secrets to a third-party vision API, alongside shipping new raster-image indexing with LLM vision captioning (v3.4.0).
-- **ag-bash** — shipped a 9-phase security-hardening backlog to main (2026-09-26) and reached a fully green cross-platform CI matrix after root-causing deep Windows/macOS path-handling bugs.
+- **ag-bash** (2026-09-25) — shipped a 9-phase security-hardening backlog to main and reached a fully green cross-platform CI matrix after root-causing deep Windows/macOS path-handling bugs.
 - **Tombstone v2.0.1** (2026-09-09) — shipped after live E2E testing against a real Postgres/Kubernetes stack surfaced 10 real production bugs, including severe connection-pooling races.
 - **ContextOS (@context-os/core v1.13.2)** — shipped a deliberate breaking change eliminating an unfixable critical CVE (optional embedding peer-dependency) with in-band degradation reporting for MCP agents.
-- **kelvran** — 4 patch releases in one week (gateway v0.14.2 / evals v0.10.1) fixing 2 CRITICAL + a HIGH-severity SSE error-swallowing bug found via back-to-back audits, alongside a live AWS Bedrock production pilot.
-- **mcpsmiths/cost-guard-mcp** — shipped a third query-cost engine (Databricks) and closed a CRITICAL secret-redaction bug in the same audit pass, raising coverage to 98.4%.
-- **mcpsmiths/tracehub-mcp v0.5.0** — a real end-to-end dry run against a live Jaeger/OTel stack caught a CRITICAL silent-data-loss bug before it reached users.
+- **kelvran** (2026-09-21 to 09-22) — 5 releases in a week (gateway v0.14.0→v0.14.2, evals v0.10.0→v0.10.1) fixing 2 CRITICAL + a HIGH-severity SSE error-swallowing bug found via back-to-back audits, alongside a live AWS Bedrock production pilot; gateway has since reached v0.15.0.
+- **mcpsmiths/cost-guard-mcp** — shipped a third query-cost engine (Databricks, 2026-09-13) and, the next day, closed a CRITICAL secret-redaction bug in a full-repo audit, raising coverage to 98.4%.
+- **mcpsmiths/tracehub-mcp v0.5.0** (2026-09-14) — a real end-to-end dry run against a live Jaeger/OTel stack caught a CRITICAL silent-data-loss bug before it reached users; now at v0.12.2.
 
 ---
 
@@ -105,7 +105,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 | [`@ag-bash/bash`](https://www.npmjs.com/package/@ag-bash/bash) (npm) | [![npm](https://img.shields.io/npm/v/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | [![downloads](https://img.shields.io/npm/dm/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | ![license](https://img.shields.io/npm/l/@ag-bash/bash.svg) | [![CI](https://github.com/sairam0424/ag-bash/actions/workflows/tests.yml/badge.svg?branch=develop)](https://github.com/sairam0424/ag-bash/actions/workflows/tests.yml) |
 | [`@ag-bash/mcp-server`](https://www.npmjs.com/package/@ag-bash/mcp-server) (npm) | [![npm](https://img.shields.io/npm/v/@ag-bash/mcp-server.svg)](https://www.npmjs.com/package/@ag-bash/mcp-server) | [![downloads](https://img.shields.io/npm/dm/@ag-bash/mcp-server.svg)](https://www.npmjs.com/package/@ag-bash/mcp-server) | ![license](https://img.shields.io/npm/l/@ag-bash/mcp-server.svg) | *(same monorepo as @ag-bash/bash)* |
 | [`@ag-bash/agent-bridge`](https://www.npmjs.com/package/@ag-bash/agent-bridge) (npm) | [![npm](https://img.shields.io/npm/v/@ag-bash/agent-bridge.svg)](https://www.npmjs.com/package/@ag-bash/agent-bridge) | [![downloads](https://img.shields.io/npm/dm/@ag-bash/agent-bridge.svg)](https://www.npmjs.com/package/@ag-bash/agent-bridge) | ![license](https://img.shields.io/npm/l/@ag-bash/agent-bridge.svg) | *(same monorepo as @ag-bash/bash)* |
-| [`@context-os/core`](https://www.npmjs.com/package/@context-os/core) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | [![downloads](https://img.shields.io/npm/dm/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | *(registry `license` field is null — pending fix)* | *(CI omitted — no green run in 10+ attempts across 2+ weeks; no commits since 2026-09-17)* |
+| [`@context-os/core`](https://www.npmjs.com/package/@context-os/core) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | [![downloads](https://img.shields.io/npm/dm/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | *(registry `license` field is null — pending fix)* | *(CI omitted — no green run in 10+ attempts across ~11 days; no commits since 2026-09-17)* |
 | [`@context-os/cli`](https://www.npmjs.com/package/@context-os/cli) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/cli.svg)](https://www.npmjs.com/package/@context-os/cli) | [![downloads](https://img.shields.io/npm/dm/@context-os/cli.svg)](https://www.npmjs.com/package/@context-os/cli) | *(same registry gap as @context-os/core)* | *(same pipeline as @context-os/core)* |
 | [`@context-os/mcp`](https://www.npmjs.com/package/@context-os/mcp) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/mcp.svg)](https://www.npmjs.com/package/@context-os/mcp) | [![downloads](https://img.shields.io/npm/dm/@context-os/mcp.svg)](https://www.npmjs.com/package/@context-os/mcp) | *(same registry gap as @context-os/core)* | *(same pipeline as @context-os/core)* |
 | [`trelix`](https://pypi.org/project/trelix/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/trelix.svg)](https://pypi.org/project/trelix/) | [![Downloads](https://static.pepy.tech/badge/trelix)](https://pepy.tech/project/trelix) | ![license](https://img.shields.io/pypi/l/trelix.svg) | [![CI](https://github.com/sairam0424/trelix/actions/workflows/ci.yml/badge.svg)](https://github.com/sairam0424/trelix/actions/workflows/ci.yml) |
@@ -116,7 +116,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 | [`cost-guard-mcp`](https://pypi.org/project/cost-guard-mcp/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/cost-guard-mcp.svg)](https://pypi.org/project/cost-guard-mcp/) | [![Downloads](https://static.pepy.tech/badge/cost-guard-mcp)](https://pepy.tech/project/cost-guard-mcp) | ![license](https://img.shields.io/pypi/l/cost-guard-mcp.svg) | *(mcpsmiths org project)* |
 | [`@commandvault/cli`](https://www.npmjs.com/package/@commandvault/cli) (npm) | [![npm](https://img.shields.io/npm/v/@commandvault/cli.svg)](https://www.npmjs.com/package/@commandvault/cli) | [![downloads](https://img.shields.io/npm/dm/@commandvault/cli.svg)](https://www.npmjs.com/package/@commandvault/cli) | ![license](https://img.shields.io/npm/l/@commandvault/cli.svg) | *(also on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nothumanslabs.commandvault-ai))* |
 
-*Also distributed via: Homebrew (`brew install sairam0424/tap/ag-bash`, `brew install sairam0424/tap/mindforge`) · [MCP Registry](https://registry.modelcontextprotocol.io) (mindforge-cc, @ag-bash/mcp-server, trelix-mcp, tracehub-mcp, cost-guard-mcp) · Go modules ([RateCap](https://pkg.go.dev/github.com/sairam0424/RateCap), [Tombstone](https://pkg.go.dev/github.com/sairam0424/Tombstone) — `go get` directly, no separate registry needed).*
+*Also distributed via: Homebrew (`brew install sairam0424/tap/ag-bash`, `brew install sairam0424/tap/mindforge`) · [MCP Registry](https://registry.modelcontextprotocol.io) (mindforge-mcp-server, @ag-bash/mcp-server, trelix-mcp, tracehub-mcp, cost-guard-mcp).*
 
 ---
 
@@ -132,7 +132,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
   <a href="https://linkedin.com/in/sairam0424" style="display:inline-block; margin: 0 12px;">
     <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30"/>
   </a>
-  <a href="https://stackoverflow.com/users/user:18016584" style="display:inline-block; margin: 0 12px;">
+  <a href="https://stackoverflow.com/users/18016584/sai-ram" style="display:inline-block; margin: 0 12px;">
     <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" height="30"/>
   </a>
   <a href="https://kaggle.com/sairam0000" style="display:inline-block; margin: 0 12px;">
