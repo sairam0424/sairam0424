@@ -1,6 +1,8 @@
 <h1 align="center">Sairam Ugge</h1>
-<h3 align="center">GenAI &amp; Backend Engineer @Ascendion · Multi-Agent LLM Orchestration · RAG · Event-Driven Backends</h3>
+<h2 align="center">GenAI &amp; Backend Engineer @Ascendion · Multi-Agent LLM Orchestration · RAG · Event-Driven Backends</h2>
 <p align="center">Python · Go · FastAPI · gRPC &nbsp;|&nbsp; Open-Source AI Infrastructure &nbsp;|&nbsp; 📍 Hyderabad, India</p>
+
+<p align="center"><em>One AI-native developer-tooling stack, end to end — code intelligence (trelix, Graph-Forge), execution (ag-bash), orchestration (MindForge, ContextOS, Agent-Forge), and production safety (Tombstone, RateCap) — plus the LLM infrastructure underneath it (kelvran) and the MCP servers that connect it to agents (mcpsmiths).</em></p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=sairam0424&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
@@ -27,6 +29,15 @@
 - 🌱 Currently going deeper on **multi-agent orchestration, RAG, and distributed-systems design**.
 - 📫 Reach me at **uggesairam0000@gmail.com** · 📄 [Resume](http://bit.ly/4rTi7s0) · 💼 [LinkedIn](https://linkedin.com/in/sairam0424)
 
+### 🔭 Now
+
+- Pushing trelix, ag-bash, and MindForge through their next hardening + release cycle
+- Growing kelvran's gateway/evals and mcpsmiths' MCP servers past solo-maintainer scale
+
+### 🤖 How I Build This
+
+Most of what's above is AI-agent tooling, and I build it with AI agents — Claude Code drives most of the day-to-day implementation. That's not a disclaimer, it's the actual workflow: every change goes through an independent review pass before merge, a test/audit gate before release, and I read and take responsibility for what ships. I hit the rough edges of agentic coding daily, which is part of why the tools here exist.
+
 ---
 
 ### 🧩 Featured Projects
@@ -40,7 +51,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 | **[trelix](https://github.com/sairam0424/trelix)** · `1,453 commits` | Fast, reliable code intelligence — Tree-sitter AST parsing, contextual hybrid search, adaptive query planning, call-graph expansion & LLM synthesis across 20+ languages with zero infra. Ships as a PyPI CLI, a multi-arch Docker image (`ghcr.io/sairam0424/trelix`), MCP/LangChain/LlamaIndex retriever packages, plus a GitHub Action (`trelix-index-action`) for CI-based repo indexing.<br>`Python` · `Tree-sitter` · `BM25` · `CLI` |
 | **[gRPC Microservices](https://github.com/sairam0424/gRPC-micro-services)** · `316 commits` — *Order Processing System* | Polyglot event-driven microservices — gRPC internal RPC + REST gateway, **etcd leader election**, **ACID inventory reservations**, a **Saga orchestrator**, metric-based read routing across PostgreSQL replicas, **Debezium/WAL CDC outbox**, Bloom filters, Redis caching, **DLQ + idempotency**, and observability via Envoy L7 (OpenTelemetry/Prometheus/Grafana).<br>`Go` · `Python` · `gRPC` · `PostgreSQL` · `Kafka` · `etcd` |
 | **Graph-Forge** · `574 commits` *(private)* | AI-native distributed code-intelligence platform — code modeled as a Neo4j knowledge graph + Chroma semantic embeddings, served by ~19 polyglot microservices over gRPC/REST. Kafka ingestion, Tree-Sitter AST parsing, full OpenTelemetry/Jaeger/Prometheus/Grafana stack via Envoy. RAG over massive codebases.<br>`Go` · `Python` · `gRPC` · `Neo4j` · `Chroma` · `Kafka` · `Next.js` |
-| **[ag-bash](https://github.com/sairam0424/ag-bash)** · `510 commits` | AI-native bash interpreter implemented entirely in TypeScript — exposed as the `@ag-bash/bash` shell engine plus an MCP server and an agent terminal bridge. Tree-sitter WASM parser, esbuild (ESM+CJS), WASM runtimes (CPython, QuickJS, SQLite3), and fork-speculation (`bash.fork()`/`bash.speculate()` — parallel speculative execution with copy-on-write branches).<br>`TypeScript` · `WebAssembly` · `MCP` · `Tree-sitter` · `pnpm` |
+| **[ag-bash](https://github.com/sairam0424/ag-bash)** · `510 commits` | AI-native bash interpreter with fork-speculation (`bash.fork()`/`bash.speculate()` — parallel speculative execution with copy-on-write branches, a capability no peer sandboxed-shell project has) — exposed as the `@ag-bash/bash` shell engine plus an MCP server and an agent terminal bridge. Tree-sitter WASM parser, esbuild (ESM+CJS), WASM runtimes (CPython, QuickJS, SQLite3).<br>`TypeScript` · `WebAssembly` · `MCP` · `Tree-sitter` · `pnpm` |
 
 #### 🛡️ Production Reliability & Delivery
 
@@ -53,7 +64,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[MindForge](https://github.com/sairam0424/MindForge)** · `1,786 commits` | Agentic-intelligence framework for Claude Code — v12.0.0 ships 221 slash commands, 164 specialized subagents, 354 skills, 216 personas, and 35 dynamic workflows, plus hooks, governance, cost-aware model routing, and true wave (parallel) execution. Streaming WebSocket SDK. Ships as `npx mindforge-cc`.<br>`Node.js` · `TypeScript` · `MCP` · `sql.js` |
+| **[MindForge](https://github.com/sairam0424/MindForge)** · `1,786 commits` | Agentic-intelligence framework for Claude Code — v12.0.0 ships 221 slash commands, 164 specialized subagents, 354 skills, 216 personas, and 35 dynamic workflows, plus hooks, governance, cost-aware model routing, and true wave (parallel) execution. Streaming WebSocket SDK. Ships as `npx mindforge-cc` (7K+ monthly npm downloads).<br>`Node.js` · `TypeScript` · `MCP` · `sql.js` |
 | **Agent-Forge** · `209 commits` *(private)* | Framework-agnostic, self-improving AI agent infrastructure — a Karpathy-style propose/eval/score/commit-or-revert loop over a mutable markdown agent spec (`AGENT.md`), git-versioned, with an LLM-judge eval harness and held-out validation to guard against overfitting.<br>`Python` · `FastAPI` · `pgvector` · `Celery` · `MCP` · `Docker` |
 | **[ContextOS](https://github.com/sairam0424/ContextOS)** · `233 commits` | Intelligence layer for autonomous AI agents — SQLite/vector indexing, multi-agent orchestration, and resilience. Ships as core/CLI/MCP npm packages (`@context-os/*`) plus a spatial dashboard.<br>`TypeScript` · `SQLite` · `vector search` · `MCP` · `React` · `Three.js` |
 
@@ -83,6 +94,21 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 ---
 
+### 🔌 MCP Servers
+
+Four Model Context Protocol servers, spanning shell execution, code search, distributed tracing, and query-cost guardrails:
+
+| Server | What it connects | Install |
+|---|---|---|
+| [`@ag-bash/mcp-server`](https://github.com/sairam0424/ag-bash) | AI-native sandboxed bash — agents get a real, observable shell | `npx @ag-bash/mcp-server` |
+| [`trelix-mcp`](https://pypi.org/project/trelix-mcp/) | Semantic code search for Claude Code, Cursor, Windsurf | `uvx trelix-mcp` |
+| [`tracehub-mcp`](https://pypi.org/project/tracehub-mcp/) | Query distributed traces across Jaeger, Tempo, Traceloop, Datadog | `uvx tracehub-mcp` |
+| [`cost-guard-mcp`](https://pypi.org/project/cost-guard-mcp/) | Pre-flight cost/result-size guardrails for BigQuery, Snowflake, Databricks | `uvx cost-guard-mcp` |
+
+Also browsable on the [official MCP Registry](https://registry.modelcontextprotocol.io).
+
+---
+
 ### 🔥 Recent Highlights
 
 - **MindForge v12.0.0** (2026-09-24) — first release cut for real external users; an independent 8-agent security/production audit closed 1 CRITICAL + 4 HIGH findings before the cutover.
@@ -96,25 +122,31 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 ---
 
+### 📈 Track Record
+
+`174` versioned releases shipped across 11 projects · `1,910` PRs merged (career total) · `64` repositories contributed to (all-time, all contribution types) · `10.4K+` contributions in the last 12 months
+
+---
+
 ### 📦 Open Source Packages
 
 | Package | Version | Downloads | License | Build |
 |---|---|---|---|---|
-| [`mindforge-cc`](https://www.npmjs.com/package/mindforge-cc) (npm) | [![npm](https://img.shields.io/npm/v/mindforge-cc.svg)](https://www.npmjs.com/package/mindforge-cc) | [![downloads](https://img.shields.io/npm/dm/mindforge-cc.svg)](https://www.npmjs.com/package/mindforge-cc) | ![license](https://img.shields.io/npm/l/mindforge-cc.svg) | [![CI](https://github.com/sairam0424/MindForge/actions/workflows/mindforge-ci.yml/badge.svg)](https://github.com/sairam0424/MindForge/actions/workflows/mindforge-ci.yml) |
-| [`mindforge-mcp-server`](https://www.npmjs.com/package/mindforge-mcp-server) (npm) | [![npm](https://img.shields.io/npm/v/mindforge-mcp-server.svg)](https://www.npmjs.com/package/mindforge-mcp-server) | [![downloads](https://img.shields.io/npm/dm/mindforge-mcp-server.svg)](https://www.npmjs.com/package/mindforge-mcp-server) | ![license](https://img.shields.io/npm/l/mindforge-mcp-server.svg) | *(same pipeline as mindforge-cc)* |
-| [`@ag-bash/bash`](https://www.npmjs.com/package/@ag-bash/bash) (npm) | [![npm](https://img.shields.io/npm/v/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | [![downloads](https://img.shields.io/npm/dm/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | ![license](https://img.shields.io/npm/l/@ag-bash/bash.svg) | [![CI](https://github.com/sairam0424/ag-bash/actions/workflows/tests.yml/badge.svg?branch=develop)](https://github.com/sairam0424/ag-bash/actions/workflows/tests.yml) |
-| [`@ag-bash/mcp-server`](https://www.npmjs.com/package/@ag-bash/mcp-server) (npm) | [![npm](https://img.shields.io/npm/v/@ag-bash/mcp-server.svg)](https://www.npmjs.com/package/@ag-bash/mcp-server) | [![downloads](https://img.shields.io/npm/dm/@ag-bash/mcp-server.svg)](https://www.npmjs.com/package/@ag-bash/mcp-server) | ![license](https://img.shields.io/npm/l/@ag-bash/mcp-server.svg) | *(same monorepo as @ag-bash/bash)* |
-| [`@ag-bash/agent-bridge`](https://www.npmjs.com/package/@ag-bash/agent-bridge) (npm) | [![npm](https://img.shields.io/npm/v/@ag-bash/agent-bridge.svg)](https://www.npmjs.com/package/@ag-bash/agent-bridge) | [![downloads](https://img.shields.io/npm/dm/@ag-bash/agent-bridge.svg)](https://www.npmjs.com/package/@ag-bash/agent-bridge) | ![license](https://img.shields.io/npm/l/@ag-bash/agent-bridge.svg) | *(same monorepo as @ag-bash/bash)* |
-| [`@context-os/core`](https://www.npmjs.com/package/@context-os/core) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | [![downloads](https://img.shields.io/npm/dm/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | *(registry `license` field is null — pending fix)* | *(CI omitted — no green run in 10+ attempts across ~11 days; no commits since 2026-09-17)* |
-| [`@context-os/cli`](https://www.npmjs.com/package/@context-os/cli) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/cli.svg)](https://www.npmjs.com/package/@context-os/cli) | [![downloads](https://img.shields.io/npm/dm/@context-os/cli.svg)](https://www.npmjs.com/package/@context-os/cli) | *(same registry gap as @context-os/core)* | *(same pipeline as @context-os/core)* |
-| [`@context-os/mcp`](https://www.npmjs.com/package/@context-os/mcp) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/mcp.svg)](https://www.npmjs.com/package/@context-os/mcp) | [![downloads](https://img.shields.io/npm/dm/@context-os/mcp.svg)](https://www.npmjs.com/package/@context-os/mcp) | *(same registry gap as @context-os/core)* | *(same pipeline as @context-os/core)* |
-| [`trelix`](https://pypi.org/project/trelix/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/trelix.svg)](https://pypi.org/project/trelix/) | [![Downloads](https://static.pepy.tech/badge/trelix)](https://pepy.tech/project/trelix) | ![license](https://img.shields.io/pypi/l/trelix.svg) | [![CI](https://github.com/sairam0424/trelix/actions/workflows/ci.yml/badge.svg)](https://github.com/sairam0424/trelix/actions/workflows/ci.yml) |
-| [`trelix-mcp`](https://pypi.org/project/trelix-mcp/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/trelix-mcp.svg)](https://pypi.org/project/trelix-mcp/) | [![Downloads](https://static.pepy.tech/badge/trelix-mcp)](https://pepy.tech/project/trelix-mcp) | ![license](https://img.shields.io/pypi/l/trelix-mcp.svg) | *(same release train as trelix)* |
-| [`trelix-langchain`](https://pypi.org/project/trelix-langchain/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/trelix-langchain.svg)](https://pypi.org/project/trelix-langchain/) | [![Downloads](https://static.pepy.tech/badge/trelix-langchain)](https://pepy.tech/project/trelix-langchain) | ![license](https://img.shields.io/pypi/l/trelix-langchain.svg) | *(same release train as trelix)* |
-| [`trelix-llama-index`](https://pypi.org/project/trelix-llama-index/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/trelix-llama-index.svg)](https://pypi.org/project/trelix-llama-index/) | [![Downloads](https://static.pepy.tech/badge/trelix-llama-index)](https://pepy.tech/project/trelix-llama-index) | ![license](https://img.shields.io/pypi/l/trelix-llama-index.svg) | *(same release train as trelix)* |
-| [`tracehub-mcp`](https://pypi.org/project/tracehub-mcp/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/tracehub-mcp.svg)](https://pypi.org/project/tracehub-mcp/) | [![Downloads](https://static.pepy.tech/badge/tracehub-mcp)](https://pepy.tech/project/tracehub-mcp) | ![license](https://img.shields.io/pypi/l/tracehub-mcp.svg) | *(mcpsmiths org project)* |
-| [`cost-guard-mcp`](https://pypi.org/project/cost-guard-mcp/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/cost-guard-mcp.svg)](https://pypi.org/project/cost-guard-mcp/) | [![Downloads](https://static.pepy.tech/badge/cost-guard-mcp)](https://pepy.tech/project/cost-guard-mcp) | ![license](https://img.shields.io/pypi/l/cost-guard-mcp.svg) | *(mcpsmiths org project)* |
-| [`@commandvault/cli`](https://www.npmjs.com/package/@commandvault/cli) (npm) | [![npm](https://img.shields.io/npm/v/@commandvault/cli.svg)](https://www.npmjs.com/package/@commandvault/cli) | [![downloads](https://img.shields.io/npm/dm/@commandvault/cli.svg)](https://www.npmjs.com/package/@commandvault/cli) | ![license](https://img.shields.io/npm/l/@commandvault/cli.svg) | *(also on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nothumanslabs.commandvault-ai))* |
+| [`mindforge-cc`](https://www.npmjs.com/package/mindforge-cc) (npm) | [![mindforge-cc npm version](https://img.shields.io/npm/v/mindforge-cc.svg)](https://www.npmjs.com/package/mindforge-cc) | [![mindforge-cc npm downloads](https://img.shields.io/npm/dm/mindforge-cc.svg)](https://www.npmjs.com/package/mindforge-cc) | ![mindforge-cc license](https://img.shields.io/npm/l/mindforge-cc.svg) | [![MindForge CI status](https://github.com/sairam0424/MindForge/actions/workflows/mindforge-ci.yml/badge.svg)](https://github.com/sairam0424/MindForge/actions/workflows/mindforge-ci.yml) |
+| [`mindforge-mcp-server`](https://www.npmjs.com/package/mindforge-mcp-server) (npm) | [![mindforge-mcp-server npm version](https://img.shields.io/npm/v/mindforge-mcp-server.svg)](https://www.npmjs.com/package/mindforge-mcp-server) | [![mindforge-mcp-server npm downloads](https://img.shields.io/npm/dm/mindforge-mcp-server.svg)](https://www.npmjs.com/package/mindforge-mcp-server) | ![mindforge-mcp-server license](https://img.shields.io/npm/l/mindforge-mcp-server.svg) | *(same pipeline as mindforge-cc)* |
+| [`@ag-bash/bash`](https://www.npmjs.com/package/@ag-bash/bash) (npm) | [![@ag-bash/bash npm version](https://img.shields.io/npm/v/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | [![@ag-bash/bash npm downloads](https://img.shields.io/npm/dm/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | ![@ag-bash/bash license](https://img.shields.io/npm/l/@ag-bash/bash.svg) | [![ag-bash CI status](https://github.com/sairam0424/ag-bash/actions/workflows/tests.yml/badge.svg?branch=develop)](https://github.com/sairam0424/ag-bash/actions/workflows/tests.yml) |
+| [`@ag-bash/mcp-server`](https://www.npmjs.com/package/@ag-bash/mcp-server) (npm) | [![@ag-bash/mcp-server npm version](https://img.shields.io/npm/v/@ag-bash/mcp-server.svg)](https://www.npmjs.com/package/@ag-bash/mcp-server) | [![@ag-bash/mcp-server npm downloads](https://img.shields.io/npm/dm/@ag-bash/mcp-server.svg)](https://www.npmjs.com/package/@ag-bash/mcp-server) | ![@ag-bash/mcp-server license](https://img.shields.io/npm/l/@ag-bash/mcp-server.svg) | *(same monorepo as @ag-bash/bash)* |
+| [`@ag-bash/agent-bridge`](https://www.npmjs.com/package/@ag-bash/agent-bridge) (npm) | [![@ag-bash/agent-bridge npm version](https://img.shields.io/npm/v/@ag-bash/agent-bridge.svg)](https://www.npmjs.com/package/@ag-bash/agent-bridge) | [![@ag-bash/agent-bridge npm downloads](https://img.shields.io/npm/dm/@ag-bash/agent-bridge.svg)](https://www.npmjs.com/package/@ag-bash/agent-bridge) | ![@ag-bash/agent-bridge license](https://img.shields.io/npm/l/@ag-bash/agent-bridge.svg) | *(same monorepo as @ag-bash/bash)* |
+| [`@context-os/core`](https://www.npmjs.com/package/@context-os/core) (npm) | [![@context-os/core npm version](https://img.shields.io/npm/v/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | [![@context-os/core npm downloads](https://img.shields.io/npm/dm/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | *(registry `license` field is null — pending fix)* | *(CI omitted — no green run in 10+ attempts across ~11 days; no commits since 2026-09-17)* |
+| [`@context-os/cli`](https://www.npmjs.com/package/@context-os/cli) (npm) | [![@context-os/cli npm version](https://img.shields.io/npm/v/@context-os/cli.svg)](https://www.npmjs.com/package/@context-os/cli) | [![@context-os/cli npm downloads](https://img.shields.io/npm/dm/@context-os/cli.svg)](https://www.npmjs.com/package/@context-os/cli) | *(same registry gap as @context-os/core)* | *(same pipeline as @context-os/core)* |
+| [`@context-os/mcp`](https://www.npmjs.com/package/@context-os/mcp) (npm) | [![@context-os/mcp npm version](https://img.shields.io/npm/v/@context-os/mcp.svg)](https://www.npmjs.com/package/@context-os/mcp) | [![@context-os/mcp npm downloads](https://img.shields.io/npm/dm/@context-os/mcp.svg)](https://www.npmjs.com/package/@context-os/mcp) | *(same registry gap as @context-os/core)* | *(same pipeline as @context-os/core)* |
+| [`trelix`](https://pypi.org/project/trelix/) (PyPI) | [![trelix PyPI version](https://img.shields.io/pypi/v/trelix.svg)](https://pypi.org/project/trelix/) | [![trelix PyPI downloads](https://static.pepy.tech/badge/trelix)](https://pepy.tech/project/trelix) | ![trelix license](https://img.shields.io/pypi/l/trelix.svg) | [![trelix CI status](https://github.com/sairam0424/trelix/actions/workflows/ci.yml/badge.svg)](https://github.com/sairam0424/trelix/actions/workflows/ci.yml) |
+| [`trelix-mcp`](https://pypi.org/project/trelix-mcp/) (PyPI) | [![trelix-mcp PyPI version](https://img.shields.io/pypi/v/trelix-mcp.svg)](https://pypi.org/project/trelix-mcp/) | [![trelix-mcp PyPI downloads](https://static.pepy.tech/badge/trelix-mcp)](https://pepy.tech/project/trelix-mcp) | ![trelix-mcp license](https://img.shields.io/pypi/l/trelix-mcp.svg) | *(same release train as trelix)* |
+| [`trelix-langchain`](https://pypi.org/project/trelix-langchain/) (PyPI) | [![trelix-langchain PyPI version](https://img.shields.io/pypi/v/trelix-langchain.svg)](https://pypi.org/project/trelix-langchain/) | [![trelix-langchain PyPI downloads](https://static.pepy.tech/badge/trelix-langchain)](https://pepy.tech/project/trelix-langchain) | ![trelix-langchain license](https://img.shields.io/pypi/l/trelix-langchain.svg) | *(same release train as trelix)* |
+| [`trelix-llama-index`](https://pypi.org/project/trelix-llama-index/) (PyPI) | [![trelix-llama-index PyPI version](https://img.shields.io/pypi/v/trelix-llama-index.svg)](https://pypi.org/project/trelix-llama-index/) | [![trelix-llama-index PyPI downloads](https://static.pepy.tech/badge/trelix-llama-index)](https://pepy.tech/project/trelix-llama-index) | ![trelix-llama-index license](https://img.shields.io/pypi/l/trelix-llama-index.svg) | *(same release train as trelix)* |
+| [`tracehub-mcp`](https://pypi.org/project/tracehub-mcp/) (PyPI) | [![tracehub-mcp PyPI version](https://img.shields.io/pypi/v/tracehub-mcp.svg)](https://pypi.org/project/tracehub-mcp/) | [![tracehub-mcp PyPI downloads](https://static.pepy.tech/badge/tracehub-mcp)](https://pepy.tech/project/tracehub-mcp) | ![tracehub-mcp license](https://img.shields.io/pypi/l/tracehub-mcp.svg) | *(mcpsmiths org project)* |
+| [`cost-guard-mcp`](https://pypi.org/project/cost-guard-mcp/) (PyPI) | [![cost-guard-mcp PyPI version](https://img.shields.io/pypi/v/cost-guard-mcp.svg)](https://pypi.org/project/cost-guard-mcp/) | [![cost-guard-mcp PyPI downloads](https://static.pepy.tech/badge/cost-guard-mcp)](https://pepy.tech/project/cost-guard-mcp) | ![cost-guard-mcp license](https://img.shields.io/pypi/l/cost-guard-mcp.svg) | *(mcpsmiths org project)* |
+| [`@commandvault/cli`](https://www.npmjs.com/package/@commandvault/cli) (npm) | [![@commandvault/cli npm version](https://img.shields.io/npm/v/@commandvault/cli.svg)](https://www.npmjs.com/package/@commandvault/cli) | [![@commandvault/cli npm downloads](https://img.shields.io/npm/dm/@commandvault/cli.svg)](https://www.npmjs.com/package/@commandvault/cli) | ![@commandvault/cli license](https://img.shields.io/npm/l/@commandvault/cli.svg) | *(also on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nothumanslabs.commandvault-ai))* |
 
 *Also distributed via: Homebrew (`brew install sairam0424/tap/ag-bash`, `brew install sairam0424/tap/mindforge`) · [MCP Registry](https://registry.modelcontextprotocol.io) (mindforge-mcp-server, @ag-bash/mcp-server, trelix-mcp, tracehub-mcp, cost-guard-mcp).*
 
@@ -123,35 +155,41 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 <h3 align="left">Connect with me:</h3>
 
 <p align="left">
-  <a href="https://codepen.io/sairam0000" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" height="30"/>
+  <a href="https://codepen.io/sairam0000" aria-label="Sairam's CodePen profile" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" height="30" alt=""/>
   </a>
-  <a href="https://dev.to/sai_ram_0000" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" height="30"/>
+  <a href="https://dev.to/sai_ram_0000" aria-label="Sairam's Dev.to profile" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" height="30" alt=""/>
   </a>
-  <a href="https://linkedin.com/in/sairam0424" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30"/>
+  <a href="https://sairam0000.substack.com" aria-label="Sairam's Substack newsletter" style="display:inline-block; margin: 0 12px;">
+    <img src="https://wsrv.nl/?url=cdn.jsdelivr.net/npm/simple-icons@latest/icons/substack.svg&bg=white" height="30" alt=""/>
   </a>
-  <a href="https://stackoverflow.com/users/18016584/sai-ram" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" height="30"/>
+  <a href="https://sairam0000.hashnode.dev" aria-label="Sairam's Hashnode blog" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg" height="30" alt=""/>
   </a>
-  <a href="https://kaggle.com/sairam0000" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" height="30"/>
+  <a href="https://linkedin.com/in/sairam0424" aria-label="Sairam's LinkedIn profile" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30" alt=""/>
   </a>
-  <a href="https://medium.com/@uggesairam0000" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" height="30"/>
+  <a href="https://stackoverflow.com/users/18016584/sai-ram" aria-label="Sairam's Stack Overflow profile" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" height="30" alt=""/>
   </a>
-  <a href="https://www.codechef.com/users/sairam_056" style="display:inline-block; margin: 0 12px;">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" height="30"/>
+  <a href="https://kaggle.com/sairam0000" aria-label="Sairam's Kaggle profile" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" height="30" alt=""/>
   </a>
-  <a href="https://www.hackerrank.com/uggesairam0000" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" height="30"/>
+  <a href="https://medium.com/@uggesairam0000" aria-label="Sairam's Medium blog" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" height="30" alt=""/>
   </a>
-  <a href="https://codeforces.com/profile/sairam_056" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" height="30"/>
+  <a href="https://www.codechef.com/users/sairam_056" aria-label="Sairam's CodeChef profile" style="display:inline-block; margin: 0 12px;">
+    <img src="https://wsrv.nl/?url=cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg&bg=white" height="30" alt=""/>
   </a>
-  <a href="https://www.leetcode.com/sairam_056" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" height="30"/>
+  <a href="https://www.hackerrank.com/uggesairam0000" aria-label="Sairam's HackerRank profile" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" height="30" alt=""/>
+  </a>
+  <a href="https://codeforces.com/profile/sairam_056" aria-label="Sairam's Codeforces profile" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" height="30" alt=""/>
+  </a>
+  <a href="https://www.leetcode.com/sairam_056" aria-label="Sairam's LeetCode profile" style="display:inline-block; margin: 0 12px;">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" height="30" alt=""/>
   </a>
 </p>
 
@@ -160,7 +198,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 ### 🛠 Tech Stack
 
 <div>
-<table> <tr> <td align="center" width="96"> <!-- Animated supported --> <img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" height="65" /> <br>Python </td> <td align="center" width="96"> <!-- Possibly animated --> <img src="https://techstack-generator.vercel.app/react-icon.svg" width="65" height="65" /> <br>React </td> <td align="center" width="96"> <!-- Possibly animated --> <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" height="65" /> <br>GitHub </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=go" width="65" height="65" /> <br>Go </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" /> <br>FastAPI </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=flask" width="65" height="65" /> <br>Flask </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=django" width="65" height="65" /> <br>Django </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nodejs" width="65" height="65" /> <br>Node.js </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=graphql" width="65" height="65" /> <br>GraphQL </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=postgres" width="65" height="65" /> <br>PostgreSQL </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=dynamodb" width="65" height="65" /> <br>DynamoDB </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=mongodb" width="65" height="65" /> <br>MongoDB </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=elasticsearch" width="65" height="65" /> <br>Elasticsearch </td> <td align="center" width="96"> <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="65" height="65" /> <br>MySQL </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=redis" width="65" height="65" /> <br>Redis </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=kafka" width="65" height="65" /> <br>Kafka </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=docker" width="65" height="65" /> <br>Docker </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=kubernetes" width="65" height="65" /> <br>Kubernetes </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=terraform" width="65" height="65" /> <br>Terraform </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=aws" width="65" height="65" /> <br>AWS </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=azure" width="65" height="65" /> <br>Azure </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=prometheus" width="65" height="65" /> <br>Prometheus </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=grafana" width="65" height="65" /> <br>Grafana </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=linux" width="65" height="65" /> <br>Linux </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nginx" width="65" height="65" /> <br>Nginx </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nextjs" width="65" height="65" /> <br>Next.js </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=angular" width="65" height="65" /> <br>Angular </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=tailwind" width="65" height="65" /> <br>Tailwind CSS </td> </tr>
+<table> <tr> <td align="center" width="96"> <!-- Animated supported --> <img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" height="65" /> <br>Python </td> <td align="center" width="96"> <!-- Possibly animated --> <img src="https://techstack-generator.vercel.app/react-icon.svg" width="65" height="65" /> <br>React </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=github" width="65" height="65" alt="GitHub" /> <br>GitHub </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=go" width="65" height="65" /> <br>Go </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" /> <br>FastAPI </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=flask" width="65" height="65" /> <br>Flask </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=django" width="65" height="65" /> <br>Django </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nodejs" width="65" height="65" /> <br>Node.js </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=graphql" width="65" height="65" /> <br>GraphQL </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=postgres" width="65" height="65" /> <br>PostgreSQL </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=dynamodb" width="65" height="65" /> <br>DynamoDB </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=mongodb" width="65" height="65" /> <br>MongoDB </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=elasticsearch" width="65" height="65" /> <br>Elasticsearch </td> <td align="center" width="96"> <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="65" height="65" /> <br>MySQL </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=redis" width="65" height="65" /> <br>Redis </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=kafka" width="65" height="65" /> <br>Kafka </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=docker" width="65" height="65" /> <br>Docker </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=kubernetes" width="65" height="65" /> <br>Kubernetes </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=terraform" width="65" height="65" /> <br>Terraform </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=aws" width="65" height="65" /> <br>AWS </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=azure" width="65" height="65" /> <br>Azure </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=prometheus" width="65" height="65" /> <br>Prometheus </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=grafana" width="65" height="65" /> <br>Grafana </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=linux" width="65" height="65" /> <br>Linux </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nginx" width="65" height="65" /> <br>Nginx </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nextjs" width="65" height="65" /> <br>Next.js </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=angular" width="65" height="65" /> <br>Angular </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=tailwind" width="65" height="65" /> <br>Tailwind CSS </td> </tr>
 
 <tr>
  <td align="center" width="96">
@@ -195,7 +233,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 </tr>
     <tr>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/websocket.png"/>
+        <img width="65" src="https://wsrv.nl/?url=raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/websocket.png&bg=white" alt="WebSocket"/>
         <br><sub><b>WebSocket</b></sub>
       </td>
       <td align="center" width="90">
@@ -237,7 +275,10 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
         <br><sub><b>Material UI</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/shadcn_ui.png"/>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://wsrv.nl/?url=raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/shadcn_ui.png&filt=negate" />
+          <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/shadcn_ui.png" alt="shadcn/ui"/>
+        </picture>
         <br><sub><b>ShadCN UI</b></sub>
       </td>
       <td align="center" width="90">
@@ -327,6 +368,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 - 🏅 Meta Hacker Cup 2022 — Global Rank 4,048 / 70,000+
 - 🏅 Flipkart Grid 2022 — Rank 1,325 / 40,000+
 - 👨‍🏫 Mentored 250+ students in Data Structures & Algorithms
+- 🏅 GitHub Achievements: [Pull Shark (gold)](https://github.com/sairam0424?tab=achievements), Quickdraw, YOLO, Pair Extraordinaire
 
 ---
 
@@ -334,11 +376,19 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 <div align="center">
 
-<img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true&repo=kelvran/gateway,mcpsmiths/tracehub-mcp,mcpsmiths/cost-guard-mcp" alt="Top languages" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true&repo=kelvran/gateway,mcpsmiths/tracehub-mcp,mcpsmiths/cost-guard-mcp" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=default&hide_border=true&repo=kelvran/gateway,mcpsmiths/tracehub-mcp,mcpsmiths/cost-guard-mcp" />
+  <img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true&repo=kelvran/gateway,mcpsmiths/tracehub-mcp,mcpsmiths/cost-guard-mcp" alt="sairam0424's top GitHub languages by code volume, including kelvran and mcpsmiths org repos" />
+</picture>
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=sairam0424&theme=radical&hide_border=true" alt="GitHub streak" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=sairam0424&theme=radical&hide_border=true" />
+  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=sairam0424&theme=default&hide_border=true" />
+  <img src="https://streak-stats.demolab.com?user=sairam0424&theme=radical&hide_border=true" alt="sairam0424's current and longest GitHub contribution streak" />
+</picture>
 
 </div>
 
@@ -375,6 +425,8 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 ---
 
 ### ☕ Support Me
+
+MindForge, trelix, ag-bash, and the other projects above are built and maintained solo, outside full-time work — if any of them save you time, a coffee is genuinely appreciated (never expected).
 
 <p><a href="https://www.buymeacoffee.com/sairam"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="40" alt="Buy me a coffee"/></a>
 <a href="https://ko-fi.com/sairam"> <img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="40" alt="Ko-fi"/></a></p>
