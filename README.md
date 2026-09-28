@@ -399,6 +399,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### ✍️ Latest Writing
 
 <!-- BLOG-POST-LIST:START -->
+- [trelix v3.2.2 to v3.3.8: A GitHub App Already Hardened and Running in Production, and a Connector That Never Touches a Pixel](https://dev.to/sai_ram_0000/trelix-v322-to-v338-a-github-app-already-hardened-and-running-in-production-and-a-connector-3hng)
+- [MindForge v12.0.0: An Agentic Framework for Claude Code — What It Ships, How to Install It, and What&#39;s Actually Enforced](https://dev.to/sai_ram_0000/mindforge-v1200-an-agentic-framework-for-claude-code-what-it-ships-how-to-install-it-and-3ncb)
+- [tracehub-mcp: Giving AI Assistants a Real Query Interface Into Your LLM Traces](https://dev.to/sai_ram_0000/tracehub-mcp-giving-ai-assistants-a-real-query-interface-into-your-llm-traces-22ck)
+- [Why I Built cost-guard-mcp: Pre-Flight Cost Guardrails for AI Agents Talking to Data Warehouses](https://dev.to/sai_ram_0000/why-i-built-cost-guard-mcp-pre-flight-cost-guardrails-for-ai-agents-talking-to-data-warehouses-25f2)
+- [trelix v3.2.2 to v3.2.5: The Source Tree Was Fine. The Published Package Wasn&#39;t.](https://dev.to/sai_ram_0000/trelix-v322-to-v325-the-source-tree-was-fine-the-published-package-wasnt-55i)
 <!-- BLOG-POST-LIST:END -->
 
 ---
