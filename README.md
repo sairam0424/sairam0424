@@ -198,8 +198,6 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
 | [ContextOS](https://github.com/sairam0424/ContextOS) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/ContextOS/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/ContextOS) |
 | [CommandVault](https://github.com/sairam0424/CommandVault) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/CommandVault/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/CommandVault) |
 
-*Tombstone isn't shown — OSSF hasn't scanned it yet. The largest drag on most scores here is `Code-Review: 0/10`, since these are solo-maintained repos without a PR-approval gate — accurate, not hidden.*
-
 ---
 
 ### 📦 Open Source Packages
