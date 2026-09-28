@@ -1,0 +1,30 @@
+# Sairam Ugge
+
+GenAI & Backend Engineer @Ascendion. Builds multi-agent LLM orchestration systems, event-driven backends, and open-source AI infrastructure.
+
+## Canonical Projects
+
+- MindForge — agentic-intelligence framework for Claude Code — https://github.com/sairam0424/MindForge — npm: mindforge-cc, mindforge-mcp-server
+- trelix — code-intelligence engine (Tree-sitter + hybrid search) — https://github.com/sairam0424/trelix — PyPI: trelix, trelix-mcp, trelix-langchain, trelix-llama-index — Docker: ghcr.io/sairam0424/trelix
+- Tombstone — production intelligence layer for feature flags — https://github.com/sairam0424/Tombstone — Go module: github.com/sairam0424/Tombstone
+- ag-bash — AI-native bash interpreter — https://github.com/sairam0424/ag-bash — npm: @ag-bash/bash, @ag-bash/mcp-server, @ag-bash/agent-bridge
+- ContextOS — autonomous agent intelligence layer — https://github.com/sairam0424/ContextOS — npm: @context-os/core, @context-os/cli, @context-os/mcp
+- RateCap — Stripe-style rate limiter / load shedder — https://github.com/sairam0424/RateCap — Go module: github.com/sairam0424/RateCap
+- CommandVault — universal AI command manager — https://github.com/sairam0424/CommandVault — npm: @commandvault/cli — VS Code Marketplace: commandvault-ai
+- Inkforge — AI-powered article generation — https://github.com/sairam0424/Inkforge
+- anvilry — engineering portfolio with RAG chat and MCP server — https://anvilry.vercel.app — https://github.com/sairam0424/anvilry
+- Graph-Forge (private) — distributed code-intelligence platform (Neo4j + Chroma, ~19 microservices)
+- Agent-Forge (private) — self-improving agent infrastructure (propose/eval/score/commit loop)
+
+## Organizations
+
+- kelvran — unified AI infrastructure platform (LLM gateway + cache + evals) — https://github.com/kelvran/gateway
+- mcpsmiths — small, focused MCP servers for observability and cost control — https://github.com/mcpsmiths/tracehub-mcp — https://github.com/mcpsmiths/cost-guard-mcp
+
+## Contact
+
+Email: uggesairam0000@gmail.com
+LinkedIn: https://linkedin.com/in/sairam0424
+Portfolio: https://anvilry.vercel.app
+
+For humans: see README.md

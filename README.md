@@ -6,6 +6,12 @@
   <img src="https://komarev.com/ghpvc/?username=sairam0424&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
 </p>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sairam0424/sairam0424/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sairam0424/sairam0424/output/github-contribution-grid-snake.svg" />
+  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/sairam0424/sairam0424/output/github-contribution-grid-snake.svg" />
+</picture>
+
 ---
 
 ### 🚀 About Me
@@ -31,10 +37,10 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[trelix](https://github.com/sairam0424/trelix)** · `1,453 commits` | Fast, reliable code intelligence — Tree-sitter AST parsing, contextual hybrid search, adaptive query planning, call-graph expansion & LLM synthesis across 20+ languages with zero infra. Ships as a PyPI CLI plus a GitHub Action (`trelix-index-action`) for CI-based repo indexing.<br>`Python` · `Tree-sitter` · `BM25` · `CLI` |
+| **[trelix](https://github.com/sairam0424/trelix)** · `1,453 commits` | Fast, reliable code intelligence — Tree-sitter AST parsing, contextual hybrid search, adaptive query planning, call-graph expansion & LLM synthesis across 20+ languages with zero infra. Ships as a PyPI CLI, a multi-arch Docker image (`ghcr.io/sairam0424/trelix`), MCP/LangChain/LlamaIndex retriever packages, plus a GitHub Action (`trelix-index-action`) for CI-based repo indexing.<br>`Python` · `Tree-sitter` · `BM25` · `CLI` |
 | **[gRPC Microservices](https://github.com/sairam0424/gRPC-micro-services)** · `316 commits` — *Order Processing System* | Polyglot event-driven microservices — gRPC internal RPC + REST gateway, **etcd leader election**, **ACID inventory reservations**, a **Saga orchestrator**, metric-based read routing across PostgreSQL replicas, **Debezium/WAL CDC outbox**, Bloom filters, Redis caching, **DLQ + idempotency**, and observability via Envoy L7 (OpenTelemetry/Prometheus/Grafana).<br>`Go` · `Python` · `gRPC` · `PostgreSQL` · `Kafka` · `etcd` |
 | **Graph-Forge** · `574 commits` *(private)* | AI-native distributed code-intelligence platform — code modeled as a Neo4j knowledge graph + Chroma semantic embeddings, served by ~19 polyglot microservices over gRPC/REST. Kafka ingestion, Tree-Sitter AST parsing, full OpenTelemetry/Jaeger/Prometheus/Grafana stack via Envoy. RAG over massive codebases.<br>`Go` · `Python` · `gRPC` · `Neo4j` · `Chroma` · `Kafka` · `Next.js` |
-| **[ag-bash](https://github.com/sairam0424/ag-bash)** · `510 commits` | AI-native bash interpreter implemented entirely in TypeScript — exposed as the `@ag-bash/bash` shell engine plus an MCP server and an agent terminal bridge. Tree-sitter WASM parser, esbuild (ESM+CJS), and WASM runtimes (CPython, QuickJS, SQLite3).<br>`TypeScript` · `WebAssembly` · `MCP` · `Tree-sitter` · `pnpm` |
+| **[ag-bash](https://github.com/sairam0424/ag-bash)** · `510 commits` | AI-native bash interpreter implemented entirely in TypeScript — exposed as the `@ag-bash/bash` shell engine plus an MCP server and an agent terminal bridge. Tree-sitter WASM parser, esbuild (ESM+CJS), WASM runtimes (CPython, QuickJS, SQLite3), and fork-speculation (`bash.fork()`/`bash.speculate()` — parallel speculative execution with copy-on-write branches).<br>`TypeScript` · `WebAssembly` · `MCP` · `Tree-sitter` · `pnpm` |
 
 #### 🛡️ Production Reliability & Delivery
 
@@ -47,7 +53,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[MindForge](https://github.com/sairam0424/MindForge)** · `1,778 commits` | Agentic-intelligence framework for Claude Code — 174 slash commands, 154 specialized subagents, 73 skills, hooks, governance, cost-aware model routing, and true wave (parallel) execution. Streaming WebSocket SDK. Ships as `npx mindforge-cc`.<br>`Node.js` · `TypeScript` · `MCP` · `sql.js` |
+| **[MindForge](https://github.com/sairam0424/MindForge)** · `1,778 commits` | Agentic-intelligence framework for Claude Code — v12.0.0 ships 221 slash commands, 164 specialized subagents, 354 skills, 216 personas, and 35 dynamic workflows, plus hooks, governance, cost-aware model routing, and true wave (parallel) execution. Streaming WebSocket SDK. Ships as `npx mindforge-cc`.<br>`Node.js` · `TypeScript` · `MCP` · `sql.js` |
 | **Agent-Forge** · `209 commits` *(private)* | Framework-agnostic, self-improving AI agent infrastructure — a Karpathy-style propose/eval/score/commit-or-revert loop over a mutable markdown agent spec (`AGENT.md`), git-versioned, with an LLM-judge eval harness and held-out validation to guard against overfitting.<br>`Python` · `FastAPI` · `pgvector` · `Celery` · `MCP` · `Docker` |
 | **[ContextOS](https://github.com/sairam0424/ContextOS)** · `233 commits` | Intelligence layer for autonomous AI agents — SQLite/vector indexing, multi-agent orchestration, and resilience. Ships as core/CLI/MCP npm packages (`@context-os/*`) plus a spatial dashboard.<br>`TypeScript` · `SQLite` · `vector search` · `MCP` · `React` · `Three.js` |
 
@@ -55,7 +61,7 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[kelvran/gateway](https://github.com/kelvran/gateway)** · `690 commits` | Unified AI infrastructure platform — LLM gateway with an embedded multi-layer cache; a separate agent-evaluation system is in development.<br>`Go` |
+| **[kelvran/gateway](https://github.com/kelvran/gateway)** · `690 commits` | Unified AI infrastructure platform — LLM gateway with an embedded multi-layer cache, plus an independently-versioned `evals` subsystem (currently v0.10.1).<br>`Go` |
 | **[mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)** · `185 commits` | MCP server for querying OpenTelemetry traces across multiple observability backends (Jaeger, Tempo, Traceloop, Datadog) for LLM application debugging.<br>`Python` · `MCP` · `OpenTelemetry` |
 | **[mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)** · `64 commits` | Pre-flight query cost and result-size guardrails for AI agents across BigQuery, Snowflake, and Databricks.<br>`Python` · `MCP` |
 
@@ -77,16 +83,40 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 ---
 
+### 🔥 Recent Highlights
+
+- **MindForge v12.0.0** (2026-09-24) — first release cut for real external users; an independent 8-agent security/production audit closed 1 CRITICAL + 4 HIGH findings before the cutover.
+- **trelix v3.4.1** (2026-09-27) — closed a CRITICAL symlink-following vulnerability that could leak local secrets to a third-party vision API, alongside shipping new raster-image indexing with LLM vision captioning (v3.4.0).
+- **ag-bash** — shipped a 9-phase security-hardening backlog to main (2026-09-26) and reached a fully green cross-platform CI matrix after root-causing deep Windows/macOS path-handling bugs.
+- **Tombstone v2.0.1** (2026-09-09) — shipped after live E2E testing against a real Postgres/Kubernetes stack surfaced 10 real production bugs, including severe connection-pooling races.
+- **ContextOS (@context-os/core v1.13.2)** — shipped a deliberate breaking change eliminating an unfixable critical CVE (optional embedding peer-dependency) with in-band degradation reporting for MCP agents.
+- **kelvran** — 4 patch releases in one week (gateway v0.14.2 / evals v0.10.1) fixing 2 CRITICAL + a HIGH-severity SSE error-swallowing bug found via back-to-back audits, alongside a live AWS Bedrock production pilot.
+- **mcpsmiths/cost-guard-mcp** — shipped a third query-cost engine (Databricks) and closed a CRITICAL secret-redaction bug in the same audit pass, raising coverage to 98.4%.
+- **mcpsmiths/tracehub-mcp v0.5.0** — a real end-to-end dry run against a live Jaeger/OTel stack caught a CRITICAL silent-data-loss bug before it reached users.
+
+---
+
 ### 📦 Open Source Packages
 
 | Package | Version | Downloads | License | Build |
 |---|---|---|---|---|
 | [`mindforge-cc`](https://www.npmjs.com/package/mindforge-cc) (npm) | [![npm](https://img.shields.io/npm/v/mindforge-cc.svg)](https://www.npmjs.com/package/mindforge-cc) | [![downloads](https://img.shields.io/npm/dm/mindforge-cc.svg)](https://www.npmjs.com/package/mindforge-cc) | ![license](https://img.shields.io/npm/l/mindforge-cc.svg) | [![CI](https://github.com/sairam0424/MindForge/actions/workflows/mindforge-ci.yml/badge.svg)](https://github.com/sairam0424/MindForge/actions/workflows/mindforge-ci.yml) |
-| [`@ag-bash/bash`](https://www.npmjs.com/package/@ag-bash/bash) (npm) | [![npm](https://img.shields.io/npm/v/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | [![downloads](https://img.shields.io/npm/dm/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | ![license](https://img.shields.io/npm/l/@ag-bash/bash.svg) | *(CI omitted — default branch currently red)* |
-| [`@context-os/core`](https://www.npmjs.com/package/@context-os/core) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | [![downloads](https://img.shields.io/npm/dm/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | *(registry `license` field is null — pending fix)* | *(CI omitted — 3 consecutive red runs)* |
+| [`mindforge-mcp-server`](https://www.npmjs.com/package/mindforge-mcp-server) (npm) | [![npm](https://img.shields.io/npm/v/mindforge-mcp-server.svg)](https://www.npmjs.com/package/mindforge-mcp-server) | [![downloads](https://img.shields.io/npm/dm/mindforge-mcp-server.svg)](https://www.npmjs.com/package/mindforge-mcp-server) | ![license](https://img.shields.io/npm/l/mindforge-mcp-server.svg) | *(same pipeline as mindforge-cc)* |
+| [`@ag-bash/bash`](https://www.npmjs.com/package/@ag-bash/bash) (npm) | [![npm](https://img.shields.io/npm/v/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | [![downloads](https://img.shields.io/npm/dm/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | ![license](https://img.shields.io/npm/l/@ag-bash/bash.svg) | [![CI](https://github.com/sairam0424/ag-bash/actions/workflows/tests.yml/badge.svg?branch=develop)](https://github.com/sairam0424/ag-bash/actions/workflows/tests.yml) |
+| [`@ag-bash/mcp-server`](https://www.npmjs.com/package/@ag-bash/mcp-server) (npm) | [![npm](https://img.shields.io/npm/v/@ag-bash/mcp-server.svg)](https://www.npmjs.com/package/@ag-bash/mcp-server) | [![downloads](https://img.shields.io/npm/dm/@ag-bash/mcp-server.svg)](https://www.npmjs.com/package/@ag-bash/mcp-server) | ![license](https://img.shields.io/npm/l/@ag-bash/mcp-server.svg) | *(same monorepo as @ag-bash/bash)* |
+| [`@ag-bash/agent-bridge`](https://www.npmjs.com/package/@ag-bash/agent-bridge) (npm) | [![npm](https://img.shields.io/npm/v/@ag-bash/agent-bridge.svg)](https://www.npmjs.com/package/@ag-bash/agent-bridge) | [![downloads](https://img.shields.io/npm/dm/@ag-bash/agent-bridge.svg)](https://www.npmjs.com/package/@ag-bash/agent-bridge) | ![license](https://img.shields.io/npm/l/@ag-bash/agent-bridge.svg) | *(same monorepo as @ag-bash/bash)* |
+| [`@context-os/core`](https://www.npmjs.com/package/@context-os/core) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | [![downloads](https://img.shields.io/npm/dm/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | *(registry `license` field is null — pending fix)* | *(CI omitted — no green run in 10+ attempts across 2+ weeks; no commits since 2026-09-17)* |
+| [`@context-os/cli`](https://www.npmjs.com/package/@context-os/cli) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/cli.svg)](https://www.npmjs.com/package/@context-os/cli) | [![downloads](https://img.shields.io/npm/dm/@context-os/cli.svg)](https://www.npmjs.com/package/@context-os/cli) | *(same registry gap as @context-os/core)* | *(same pipeline as @context-os/core)* |
+| [`@context-os/mcp`](https://www.npmjs.com/package/@context-os/mcp) (npm) | [![npm](https://img.shields.io/npm/v/@context-os/mcp.svg)](https://www.npmjs.com/package/@context-os/mcp) | [![downloads](https://img.shields.io/npm/dm/@context-os/mcp.svg)](https://www.npmjs.com/package/@context-os/mcp) | *(same registry gap as @context-os/core)* | *(same pipeline as @context-os/core)* |
 | [`trelix`](https://pypi.org/project/trelix/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/trelix.svg)](https://pypi.org/project/trelix/) | [![Downloads](https://static.pepy.tech/badge/trelix)](https://pepy.tech/project/trelix) | ![license](https://img.shields.io/pypi/l/trelix.svg) | [![CI](https://github.com/sairam0424/trelix/actions/workflows/ci.yml/badge.svg)](https://github.com/sairam0424/trelix/actions/workflows/ci.yml) |
+| [`trelix-mcp`](https://pypi.org/project/trelix-mcp/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/trelix-mcp.svg)](https://pypi.org/project/trelix-mcp/) | [![Downloads](https://static.pepy.tech/badge/trelix-mcp)](https://pepy.tech/project/trelix-mcp) | ![license](https://img.shields.io/pypi/l/trelix-mcp.svg) | *(same release train as trelix)* |
+| [`trelix-langchain`](https://pypi.org/project/trelix-langchain/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/trelix-langchain.svg)](https://pypi.org/project/trelix-langchain/) | [![Downloads](https://static.pepy.tech/badge/trelix-langchain)](https://pepy.tech/project/trelix-langchain) | ![license](https://img.shields.io/pypi/l/trelix-langchain.svg) | *(same release train as trelix)* |
+| [`trelix-llama-index`](https://pypi.org/project/trelix-llama-index/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/trelix-llama-index.svg)](https://pypi.org/project/trelix-llama-index/) | [![Downloads](https://static.pepy.tech/badge/trelix-llama-index)](https://pepy.tech/project/trelix-llama-index) | ![license](https://img.shields.io/pypi/l/trelix-llama-index.svg) | *(same release train as trelix)* |
 | [`tracehub-mcp`](https://pypi.org/project/tracehub-mcp/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/tracehub-mcp.svg)](https://pypi.org/project/tracehub-mcp/) | [![Downloads](https://static.pepy.tech/badge/tracehub-mcp)](https://pepy.tech/project/tracehub-mcp) | ![license](https://img.shields.io/pypi/l/tracehub-mcp.svg) | *(mcpsmiths org project)* |
 | [`cost-guard-mcp`](https://pypi.org/project/cost-guard-mcp/) (PyPI) | [![PyPI](https://img.shields.io/pypi/v/cost-guard-mcp.svg)](https://pypi.org/project/cost-guard-mcp/) | [![Downloads](https://static.pepy.tech/badge/cost-guard-mcp)](https://pepy.tech/project/cost-guard-mcp) | ![license](https://img.shields.io/pypi/l/cost-guard-mcp.svg) | *(mcpsmiths org project)* |
+| [`@commandvault/cli`](https://www.npmjs.com/package/@commandvault/cli) (npm) | [![npm](https://img.shields.io/npm/v/@commandvault/cli.svg)](https://www.npmjs.com/package/@commandvault/cli) | [![downloads](https://img.shields.io/npm/dm/@commandvault/cli.svg)](https://www.npmjs.com/package/@commandvault/cli) | ![license](https://img.shields.io/npm/l/@commandvault/cli.svg) | *(also on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nothumanslabs.commandvault-ai))* |
+
+*Also distributed via: Homebrew (`brew install sairam0424/tap/ag-bash`, `brew install sairam0424/tap/mindforge`) · [MCP Registry](https://registry.modelcontextprotocol.io) (mindforge-cc, @ag-bash/mcp-server, trelix-mcp, tracehub-mcp, cost-guard-mcp) · Go modules ([RateCap](https://pkg.go.dev/github.com/sairam0424/RateCap), [Tombstone](https://pkg.go.dev/github.com/sairam0424/Tombstone) — `go get` directly, no separate registry needed).*
 
 ---
 
@@ -304,13 +334,20 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 <div align="center">
 
-<img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true" alt="Top languages" />
+<img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=sairam0424&layout=compact&count_private=true&theme=radical&hide_border=true&repo=kelvran/gateway,mcpsmiths/tracehub-mcp,mcpsmiths/cost-guard-mcp" alt="Top languages" />
 
 <br/>
 
 <img src="https://streak-stats.demolab.com?user=sairam0424&theme=radical&hide_border=true" alt="GitHub streak" />
 
 </div>
+
+---
+
+### ✍️ Latest Writing
+
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
 
 ---
 
