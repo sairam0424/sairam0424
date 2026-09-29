@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#317](https://github.com/sairam0424/MindForge/pull/317) in [sairam0424/MindForge](https://github.com/sairam0424/MindForge)
-2. 💪 Opened PR [#316](https://github.com/sairam0424/MindForge/pull/316) in [sairam0424/MindForge](https://github.com/sairam0424/MindForge)
-3. 💪 Opened PR [#315](https://github.com/sairam0424/MindForge/pull/315) in [sairam0424/MindForge](https://github.com/sairam0424/MindForge)
-4. 🎉 Merged PR [#314](https://github.com/sairam0424/MindForge/pull/314) in [sairam0424/MindForge](https://github.com/sairam0424/MindForge)
-5. 💪 Opened PR [#314](https://github.com/sairam0424/MindForge/pull/314) in [sairam0424/MindForge](https://github.com/sairam0424/MindForge)
+1. 🎉 Merged PR [#414](https://github.com/sairam0424/trelix/pull/414) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
+2. 💪 Opened PR [#414](https://github.com/sairam0424/trelix/pull/414) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
+3. 🎉 Merged PR [#413](https://github.com/sairam0424/trelix/pull/413) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
+4. 🚀 Published release [gateway v0.16.0](https://github.com/kelvran/gateway/releases/tag/gateway/v0.16.0) in [kelvran/gateway](https://github.com/kelvran/gateway)
+5. 💪 Opened PR [#318](https://github.com/sairam0424/MindForge/pull/318) in [sairam0424/MindForge](https://github.com/sairam0424/MindForge)
 <!--END_SECTION:activity-->
 
 ---
