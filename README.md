@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#414](https://github.com/sairam0424/trelix/pull/414) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-2. 💪 Opened PR [#414](https://github.com/sairam0424/trelix/pull/414) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-3. 🎉 Merged PR [#413](https://github.com/sairam0424/trelix/pull/413) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-4. 🚀 Published release [gateway v0.16.0](https://github.com/kelvran/gateway/releases/tag/gateway/v0.16.0) in [kelvran/gateway](https://github.com/kelvran/gateway)
-5. 💪 Opened PR [#318](https://github.com/sairam0424/MindForge/pull/318) in [sairam0424/MindForge](https://github.com/sairam0424/MindForge)
+1. 🎉 Merged PR [#283](https://github.com/sairam0424/anvilry/pull/283) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+2. 🎉 Merged PR [#281](https://github.com/sairam0424/anvilry/pull/281) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+3. 🎉 Merged PR [#282](https://github.com/sairam0424/anvilry/pull/282) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+4. 🎉 Merged PR [#280](https://github.com/sairam0424/anvilry/pull/280) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+5. 🎉 Merged PR [#279](https://github.com/sairam0424/anvilry/pull/279) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
 <!--END_SECTION:activity-->
 
 ---
