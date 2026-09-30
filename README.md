@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#283](https://github.com/sairam0424/anvilry/pull/283) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-2. 🎉 Merged PR [#281](https://github.com/sairam0424/anvilry/pull/281) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-3. 🎉 Merged PR [#282](https://github.com/sairam0424/anvilry/pull/282) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-4. 🎉 Merged PR [#280](https://github.com/sairam0424/anvilry/pull/280) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-5. 🎉 Merged PR [#279](https://github.com/sairam0424/anvilry/pull/279) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+1. 🚀 Published release [v3.7.0 — shared constant-time auth, per-class rate-limit buckets, dark notes no longer leak](https://github.com/sairam0424/anvilry/releases/tag/v3.7.0) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+2. 🎉 Merged PR [#286](https://github.com/sairam0424/anvilry/pull/286) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+3. 💪 Opened PR [#286](https://github.com/sairam0424/anvilry/pull/286) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+4. 🎉 Merged PR [#285](https://github.com/sairam0424/anvilry/pull/285) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+5. 💪 Opened PR [#285](https://github.com/sairam0424/anvilry/pull/285) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
 <!--END_SECTION:activity-->
 
 ---
