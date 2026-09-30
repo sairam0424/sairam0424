@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🚀 Published release [v3.7.0 — shared constant-time auth, per-class rate-limit buckets, dark notes no longer leak](https://github.com/sairam0424/anvilry/releases/tag/v3.7.0) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-2. 🎉 Merged PR [#286](https://github.com/sairam0424/anvilry/pull/286) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-3. 💪 Opened PR [#286](https://github.com/sairam0424/anvilry/pull/286) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-4. 🎉 Merged PR [#285](https://github.com/sairam0424/anvilry/pull/285) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-5. 💪 Opened PR [#285](https://github.com/sairam0424/anvilry/pull/285) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+1. 💪 Opened PR [#291](https://github.com/sairam0424/anvilry/pull/291) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+2. 🎉 Merged PR [#288](https://github.com/sairam0424/anvilry/pull/288) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+3. 🚀 Published release [v3.8.0 — IAM-denied models fall through the chain, fallback answers stay out of the cache, opt-in Sonnet 5.5](https://github.com/sairam0424/anvilry/releases/tag/v3.8.0) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+4. 🎉 Merged PR [#289](https://github.com/sairam0424/anvilry/pull/289) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+5. 💪 Opened PR [#289](https://github.com/sairam0424/anvilry/pull/289) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
 <!--END_SECTION:activity-->
 
 ---
