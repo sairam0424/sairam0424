@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🚀 Published release [v3.9.0 — model line removed from chat answers, Konami code removed](https://github.com/sairam0424/anvilry/releases/tag/v3.9.0) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-2. 🎉 Merged PR [#294](https://github.com/sairam0424/anvilry/pull/294) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-3. 💪 Opened PR [#9](https://github.com/sairam0424/sde75-nightly-reminder/pull/9) in [sairam0424/sde75-nightly-reminder](https://github.com/sairam0424/sde75-nightly-reminder)
-4. 💪 Opened PR [#294](https://github.com/sairam0424/anvilry/pull/294) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-5. 🎉 Merged PR [#293](https://github.com/sairam0424/anvilry/pull/293) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+1. 💪 Opened PR [#301](https://github.com/sairam0424/anvilry/pull/301) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+2. 🎉 Merged PR [#300](https://github.com/sairam0424/anvilry/pull/300) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+3. 💪 Opened PR [#300](https://github.com/sairam0424/anvilry/pull/300) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+4. 🎉 Merged PR [#11](https://github.com/sairam0424/sde75-nightly-reminder/pull/11) in [sairam0424/sde75-nightly-reminder](https://github.com/sairam0424/sde75-nightly-reminder)
+5. 🚀 Published release [v3.10.0 — Sonnet 5.5 shows its reasoning, verified prices, a neutral AI cue](https://github.com/sairam0424/anvilry/releases/tag/v3.10.0) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
 <!--END_SECTION:activity-->
 
 ---
