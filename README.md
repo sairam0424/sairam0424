@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#502](https://github.com/sairam0424/trelix/pull/502#issuecomment-6043070380) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-2. 🎉 Merged PR [#502](https://github.com/sairam0424/trelix/pull/502) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-3. 🎉 Merged PR [#162](https://github.com/sairam0424/CommandVault/pull/162) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
-4. 💪 Opened PR [#162](https://github.com/sairam0424/CommandVault/pull/162) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
-5. 💪 Opened PR [#502](https://github.com/sairam0424/trelix/pull/502) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
+1. 🗣 Commented on [#36](https://github.com/mcpsmiths/tracehub-mcp/pull/36#issuecomment-6088938789) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+2. 🗣 Commented on [#35](https://github.com/mcpsmiths/tracehub-mcp/pull/35#issuecomment-6088937879) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+3. ❌ Closed PR [#38](https://github.com/mcpsmiths/tracehub-mcp/pull/38) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+4. 🗣 Commented on [#38](https://github.com/mcpsmiths/tracehub-mcp/pull/38#issuecomment-6088940525) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+5. ❌ Closed PR [#37](https://github.com/mcpsmiths/tracehub-mcp/pull/37) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
 <!--END_SECTION:activity-->
 
 ---
