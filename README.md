@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#56](https://github.com/sairam0424/Inkforge/pull/56) in [sairam0424/Inkforge](https://github.com/sairam0424/Inkforge)
-2. 🎉 Merged PR [#79](https://github.com/mcpsmiths/cost-guard-mcp/pull/79) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-3. 💪 Opened PR [#79](https://github.com/mcpsmiths/cost-guard-mcp/pull/79) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-4. 🎉 Merged PR [#78](https://github.com/mcpsmiths/cost-guard-mcp/pull/78) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-5. 💪 Opened PR [#78](https://github.com/mcpsmiths/cost-guard-mcp/pull/78) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+1. 🎉 Merged PR [#71](https://github.com/sairam0424/Inkforge/pull/71) in [sairam0424/Inkforge](https://github.com/sairam0424/Inkforge)
+2. 💪 Opened PR [#71](https://github.com/sairam0424/Inkforge/pull/71) in [sairam0424/Inkforge](https://github.com/sairam0424/Inkforge)
+3. 🚀 Published release [Inkforge v0.1.5](https://github.com/sairam0424/Inkforge/releases/tag/v0.1.5) in [sairam0424/Inkforge](https://github.com/sairam0424/Inkforge)
+4. 🎉 Merged PR [#70](https://github.com/sairam0424/Inkforge/pull/70) in [sairam0424/Inkforge](https://github.com/sairam0424/Inkforge)
+5. 💪 Opened PR [#70](https://github.com/sairam0424/Inkforge/pull/70) in [sairam0424/Inkforge](https://github.com/sairam0424/Inkforge)
 <!--END_SECTION:activity-->
 
 ---
