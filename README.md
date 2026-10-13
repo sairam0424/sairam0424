@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#86](https://github.com/mcpsmiths/cost-guard-mcp/pull/86) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-2. 🎉 Merged PR [#14](https://github.com/sairam0424/toolwarrant/pull/14) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-3. 🎉 Merged PR [#12](https://github.com/sairam0424/toolwarrant/pull/12) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-4. 💪 Opened PR [#14](https://github.com/sairam0424/toolwarrant/pull/14) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-5. 🎉 Merged PR [#13](https://github.com/sairam0424/toolwarrant/pull/13) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
+1. 🗣 Commented on [#86](https://github.com/mcpsmiths/cost-guard-mcp/pull/86#issuecomment-6147228329) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+2. 🎉 Merged PR [#86](https://github.com/mcpsmiths/cost-guard-mcp/pull/86) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+3. 🗣 Commented on [#41](https://github.com/mcpsmiths/tracehub-mcp/pull/41#issuecomment-6139898881) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+4. 💪 Opened PR [#41](https://github.com/mcpsmiths/tracehub-mcp/pull/41) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+5. 💪 Opened PR [#86](https://github.com/mcpsmiths/cost-guard-mcp/pull/86) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
 <!--END_SECTION:activity-->
 
 ---
