@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#14](https://github.com/sairam0424/toolwarrant/pull/14) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-2. 🎉 Merged PR [#12](https://github.com/sairam0424/toolwarrant/pull/12) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-3. 💪 Opened PR [#14](https://github.com/sairam0424/toolwarrant/pull/14) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-4. 🎉 Merged PR [#13](https://github.com/sairam0424/toolwarrant/pull/13) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-5. 🎉 Merged PR [#11](https://github.com/sairam0424/toolwarrant/pull/11) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
+1. 💪 Opened PR [#86](https://github.com/mcpsmiths/cost-guard-mcp/pull/86) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+2. 🎉 Merged PR [#14](https://github.com/sairam0424/toolwarrant/pull/14) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
+3. 🎉 Merged PR [#12](https://github.com/sairam0424/toolwarrant/pull/12) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
+4. 💪 Opened PR [#14](https://github.com/sairam0424/toolwarrant/pull/14) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
+5. 🎉 Merged PR [#13](https://github.com/sairam0424/toolwarrant/pull/13) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
 <!--END_SECTION:activity-->
 
 ---
