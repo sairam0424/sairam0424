@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#86](https://github.com/mcpsmiths/cost-guard-mcp/pull/86#issuecomment-6147228329) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-2. 🎉 Merged PR [#86](https://github.com/mcpsmiths/cost-guard-mcp/pull/86) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-3. 🗣 Commented on [#41](https://github.com/mcpsmiths/tracehub-mcp/pull/41#issuecomment-6139898881) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
-4. 💪 Opened PR [#41](https://github.com/mcpsmiths/tracehub-mcp/pull/41) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
-5. 💪 Opened PR [#86](https://github.com/mcpsmiths/cost-guard-mcp/pull/86) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+1. 🗣 Commented on [#102](https://github.com/razorpay/slashdocs/issues/102#issuecomment-6152876631) in [razorpay/slashdocs](https://github.com/razorpay/slashdocs)
+2. 🗣 Commented on [#41](https://github.com/mcpsmiths/tracehub-mcp/pull/41#issuecomment-6155004525) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+3. ❗ Opened issue [#204](https://github.com/razorpay/slashdocs/issues/204) in [razorpay/slashdocs](https://github.com/razorpay/slashdocs)
+4. ❗ Opened issue [#203](https://github.com/razorpay/slashdocs/issues/203) in [razorpay/slashdocs](https://github.com/razorpay/slashdocs)
+5. ❗ Opened issue [#202](https://github.com/razorpay/slashdocs/issues/202) in [razorpay/slashdocs](https://github.com/razorpay/slashdocs)
 <!--END_SECTION:activity-->
 
 ---
