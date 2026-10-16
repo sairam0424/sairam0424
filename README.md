@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#43](https://github.com/sairam0424/toolwarrant/pull/43) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-2. ℹ️ Labeled PR [#109](https://github.com/mcpsmiths/cost-guard-mcp/pull/109) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-3. 💪 Opened PR [#48](https://github.com/sairam0424/toolwarrant/pull/48) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-4. 🎉 Merged PR [#47](https://github.com/sairam0424/toolwarrant/pull/47) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-5. 🎉 Merged PR [#46](https://github.com/sairam0424/toolwarrant/pull/46) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
+1. 🗣 Commented on [#98](https://github.com/mcpsmiths/cost-guard-mcp/issues/98#issuecomment-6191223185) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+2. 🗣 Commented on [#100](https://github.com/mcpsmiths/cost-guard-mcp/issues/100#issuecomment-6191954556) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+3. 🎉 Merged PR [#110](https://github.com/mcpsmiths/cost-guard-mcp/pull/110) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+4. 🎉 Merged PR [#109](https://github.com/mcpsmiths/cost-guard-mcp/pull/109) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+5. 🔒 Closed issue [#101](https://github.com/mcpsmiths/cost-guard-mcp/issues/101) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
 <!--END_SECTION:activity-->
 
 ---
