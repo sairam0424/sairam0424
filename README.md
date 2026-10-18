@@ -4,9 +4,9 @@
 
 <p align="center"><em>One AI-native developer-tooling stack, end to end — code intelligence (trelix, Graph-Forge), execution (ag-bash), orchestration (MindForge, ContextOS, Agent-Forge), and production safety (Tombstone, RateCap) — plus the LLM infrastructure underneath it (kelvran) and the MCP servers that connect it to agents (mcpsmiths).</em></p>
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://komarev.com/ghpvc/?username=sairam0424&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
-</p>
+</p> -->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sairam0424/sairam0424/output/github-contribution-grid-snake-dark.svg" />
