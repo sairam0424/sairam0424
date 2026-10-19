@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#61](https://github.com/sairam0424/toolwarrant/pull/61) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-2. 💪 Opened PR [#61](https://github.com/sairam0424/toolwarrant/pull/61) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-3. 🎉 Merged PR [#60](https://github.com/sairam0424/toolwarrant/pull/60) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-4. 💪 Opened PR [#60](https://github.com/sairam0424/toolwarrant/pull/60) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
-5. 🎉 Merged PR [#59](https://github.com/sairam0424/toolwarrant/pull/59) in [sairam0424/toolwarrant](https://github.com/sairam0424/toolwarrant)
+1. 🚀 Published release [prompt-lift 0.4.0](https://github.com/sairam0424/claude-prompt-lift/releases/tag/v0.4.0) in [sairam0424/claude-prompt-lift](https://github.com/sairam0424/claude-prompt-lift)
+2. ℹ️ Labeled issue [#126](https://github.com/mcpsmiths/cost-guard-mcp/issues/126) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+3. ℹ️ Labeled issue [#126](https://github.com/mcpsmiths/cost-guard-mcp/issues/126) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+4. ❗ Opened issue [#126](https://github.com/mcpsmiths/cost-guard-mcp/issues/126) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+5. 💪 Opened PR [#341](https://github.com/karanb192/awesome-claude-code-mods/pull/341) in [karanb192/awesome-claude-code-mods](https://github.com/karanb192/awesome-claude-code-mods)
 <!--END_SECTION:activity-->
 
 ---
