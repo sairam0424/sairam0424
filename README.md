@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#100](https://github.com/mcpsmiths/cost-guard-mcp/issues/100#issuecomment-6272608530) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-2. 🗣 Commented on [#100](https://github.com/mcpsmiths/cost-guard-mcp/issues/100#issuecomment-6274133579) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-3. 🗣 Commented on [#111](https://github.com/mcpsmiths/cost-guard-mcp/issues/111#issuecomment-6272761638) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-4. 🗣 Commented on [#100](https://github.com/mcpsmiths/cost-guard-mcp/issues/100#issuecomment-6270602421) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-5. 🎉 Merged PR [#122](https://github.com/mcpsmiths/cost-guard-mcp/pull/122) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+1. 🗣 Commented on [#341](https://github.com/karanb192/awesome-claude-code-mods/pull/341#issuecomment-6293356995) in [karanb192/awesome-claude-code-mods](https://github.com/karanb192/awesome-claude-code-mods)
+2. 🚀 Published release [prompt-lift 0.4.1](https://github.com/sairam0424/claude-prompt-lift/releases/tag/v0.4.1) in [sairam0424/claude-prompt-lift](https://github.com/sairam0424/claude-prompt-lift)
+3. 🗣 Commented on [#100](https://github.com/mcpsmiths/cost-guard-mcp/issues/100#issuecomment-6272608530) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+4. 🗣 Commented on [#100](https://github.com/mcpsmiths/cost-guard-mcp/issues/100#issuecomment-6274133579) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+5. 🗣 Commented on [#111](https://github.com/mcpsmiths/cost-guard-mcp/issues/111#issuecomment-6272761638) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
 <!--END_SECTION:activity-->
 
 ---
