@@ -473,11 +473,11 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
 ### ✍️ Latest Writing
 
 <!-- BLOG-POST-LIST:START -->
+- [prompt-lift &lpar;An Claude Code Mod&rpar;:](https://medium.com/@uggesairam0000/prompt-lift-an-claude-code-mod-a154adaa75a9?source=rss-7f925a5f9f38------2)
 - [prompt-lift v0.4.0: a Claude Code mod that turns a vague prompt into a specific one before you send it](https://dev.to/sai_ram_0000/prompt-lift-v040-a-claude-code-mod-that-turns-a-vague-prompt-into-a-specific-one-before-you-send-1gkg)
 - [tracehub-mcp v0.12.3 and cost-guard-mcp v0.3.3: Two MCP Servers Shipped the Same Morning, and the Metadata Layer That Had to Learn to Tell the Truth](https://dev.to/sai_ram_0000/tracehub-mcp-v0123-and-cost-guard-mcp-v033-two-mcp-servers-shipped-the-same-morning-and-the-1d0)
 - [trelix v3.2.2 to v3.3.8: A GitHub App Already Hardened and Running in Production, and a Connector That Never Touches a Pixel](https://dev.to/sai_ram_0000/trelix-v322-to-v338-a-github-app-already-hardened-and-running-in-production-and-a-connector-3hng)
 - [MindForge v12.0.0: An Agentic Framework for Claude Code — What It Ships, How to Install It, and What&#39;s Actually Enforced](https://dev.to/sai_ram_0000/mindforge-v1200-an-agentic-framework-for-claude-code-what-it-ships-how-to-install-it-and-3ncb)
-- [tracehub-mcp: Giving AI Assistants a Real Query Interface Into Your LLM Traces](https://dev.to/sai_ram_0000/tracehub-mcp-giving-ai-assistants-a-real-query-interface-into-your-llm-traces-22ck)
 <!-- BLOG-POST-LIST:END -->
 
 ---
