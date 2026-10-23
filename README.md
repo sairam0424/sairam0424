@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#335](https://github.com/sairam0424/anvilry/pull/335) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-2. 🎉 Merged PR [#329](https://github.com/sairam0424/anvilry/pull/329) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-3. 🎉 Merged PR [#333](https://github.com/sairam0424/anvilry/pull/333) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-4. 🗣 Commented on [#341](https://github.com/karanb192/awesome-claude-code-mods/pull/341#issuecomment-6336872352) in [karanb192/awesome-claude-code-mods](https://github.com/karanb192/awesome-claude-code-mods)
-5. 🎉 Merged PR [#336](https://github.com/sairam0424/anvilry/pull/336) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+1. 🗣 Commented on [#342](https://github.com/sairam0424/anvilry/issues/342#issuecomment-6346916263) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+2. 🎉 Merged PR [#343](https://github.com/sairam0424/anvilry/pull/343) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+3. 🎉 Merged PR [#344](https://github.com/sairam0424/anvilry/pull/344) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+4. 🎉 Merged PR [#340](https://github.com/sairam0424/anvilry/pull/340) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+5. 🚀 Published release [v3.16.1 — a production deploy that waits for its own smoke test](https://github.com/sairam0424/anvilry/releases/tag/v3.16.1) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
 <!--END_SECTION:activity-->
 
 ---
