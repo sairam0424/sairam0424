@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#563](https://github.com/sairam0424/trelix/pull/563) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-2. 🎉 Merged PR [#562](https://github.com/sairam0424/trelix/pull/562) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-3. 💪 Opened PR [#563](https://github.com/sairam0424/trelix/pull/563) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-4. 💪 Opened PR [#562](https://github.com/sairam0424/trelix/pull/562) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-5. 🎉 Merged PR [#561](https://github.com/sairam0424/trelix/pull/561) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
+1. 🎉 Merged PR [#573](https://github.com/sairam0424/trelix/pull/573) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
+2. 💪 Opened PR [#576](https://github.com/sairam0424/trelix/pull/576) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
+3. 💪 Opened PR [#575](https://github.com/sairam0424/trelix/pull/575) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
+4. 💪 Opened PR [#574](https://github.com/sairam0424/trelix/pull/574) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
+5. 💪 Opened PR [#573](https://github.com/sairam0424/trelix/pull/573) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
 <!--END_SECTION:activity-->
 
 ---
