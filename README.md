@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#577](https://github.com/sairam0424/trelix/pull/577) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-2. 💪 Opened PR [#577](https://github.com/sairam0424/trelix/pull/577) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-3. 🎉 Merged PR [#576](https://github.com/sairam0424/trelix/pull/576) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-4. 🎉 Merged PR [#575](https://github.com/sairam0424/trelix/pull/575) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-5. 🎉 Merged PR [#574](https://github.com/sairam0424/trelix/pull/574) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
+1. 🎉 Merged PR [#63](https://github.com/mcpsmiths/tracehub-mcp/pull/63) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+2. 🎉 Merged PR [#128](https://github.com/mcpsmiths/cost-guard-mcp/pull/128) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+3. ℹ️ Labeled PR [#128](https://github.com/mcpsmiths/cost-guard-mcp/pull/128) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+4. ℹ️ Labeled PR [#128](https://github.com/mcpsmiths/cost-guard-mcp/pull/128) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+5. 💪 Opened PR [#128](https://github.com/mcpsmiths/cost-guard-mcp/pull/128) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
 <!--END_SECTION:activity-->
 
 ---
