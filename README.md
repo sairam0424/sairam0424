@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#139](https://github.com/mcpsmiths/cost-guard-mcp/pull/139) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-2. 💪 Opened PR [#350](https://github.com/sairam0424/anvilry/pull/350) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-3. 🎉 Merged PR [#138](https://github.com/mcpsmiths/cost-guard-mcp/pull/138) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-4. 💪 Opened PR [#138](https://github.com/mcpsmiths/cost-guard-mcp/pull/138) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-5. 🎉 Merged PR [#349](https://github.com/sairam0424/anvilry/pull/349) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+1. 🎉 Merged PR [#359](https://github.com/sairam0424/anvilry/pull/359) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+2. 💪 Opened PR [#359](https://github.com/sairam0424/anvilry/pull/359) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+3. 🎉 Merged PR [#357](https://github.com/sairam0424/anvilry/pull/357) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+4. 💪 Opened PR [#357](https://github.com/sairam0424/anvilry/pull/357) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+5. 🎉 Merged PR [#81](https://github.com/sairam0424/Inkforge/pull/81) in [sairam0424/Inkforge](https://github.com/sairam0424/Inkforge)
 <!--END_SECTION:activity-->
 
 ---
