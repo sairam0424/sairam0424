@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🚀 Published release [v3.18.1 — a fix for oversized MCP arguments](https://github.com/sairam0424/anvilry/releases/tag/v3.18.1) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-2. 🎉 Merged PR [#374](https://github.com/sairam0424/anvilry/pull/374) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-3. 💪 Opened PR [#374](https://github.com/sairam0424/anvilry/pull/374) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-4. 🎉 Merged PR [#373](https://github.com/sairam0424/anvilry/pull/373) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
-5. 💪 Opened PR [#373](https://github.com/sairam0424/anvilry/pull/373) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+1. 🎉 Merged PR [#375](https://github.com/sairam0424/anvilry/pull/375) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+2. 💪 Opened PR [#375](https://github.com/sairam0424/anvilry/pull/375) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+3. 🚀 Published release [v3.18.1 — a fix for oversized MCP arguments](https://github.com/sairam0424/anvilry/releases/tag/v3.18.1) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+4. 🎉 Merged PR [#374](https://github.com/sairam0424/anvilry/pull/374) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+5. 💪 Opened PR [#374](https://github.com/sairam0424/anvilry/pull/374) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
 <!--END_SECTION:activity-->
 
 ---
