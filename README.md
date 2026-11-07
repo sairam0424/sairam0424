@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#583](https://github.com/sairam0424/trelix/pull/583) in [sairam0424/trelix](https://github.com/sairam0424/trelix)
-2. 🎉 Merged PR [#207](https://github.com/sairam0424/ag-bash/pull/207) in [sairam0424/ag-bash](https://github.com/sairam0424/ag-bash)
-3. 🎉 Merged PR [#208](https://github.com/sairam0424/ag-bash/pull/208) in [sairam0424/ag-bash](https://github.com/sairam0424/ag-bash)
-4. 💪 Opened PR [#208](https://github.com/sairam0424/ag-bash/pull/208) in [sairam0424/ag-bash](https://github.com/sairam0424/ag-bash)
-5. 💪 Opened PR [#207](https://github.com/sairam0424/ag-bash/pull/207) in [sairam0424/ag-bash](https://github.com/sairam0424/ag-bash)
+1. 🎉 Merged PR [#405](https://github.com/karanb192/awesome-claude-code-mods/pull/405) in [karanb192/awesome-claude-code-mods](https://github.com/karanb192/awesome-claude-code-mods)
+2. 🎉 Merged PR [#211](https://github.com/sairam0424/ag-bash/pull/211) in [sairam0424/ag-bash](https://github.com/sairam0424/ag-bash)
+3. 💪 Opened PR [#211](https://github.com/sairam0424/ag-bash/pull/211) in [sairam0424/ag-bash](https://github.com/sairam0424/ag-bash)
+4. 🎉 Merged PR [#448](https://github.com/sairam0424/Tombstone/pull/448) in [sairam0424/Tombstone](https://github.com/sairam0424/Tombstone)
+5. 🎉 Merged PR [#210](https://github.com/sairam0424/ag-bash/pull/210) in [sairam0424/ag-bash](https://github.com/sairam0424/ag-bash)
 <!--END_SECTION:activity-->
 
 ---
