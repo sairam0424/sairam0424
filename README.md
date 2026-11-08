@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#167](https://github.com/sairam0424/CommandVault/pull/167) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
-2. 🎉 Merged PR [#405](https://github.com/karanb192/awesome-claude-code-mods/pull/405) in [karanb192/awesome-claude-code-mods](https://github.com/karanb192/awesome-claude-code-mods)
-3. 🎉 Merged PR [#211](https://github.com/sairam0424/ag-bash/pull/211) in [sairam0424/ag-bash](https://github.com/sairam0424/ag-bash)
-4. 💪 Opened PR [#211](https://github.com/sairam0424/ag-bash/pull/211) in [sairam0424/ag-bash](https://github.com/sairam0424/ag-bash)
-5. 🎉 Merged PR [#448](https://github.com/sairam0424/Tombstone/pull/448) in [sairam0424/Tombstone](https://github.com/sairam0424/Tombstone)
+1. 🎉 Merged PR [#170](https://github.com/sairam0424/CommandVault/pull/170) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
+2. 💪 Opened PR [#170](https://github.com/sairam0424/CommandVault/pull/170) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
+3. 🎉 Merged PR [#168](https://github.com/sairam0424/CommandVault/pull/168) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
+4. 🎉 Merged PR [#169](https://github.com/sairam0424/CommandVault/pull/169) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
+5. 💪 Opened PR [#169](https://github.com/sairam0424/CommandVault/pull/169) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
 <!--END_SECTION:activity-->
 
 ---
