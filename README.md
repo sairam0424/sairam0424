@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#171](https://github.com/sairam0424/CommandVault/pull/171) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
-2. 🎉 Merged PR [#170](https://github.com/sairam0424/CommandVault/pull/170) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
-3. 💪 Opened PR [#170](https://github.com/sairam0424/CommandVault/pull/170) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
-4. 🎉 Merged PR [#168](https://github.com/sairam0424/CommandVault/pull/168) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
-5. 🎉 Merged PR [#169](https://github.com/sairam0424/CommandVault/pull/169) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
+1. ℹ️ Labeled issue [#384](https://github.com/sairam0424/anvilry/issues/384) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+2. ❗ Opened issue [#384](https://github.com/sairam0424/anvilry/issues/384) in [sairam0424/anvilry](https://github.com/sairam0424/anvilry)
+3. 💪 Opened PR [#171](https://github.com/sairam0424/CommandVault/pull/171) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
+4. 🎉 Merged PR [#170](https://github.com/sairam0424/CommandVault/pull/170) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
+5. 💪 Opened PR [#170](https://github.com/sairam0424/CommandVault/pull/170) in [sairam0424/CommandVault](https://github.com/sairam0424/CommandVault)
 <!--END_SECTION:activity-->
 
 ---
