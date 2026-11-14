@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#144](https://github.com/mcpsmiths/cost-guard-mcp/pull/144) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-2. 🎉 Merged PR [#142](https://github.com/mcpsmiths/cost-guard-mcp/pull/142) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-3. 🎉 Merged PR [#76](https://github.com/mcpsmiths/tracehub-mcp/pull/76) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
-4. 💪 Opened PR [#142](https://github.com/mcpsmiths/cost-guard-mcp/pull/142) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-5. 💪 Opened PR [#76](https://github.com/mcpsmiths/tracehub-mcp/pull/76) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+1. 🗣 Commented on [#14323](https://github.com/punkpeye/awesome-mcp-servers/pull/14323#issuecomment-6879183186) in [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
+2. 🗣 Commented on [#14299](https://github.com/punkpeye/awesome-mcp-servers/pull/14299#issuecomment-6879182749) in [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
+3. 🎉 Merged PR [#146](https://github.com/mcpsmiths/cost-guard-mcp/pull/146) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+4. 🎉 Merged PR [#78](https://github.com/mcpsmiths/tracehub-mcp/pull/78) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+5. 🎉 Merged PR [#145](https://github.com/mcpsmiths/cost-guard-mcp/pull/145) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
 <!--END_SECTION:activity-->
 
 ---
