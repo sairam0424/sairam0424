@@ -160,11 +160,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#79](https://github.com/mcpsmiths/tracehub-mcp/pull/79) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
-2. 💪 Opened PR [#147](https://github.com/mcpsmiths/cost-guard-mcp/pull/147) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
-3. 🗣 Commented on [#14323](https://github.com/punkpeye/awesome-mcp-servers/pull/14323#issuecomment-6879183186) in [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
-4. 🗣 Commented on [#14299](https://github.com/punkpeye/awesome-mcp-servers/pull/14299#issuecomment-6879182749) in [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
-5. 🎉 Merged PR [#146](https://github.com/mcpsmiths/cost-guard-mcp/pull/146) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+1. 🎉 Merged PR [#80](https://github.com/mcpsmiths/tracehub-mcp/pull/80) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+2. 💪 Opened PR [#80](https://github.com/mcpsmiths/tracehub-mcp/pull/80) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+3. 🎉 Merged PR [#130](https://github.com/mcpsmiths/cost-guard-mcp/pull/130) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+4. 🎉 Merged PR [#79](https://github.com/mcpsmiths/tracehub-mcp/pull/79) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
+5. 🎉 Merged PR [#68](https://github.com/mcpsmiths/tracehub-mcp/pull/68) in [mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)
 <!--END_SECTION:activity-->
 
 ---
