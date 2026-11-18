@@ -1,0 +1,82 @@
+name: README link check
+
+# Fetches every image and link in README.md and opens an issue when one breaks.
+# Built after a third-party icon host (a disabled Vercel deployment answering
+# HTTP 402) left six empty boxes on the profile until someone noticed by eye.
+# The rules live in scripts/check_readme_links.py; its tests run first so a
+# broken checker cannot be mistaken for a broken README.
+
+on:
+  schedule:
+    - cron: "17 3 * * 3"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - scripts/check_readme_links.py
+      - scripts/test_check_readme_links.py
+      - .github/workflows/check-readme-links.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: readme-link-check
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Run the checker's own tests
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+
+      - name: Check README images and links
+        id: check
+        continue-on-error: true
+        run: python3 scripts/check_readme_links.py README.md --report "$RUNNER_TEMP/readme-check-report.md"
+
+      - name: Add the report to the run summary
+        if: always()
+        run: |
+          if [ -f "$RUNNER_TEMP/readme-check-report.md" ]; then
+            cat "$RUNNER_TEMP/readme-check-report.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Open, update or close the tracking issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CHECK_OUTCOME: ${{ steps.check.outcome }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          title="README image or link check failed"
+          report="$RUNNER_TEMP/readme-check-report.md"
+          body="$RUNNER_TEMP/issue-body.md"
+          number="$(gh issue list --state open --search "\"$title\" in:title" --json number,title \
+            | jq -r --arg title "$title" 'map(select(.title == $title)) | .[0].number // empty')"
+          if [ "$CHECK_OUTCOME" = "failure" ]; then
+            [ -f "$report" ] || echo "The checker stopped before writing a report; see the run log." > "$report"
+            { cat "$report"; printf '\nRun: %s\n' "$RUN_URL"; } > "$body"
+            if [ -n "$number" ]; then
+              gh issue comment "$number" --body-file "$body"
+            else
+              gh issue create --title "$title" --body-file "$body"
+            fi
+          elif [ -n "$number" ]; then
+            gh issue close "$number" --comment "Every image and link passes again. Run: $RUN_URL"
+          fi
+
+      - name: Fail the job when the check failed
+        if: steps.check.outcome == 'failure'
+        run: exit 1
