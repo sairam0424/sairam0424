@@ -8,6 +8,12 @@ on:
 permissions:
   contents: write
 
+# Blog, activity and track-record workflows all rewrite README.md. One shared
+# group makes them run one at a time, so a lost push race cannot skip an update.
+concurrency:
+  group: readme-writes
+  cancel-in-progress: false
+
 jobs:
   update-readme-with-activity:
     runs-on: ubuntu-latest

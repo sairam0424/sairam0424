@@ -8,6 +8,12 @@ on:
 permissions:
   contents: write
 
+# Blog, activity and track-record workflows all rewrite README.md. One shared
+# group makes them run one at a time, so a lost push race cannot skip an update.
+concurrency:
+  group: readme-writes
+  cancel-in-progress: false
+
 jobs:
   update-track-record:
     runs-on: ubuntu-latest
@@ -23,4 +29,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
           git diff --staged --quiet || git commit -m "chore: auto-update Track Record stats"
+          # A person (or another bot) may have pushed since checkout; replay on top.
+          git pull --rebase
           git push
