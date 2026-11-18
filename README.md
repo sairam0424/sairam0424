@@ -48,10 +48,10 @@ Open-source AI infrastructure I build in the open — agent frameworks, code-int
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[trelix](https://github.com/sairam0424/trelix)** · `1,453 commits` | Fast, reliable code intelligence — Tree-sitter AST parsing, contextual hybrid search, adaptive query planning, call-graph expansion & LLM synthesis across 20+ languages with zero infra. Ships as a PyPI CLI, a multi-arch Docker image (`ghcr.io/sairam0424/trelix`), MCP/LangChain/LlamaIndex retriever packages, plus a GitHub Action (`trelix-index-action`) for CI-based repo indexing.<br>`Python` · `Tree-sitter` · `BM25` · `CLI` |
-| **[gRPC Microservices](https://github.com/sairam0424/gRPC-micro-services)** · `316 commits` — *Order Processing System* | Polyglot event-driven microservices — gRPC internal RPC + REST gateway, **etcd leader election**, **ACID inventory reservations**, a **Saga orchestrator**, metric-based read routing across PostgreSQL replicas, **Debezium/WAL CDC outbox**, Bloom filters, Redis caching, **DLQ + idempotency**, and observability via Envoy L7 (OpenTelemetry/Prometheus/Grafana).<br>`Go` · `Python` · `gRPC` · `PostgreSQL` · `Kafka` · `etcd` |
+| **[trelix](https://github.com/sairam0424/trelix)** · `1,881 commits` | Fast, reliable code intelligence — Tree-sitter AST parsing, contextual hybrid search, adaptive query planning, call-graph expansion & LLM synthesis across 20+ languages with zero infra. Ships as a PyPI CLI, a multi-arch Docker image (`ghcr.io/sairam0424/trelix`), MCP/LangChain/LlamaIndex retriever packages, plus a GitHub Action (`trelix-index-action`) for CI-based repo indexing.<br>`Python` · `Tree-sitter` · `BM25` · `CLI` |
+| **[gRPC Microservices](https://github.com/sairam0424/gRPC-micro-services)** · `317 commits` — *Order Processing System* | Polyglot event-driven microservices — gRPC internal RPC + REST gateway, **etcd leader election**, **ACID inventory reservations**, a **Saga orchestrator**, metric-based read routing across PostgreSQL replicas, **Debezium/WAL CDC outbox**, Bloom filters, Redis caching, **DLQ + idempotency**, and observability via Envoy L7 (OpenTelemetry/Prometheus/Grafana).<br>`Go` · `Python` · `gRPC` · `PostgreSQL` · `Kafka` · `etcd` |
 | **Graph-Forge** · `574 commits` *(private)* | AI-native distributed code-intelligence platform — code modeled as a Neo4j knowledge graph + Chroma semantic embeddings, served by ~19 polyglot microservices over gRPC/REST. Kafka ingestion, Tree-Sitter AST parsing, full OpenTelemetry/Jaeger/Prometheus/Grafana stack via Envoy. RAG over massive codebases.<br>`Go` · `Python` · `gRPC` · `Neo4j` · `Chroma` · `Kafka` · `Next.js` |
-| **[ag-bash](https://github.com/sairam0424/ag-bash)** · `510 commits` | AI-native bash interpreter with fork-speculation (`bash.fork()`/`bash.speculate()` — parallel speculative execution with copy-on-write branches, a capability no peer sandboxed-shell project has) — exposed as the `@ag-bash/bash` shell engine plus an MCP server and an agent terminal bridge. Tree-sitter WASM parser, esbuild (ESM+CJS), WASM runtimes (CPython, QuickJS, SQLite3).<br>`TypeScript` · `WebAssembly` · `MCP` · `Tree-sitter` · `pnpm` |
+| **[ag-bash](https://github.com/sairam0424/ag-bash)** · `523 commits` | AI-native bash interpreter with fork-speculation (`bash.fork()`/`bash.speculate()` — parallel speculative execution with copy-on-write branches, a capability no peer sandboxed-shell project has) — exposed as the `@ag-bash/bash` shell engine plus an MCP server and an agent terminal bridge. Tree-sitter WASM parser, esbuild (ESM+CJS), WASM runtimes (CPython, QuickJS, SQLite3).<br>`TypeScript` · `WebAssembly` · `MCP` · `Tree-sitter` · `pnpm` |
 
 <details>
 <summary><strong>How trelix actually works</strong> (simplified from <a href="https://github.com/sairam0424/trelix#how-it-works">its own repo README</a> — the real pipeline has more optional legs than this)</summary>
@@ -81,39 +81,39 @@ flowchart LR
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[Tombstone](https://github.com/sairam0424/Tombstone)** · `974 commits` | Production intelligence layer for feature flags at scale — blast-radius gating, circuit-breaker auto-rollback, Merkle-linked audit log, causal incident correlation ("What Changed?"), and Knight Capital–style tombstoning of stale flags. Polyglot monorepo.<br>`Go` · `Python` · `TypeScript` · `PostgreSQL` · `Redis` |
+| **[Tombstone](https://github.com/sairam0424/Tombstone)** · `1,034 commits` | Production intelligence layer for feature flags at scale — blast-radius gating, circuit-breaker auto-rollback, Merkle-linked audit log, causal incident correlation ("What Changed?"), and Knight Capital–style tombstoning of stale flags. Polyglot monorepo.<br>`Go` · `Python` · `TypeScript` · `PostgreSQL` · `Redis` |
 | **[RateCap](https://github.com/sairam0424/RateCap)** · `347 commits` | Faithful open-source recreation of Stripe's four-tier rate-limiter and load-shedder architecture, built as a hybrid core-engine + sidecar system.<br>`Go` · `API Gateway` · `Distributed Systems` |
 
 #### 🤖 Agent Frameworks & Infrastructure
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[MindForge](https://github.com/sairam0424/MindForge)** · `1,786 commits` | Agentic-intelligence framework for Claude Code — v12.0.0 ships 221 slash commands, 164 specialized subagents, 354 skills, 216 personas, and 35 dynamic workflows, plus hooks, governance, cost-aware model routing, and true wave (parallel) execution. Streaming WebSocket SDK. Ships as `npx mindforge-cc` (7K+ monthly npm downloads).<br>`Node.js` · `TypeScript` · `MCP` · `sql.js` |
+| **[MindForge](https://github.com/sairam0424/MindForge)** · `1,829 commits` | Agentic-intelligence framework for Claude Code — v12.0.0 ships 221 slash commands, 164 specialized subagents, 354 skills, 216 personas, and 35 dynamic workflows, plus hooks, governance, cost-aware model routing, and true wave (parallel) execution. Streaming WebSocket SDK. Ships as `npx mindforge-cc` (3K+ monthly npm downloads).<br>`Node.js` · `TypeScript` · `MCP` · `sql.js` |
 | **Agent-Forge** · `209 commits` *(private)* | Framework-agnostic, self-improving AI agent infrastructure — a Karpathy-style propose/eval/score/commit-or-revert loop over a mutable markdown agent spec (`AGENT.md`), git-versioned, with an LLM-judge eval harness and held-out validation to guard against overfitting.<br>`Python` · `FastAPI` · `pgvector` · `Celery` · `MCP` · `Docker` |
-| **[ContextOS](https://github.com/sairam0424/ContextOS)** · `233 commits` | Intelligence layer for autonomous AI agents — SQLite/vector indexing, multi-agent orchestration, and resilience. Ships as core/CLI/MCP npm packages (`@context-os/*`) plus a spatial dashboard.<br>`TypeScript` · `SQLite` · `vector search` · `MCP` · `React` · `Three.js` |
+| **[ContextOS](https://github.com/sairam0424/ContextOS)** · `234 commits` | Intelligence layer for autonomous AI agents — SQLite/vector indexing, multi-agent orchestration, and resilience. Ships as core/CLI/MCP npm packages (`@context-os/*`) plus a spatial dashboard.<br>`TypeScript` · `SQLite` · `vector search` · `MCP` · `React` · `Three.js` |
 
 #### 🏢 Organization Projects — [kelvran](https://github.com/kelvran) & [mcpsmiths](https://github.com/mcpsmiths)
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[kelvran/gateway](https://github.com/kelvran/gateway)** · `700 commits` | Unified AI infrastructure platform — LLM gateway with an embedded multi-layer cache, plus an independently-versioned `evals` subsystem (currently v0.10.1).<br>`Go` |
-| **[mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)** · `185 commits` | MCP server for querying OpenTelemetry traces across multiple observability backends (Jaeger, Tempo, Traceloop, Datadog) for LLM application debugging.<br>`Python` · `MCP` · `OpenTelemetry` |
-| **[mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)** · `64 commits` | Pre-flight query cost and result-size guardrails for AI agents across BigQuery, Snowflake, and Databricks.<br>`Python` · `MCP` |
+| **[kelvran/gateway](https://github.com/kelvran/gateway)** · `867 commits` | Unified AI infrastructure platform — LLM gateway with an embedded multi-layer cache, plus an independently-versioned `evals` subsystem (currently v0.10.1).<br>`Go` |
+| **[mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)** · `335 commits` | MCP server for querying OpenTelemetry traces across multiple observability backends (Jaeger, Tempo, Traceloop, Datadog) for LLM application debugging.<br>`Python` · `MCP` · `OpenTelemetry` |
+| **[mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)** · `229 commits` | Pre-flight query cost and result-size guardrails for AI agents across BigQuery, Snowflake, and Databricks.<br>`Python` · `MCP` |
 
 #### 🛠️ Tooling & Lab
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[CommandVault](https://github.com/sairam0424/CommandVault)** · `161 commits` | Universal AI command manager — browse/search/organize slash commands, skills, agents, plugins, rules, and hooks across Claude Code, Cursor, Copilot, Windsurf, and Aider. Indexes 350+ items via a VS Code extension, an 18-command CLI, and a three-tier search engine.<br>`TypeScript` · `VS Code Extension` · `CLI` · `SQLite` |
-| **[Inkforge](https://github.com/sairam0424/Inkforge)** · `103 commits` | AI-powered article generation system — notes/topic/code → human-readable Markdown articles, published to Dev.to, Hashnode, Medium & more.<br>`TypeScript` · `Anthropic` · `AWS Bedrock` |
-| **[Not-Humans-Lab](https://github.com/sairam0424/not-humans-lab)** | Umbrella docs tying together the Not-Humans-Lab suite: [daily-dose](https://github.com/sairam0424/daily-dose) (`156 commits`, AI-curated tech digest) and [nh-deck](https://github.com/sairam0424/nh-deck) (`58 commits`, Markdown slide-deck CLI), plus nh-skills *(private)*.<br>`TypeScript` · `Astro` · `CLI` |
+| **[CommandVault](https://github.com/sairam0424/CommandVault)** · `198 commits` | Universal AI command manager — browse/search/organize slash commands, skills, agents, plugins, rules, and hooks across Claude Code, Cursor, Copilot, Windsurf, and Aider. Indexes 350+ items via a VS Code extension, an 18-command CLI, and a three-tier search engine.<br>`TypeScript` · `VS Code Extension` · `CLI` · `SQLite` |
+| **[Inkforge](https://github.com/sairam0424/Inkforge)** · `126 commits` | AI-powered article generation system — notes/topic/code → human-readable Markdown articles, published to Dev.to, Hashnode, Medium & more.<br>`TypeScript` · `Anthropic` · `AWS Bedrock` |
+| **[Not-Humans-Lab](https://github.com/sairam0424/not-humans-lab)** | Umbrella docs tying together the Not-Humans-Lab suite: [daily-dose](https://github.com/sairam0424/daily-dose) (`215 commits`, AI-curated tech digest) and [nh-deck](https://github.com/sairam0424/nh-deck) (`58 commits`, Markdown slide-deck CLI), plus nh-skills *(private)*.<br>`TypeScript` · `Astro` · `CLI` |
 | **Not-Humans** · `400 commits` *(private)* | Thin root workspace federating independent AI-infra sub-projects (SkillStack, Deep-Research, Agent-Hub, rate-limit-observatory) — polyglot Turborepo/pnpm + Next.js, Python (uv + Temporal + FastAPI), and Go services with a Qdrant vector store.<br>`TypeScript` · `Python` · `Go` · `Temporal` · `Qdrant` |
 
 #### 🌐 Portfolio & Edge Projects
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[anvilry](https://github.com/sairam0424/anvilry)** · `722 commits` | Engineering portfolio with four switchable experiences over one content source — SSG classic site, AI concierge chat (RAG-grounded, AWS Bedrock), WebGL Build Graph, and a keyboard-native developer terminal. Exposes a read-only MCP server.<br>`Next.js 16` · `React 19` · `TypeScript` · `Tailwind v4` · `R3F` |
+| **[anvilry](https://github.com/sairam0424/anvilry)** · `973 commits` | Engineering portfolio with four switchable experiences over one content source — SSG classic site, AI concierge chat (RAG-grounded, AWS Bedrock), WebGL Build Graph, and a keyboard-native developer terminal. Exposes a read-only MCP server.<br>`Next.js 16` · `React 19` · `TypeScript` · `Tailwind v4` · `R3F` |
 | **[Thunderboard-Labs](https://github.com/sairam0424/Thunderboard-Labs)** · `38 commits` | On-device TinyML on the Silicon Labs Thunderboard Sense 2 (EFR32MG12, no NPU) — an 85%-accurate IMU gesture recognizer running fully on-chip at ~87.5ms.<br>`Embedded ML` · `Cortex-M4` · `Edge Impulse` |
 
 ---
@@ -141,9 +141,9 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 - **ag-bash** (2026-09-25) — shipped a 9-phase security-hardening backlog to main and reached a fully green cross-platform CI matrix after root-causing deep Windows/macOS path-handling bugs.
 - **Tombstone v2.0.1** (2026-09-09) — shipped after live E2E testing against a real Postgres/Kubernetes stack surfaced 10 real production bugs, including severe connection-pooling races.
 - **ContextOS (@context-os/core v1.13.2)** — shipped a deliberate breaking change eliminating an unfixable critical CVE (optional embedding peer-dependency) with in-band degradation reporting for MCP agents.
-- **kelvran** (2026-09-21 to 09-22) — 5 releases in a week (gateway v0.14.0→v0.14.2, evals v0.10.0→v0.10.1) fixing 2 CRITICAL + a HIGH-severity SSE error-swallowing bug found via back-to-back audits, alongside a live AWS Bedrock production pilot; gateway has since reached v0.15.0.
+- **kelvran** (2026-09-21 to 09-22) — 5 releases in a week (gateway v0.14.0→v0.14.2, evals v0.10.0→v0.10.1) fixing 2 CRITICAL + a HIGH-severity SSE error-swallowing bug found via back-to-back audits, alongside a live AWS Bedrock production pilot; gateway has since reached v0.20.0.
 - **mcpsmiths/cost-guard-mcp** — shipped a third query-cost engine (Databricks, 2026-09-13) and, the next day, closed a CRITICAL secret-redaction bug in a full-repo audit, raising coverage to 98.4%.
-- **mcpsmiths/tracehub-mcp v0.5.0** (2026-09-14) — a real end-to-end dry run against a live Jaeger/OTel stack caught a CRITICAL silent-data-loss bug before it reached users; now at v0.12.2.
+- **mcpsmiths/tracehub-mcp v0.5.0** (2026-09-14) — a real end-to-end dry run against a live Jaeger/OTel stack caught a CRITICAL silent-data-loss bug before it reached users; now at v0.13.2.
 - **CNCF OpenFeature** — contributed Tombstone's [OpenFeature-compatible provider listing](https://github.com/open-feature/community/pull/554) to the CNCF-affiliated OpenFeature project's interested-parties registry (merged 2026-08-18).
 
 ---
@@ -186,7 +186,7 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 
 ### 🛡️ Security Posture
 
-Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independent audit (branch protection, pinned dependencies, SAST, vulnerability history, and more) that requires zero setup on my end; it scans any public repo. Shown for every repo across my personal account and the kelvran/mcpsmiths orgs that OSSF has scanned so far, unfiltered — including the ones that score lower, since that's the honest picture:
+Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independent audit (branch protection, pinned dependencies, SAST, vulnerability history, and more) that requires zero setup on my end; it scans any public repo. Shown for every repo featured on this page, across my personal account and the kelvran/mcpsmiths orgs, that OSSF has scanned so far, unfiltered — including the ones that score lower, since that's the honest picture:
 
 | Repo | OSSF Scorecard |
 |---|---|
@@ -201,6 +201,9 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
 | [MindForge](https://github.com/sairam0424/MindForge) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/MindForge/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/MindForge) |
 | [ContextOS](https://github.com/sairam0424/ContextOS) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/ContextOS/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/ContextOS) |
 | [CommandVault](https://github.com/sairam0424/CommandVault) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/CommandVault/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/CommandVault) |
+| [Tombstone](https://github.com/sairam0424/Tombstone) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/Tombstone/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/Tombstone) |
+| [nh-deck](https://github.com/sairam0424/nh-deck) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/nh-deck/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/nh-deck) |
+| [Thunderboard-Labs](https://github.com/sairam0424/Thunderboard-Labs) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/Thunderboard-Labs/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/Thunderboard-Labs) |
 
 ---
 
@@ -213,7 +216,7 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
 | [`@ag-bash/bash`](https://www.npmjs.com/package/@ag-bash/bash) (npm) | [![@ag-bash/bash npm version](https://img.shields.io/npm/v/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | [![@ag-bash/bash npm downloads](https://img.shields.io/npm/dm/@ag-bash/bash.svg)](https://www.npmjs.com/package/@ag-bash/bash) | ![@ag-bash/bash license](https://img.shields.io/npm/l/@ag-bash/bash.svg) | [![ag-bash CI status](https://github.com/sairam0424/ag-bash/actions/workflows/tests.yml/badge.svg?branch=develop)](https://github.com/sairam0424/ag-bash/actions/workflows/tests.yml) |
 | [`@ag-bash/mcp-server`](https://www.npmjs.com/package/@ag-bash/mcp-server) (npm) | [![@ag-bash/mcp-server npm version](https://img.shields.io/npm/v/@ag-bash/mcp-server.svg)](https://www.npmjs.com/package/@ag-bash/mcp-server) | [![@ag-bash/mcp-server npm downloads](https://img.shields.io/npm/dm/@ag-bash/mcp-server.svg)](https://www.npmjs.com/package/@ag-bash/mcp-server) | ![@ag-bash/mcp-server license](https://img.shields.io/npm/l/@ag-bash/mcp-server.svg) | *(same monorepo as @ag-bash/bash)* |
 | [`@ag-bash/agent-bridge`](https://www.npmjs.com/package/@ag-bash/agent-bridge) (npm) | [![@ag-bash/agent-bridge npm version](https://img.shields.io/npm/v/@ag-bash/agent-bridge.svg)](https://www.npmjs.com/package/@ag-bash/agent-bridge) | [![@ag-bash/agent-bridge npm downloads](https://img.shields.io/npm/dm/@ag-bash/agent-bridge.svg)](https://www.npmjs.com/package/@ag-bash/agent-bridge) | ![@ag-bash/agent-bridge license](https://img.shields.io/npm/l/@ag-bash/agent-bridge.svg) | *(same monorepo as @ag-bash/bash)* |
-| [`@context-os/core`](https://www.npmjs.com/package/@context-os/core) (npm) | [![@context-os/core npm version](https://img.shields.io/npm/v/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | [![@context-os/core npm downloads](https://img.shields.io/npm/dm/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | *(registry `license` field is null — pending fix)* | *(CI omitted — no green run in 10+ attempts across ~11 days; no commits since 2026-09-17)* |
+| [`@context-os/core`](https://www.npmjs.com/package/@context-os/core) (npm) | [![@context-os/core npm version](https://img.shields.io/npm/v/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | [![@context-os/core npm downloads](https://img.shields.io/npm/dm/@context-os/core.svg)](https://www.npmjs.com/package/@context-os/core) | *(registry `license` field is null — pending fix)* | *(CI omitted — no green run in 19 attempts on develop, 2026-06-12 to 2026-11-06; last commit 2026-11-06)* |
 | [`@context-os/cli`](https://www.npmjs.com/package/@context-os/cli) (npm) | [![@context-os/cli npm version](https://img.shields.io/npm/v/@context-os/cli.svg)](https://www.npmjs.com/package/@context-os/cli) | [![@context-os/cli npm downloads](https://img.shields.io/npm/dm/@context-os/cli.svg)](https://www.npmjs.com/package/@context-os/cli) | *(same registry gap as @context-os/core)* | *(same pipeline as @context-os/core)* |
 | [`@context-os/mcp`](https://www.npmjs.com/package/@context-os/mcp) (npm) | [![@context-os/mcp npm version](https://img.shields.io/npm/v/@context-os/mcp.svg)](https://www.npmjs.com/package/@context-os/mcp) | [![@context-os/mcp npm downloads](https://img.shields.io/npm/dm/@context-os/mcp.svg)](https://www.npmjs.com/package/@context-os/mcp) | *(same registry gap as @context-os/core)* | *(same pipeline as @context-os/core)* |
 | [`trelix`](https://pypi.org/project/trelix/) (PyPI) | [![trelix PyPI version](https://img.shields.io/pypi/v/trelix.svg)](https://pypi.org/project/trelix/) | [![trelix PyPI downloads](https://static.pepy.tech/badge/trelix)](https://pepy.tech/project/trelix) | ![trelix license](https://img.shields.io/pypi/l/trelix.svg) | [![trelix CI status](https://github.com/sairam0424/trelix/actions/workflows/ci.yml/badge.svg)](https://github.com/sairam0424/trelix/actions/workflows/ci.yml) |
@@ -433,6 +436,36 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
         <br><sub><b>Selenium</b></sub>
       </td>
     </tr>
+    <tr>
+      <td align="center" width="90">
+        <img alt="MCP" width="65" src="./assets/icons/mcp.svg"/>
+        <br><sub><b>MCP</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img alt="Claude Code" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/ae665cf9136a4918916457c1fdb953400ca93967/icons/claude_code.png"/>
+        <br><sub><b>Claude Code</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img alt="OpenTelemetry" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/ae665cf9136a4918916457c1fdb953400ca93967/icons/opentelemetry.png"/>
+        <br><sub><b>OpenTelemetry</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img alt="SQLite" width="65" src="https://skillicons.dev/icons?i=sqlite"/>
+        <br><sub><b>SQLite</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img alt="WebAssembly" width="65" src="https://skillicons.dev/icons?i=wasm"/>
+        <br><sub><b>WebAssembly</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img alt="pnpm" width="65" src="https://skillicons.dev/icons?i=pnpm"/>
+        <br><sub><b>pnpm</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img alt="VS Code" width="65" src="https://skillicons.dev/icons?i=vscode"/>
+        <br><sub><b>VS Code</b></sub>
+      </td>
+    </tr>
 
 </table>
 
@@ -490,14 +523,6 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
 <p align="center">
   <img src="https://leetcard.jacoblin.cool/sairam_056?theme=dark&font=Baloo%202&ext=heatmap" alt="LeetCode stats" />
 </p>
-
----
-
-### 📫 Connect With Me
-
-- 💼 LinkedIn: https://linkedin.com/in/sairam0424
-- 💻 GitHub: https://github.com/sairam0424
-- 📧 Email: uggesairam0000@gmail.com
 
 ---
 
