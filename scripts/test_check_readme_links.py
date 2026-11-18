@@ -11,6 +11,7 @@ import tempfile
 import threading
 import time
 import unittest
+import urllib.parse
 from pathlib import Path
 
 import check_readme_links as crl
@@ -44,12 +45,34 @@ ROUTES = {
     "/linkedin": (999, "text/html", b"wall"),
     "/limited": (429, "text/html", b"slow down"),
     "/broken": (500, "text/html", b"boom"),
+    "/created.svg": (201, "image/svg+xml", SVG_OK),
+    "/nocontent": (204, "text/html", b""),
+    "/upper-badge.svg": (200, "IMAGE/SVG+XML", SVG_ERROR_BADGE),
+    # Raw request paths, exactly as a client must send them (percent-encoded).
+    "/%C3%A9.svg": (200, "image/svg+xml", SVG_OK),
+    "/with%20space.svg": (200, "image/svg+xml", SVG_OK),
+    "/q?a=1&b=2": (200, "image/svg+xml", SVG_OK),
+    "/wiki/Foo_(bar)": (200, "text/html", b"<html></html>"),
+    "/i_(1).png": (200, "image/png", b"\x89PNG\r\n"),
 }
+
+
+def _badge(label_text, *, title=True, aria=None):
+    """An SVG badge like the ones badge services return, with chosen text sources."""
+    parts = ['<svg xmlns="http://www.w3.org/2000/svg"']
+    if aria:
+        parts.append(f" aria-label={aria}{label_text}{aria}")
+    parts.append(">")
+    if title:
+        parts.append(f"<title>{label_text}</title>")
+    parts.append("</svg>")
+    return "".join(parts).encode()
 
 
 class Handler(http.server.BaseHTTPRequestHandler):
     hits = {}
     lock = threading.Lock()
+    ftp_port = None  # set by the test that needs a live listener to prove it is never contacted
 
     def log_message(self, *args):
         pass
@@ -59,9 +82,53 @@ class Handler(http.server.BaseHTTPRequestHandler):
             Handler.hits[key] = Handler.hits.get(key, 0) + 1
             return Handler.hits[key]
 
+    def _send(self, status, ctype, body, headers=()):
+        try:
+            self.send_response(status)
+            if ctype:
+                self.send_header("Content-Type", ctype)
+            for name, value in headers:
+                self.send_header(name, value)
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+        except (BrokenPipeError, ConnectionResetError):
+            pass  # the client gave up (timeout tests); nothing to report
+
+    def _dynamic(self, path):
+        """Routes whose response depends on the path. Returns None when not dynamic."""
+        route = urllib.parse.urlsplit(path).path
+        prefix, _, rest = route[1:].partition("/")
+        text = (
+            urllib.parse.unquote(rest[: -len(".svg")]) if rest.endswith(".svg") else ""
+        )
+        if prefix == "badge":
+            return 200, "image/svg+xml", _badge(f"release: {text}", aria='"')
+        if prefix == "title-badge":
+            return 200, "image/svg+xml", _badge(text)
+        if prefix == "aria-single":
+            return 200, "image/svg+xml", _badge(text, title=False, aria="'")
+        if prefix == "hop":
+            remaining = int(rest)
+            if remaining == 0:
+                return ROUTES["/ok.svg"]
+            return 302, "", b"", (("Location", f"/hop/{remaining - 1}"),)
+        if route == "/redirect-ftp-live":
+            return (
+                302,
+                "",
+                b"",
+                (("Location", f"ftp://127.0.0.1:{Handler.ftp_port}/x.svg"),),
+            )
+        return None
+
     def do_GET(self):
         path = self.path
         count = self._count(path)
+        dynamic = self._dynamic(path)
+        if dynamic is not None:
+            self._send(*dynamic)
+            return
         if path == "/flaky.svg":
             status, ctype, body = (
                 (503, "text/plain", b"later") if count == 1 else ROUTES["/ok.svg"]
@@ -87,11 +154,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             status, ctype, body = ROUTES[path]
         else:
             status, ctype, body = 404, "text/plain", b"unknown route"
-        self.send_response(status)
-        self.send_header("Content-Type", ctype)
-        self.send_header("Content-Length", str(len(body)))
-        self.end_headers()
-        self.wfile.write(body)
+        self._send(status, ctype, body)
 
 
 def setUpModule():

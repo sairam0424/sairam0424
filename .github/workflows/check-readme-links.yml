@@ -44,6 +44,9 @@ jobs:
       - name: Check README images and links
         id: check
         continue-on-error: true
+        # Own deadline, so a host that hangs fails this step (and still opens the
+        # tracking issue below) instead of the job timing out with no issue at all.
+        timeout-minutes: 8
         run: python3 scripts/check_readme_links.py README.md --report "$RUNNER_TEMP/readme-check-report.md"
 
       - name: Add the report to the run summary
@@ -73,7 +76,8 @@ jobs:
             else
               gh issue create --title "$title" --body-file "$body"
             fi
-          elif [ -n "$number" ]; then
+          elif [ "$CHECK_OUTCOME" = "success" ] && [ -n "$number" ]; then
+            # Only a real pass closes the issue; a cancelled or skipped check proves nothing.
             gh issue close "$number" --comment "Every image and link passes again. Run: $RUN_URL"
           fi
 

@@ -6,26 +6,36 @@ Why: a README can look fine in the repo while an image host quietly dies
 This finds that the week it happens instead of whenever someone notices.
 
 Rules
-- Images must answer 2xx with an image/* content type. An SVG whose title says
-  "inaccessible" or "not found" is a badge service reporting an error with
-  status 200, so it counts as broken too.
+- Images must answer 2xx with an image/* content type. An SVG badge whose message
+  says "inaccessible" or "not found" is a badge service reporting an error with
+  status 200, so it counts as broken too. A badge that says "rate limit" is the
+  service being throttled upstream: retried, then only a warning.
 - Links fail on 404/410/5xx and on connection errors. 401/403/999 are bot walls
   (npm, LinkedIn, CodePen and others refuse scripts), so they only warn.
   429 means rate limited, which proves nothing, so it only warns.
+- Network errors on "soft hosts" (default medium.com) only warn, and only for links.
 - Relative image paths are checked against the folder holding the README.
+
+Never crashes on one bad URL: every failure becomes a row in the report.
+
+Not recognised (such images are still checked, but as plain links): reference-style
+images (`![alt][ref]`) and image alt text containing square brackets.
+No per-URL wall-clock deadline: the workflow's step timeout bounds a hung host.
 
 Threat model: the input is this repository's own README on a protected branch
 (the workflow does not run on pull requests). Redirects are limited to http(s)
-and five hops.
+and five hops. Text that came from a server is sanitised before it reaches the
+report, because the report becomes a GitHub issue body.
 
 Usage: python3 scripts/check_readme_links.py README.md [--report report.md]
-Exit code: 0 no failures, 1 at least one failure, 2 bad usage.
+Exit code: 0 no failures, 1 at least one failure, 2 bad usage, 3 internal error.
 """
 
 from __future__ import annotations
 
 import argparse
 import concurrent.futures
+import html
 import http.client
 import re
 import socket
@@ -60,17 +70,30 @@ DEFAULT_TIMEOUT = 20.0
 DEFAULT_RETRIES = 2
 DEFAULT_BACKOFF = 1.0
 DEFAULT_WORKERS = 8
+MAX_DETAIL_CHARS = 200
+MAX_URL_CHARS = 300
+TRAILING_PUNCTUATION = ".,;:!?*~`"
 
-_COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
-_SRC_ATTR = re.compile(r"""\bsrc\s*=\s*(["'])(.*?)\1""", re.IGNORECASE | re.DOTALL)
-_SRCSET_ATTR = re.compile(
-    r"""\bsrcset\s*=\s*(["'])(.*?)\1""", re.IGNORECASE | re.DOTALL
+# An unclosed comment runs to the end of the file, like in a browser. Written so
+# each position is scanned once: input made of many "<!--" stays linear.
+_COMMENT = re.compile(r"<!--(?:(?!-->).)*(?:-->|\Z)", re.DOTALL)
+_IMG_TAG = re.compile(r"<(?:img|source)\b[^>]*>", re.IGNORECASE)
+_ATTR_VALUE = r"""\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'>]+))"""
+_SRC_ATTR = re.compile(r"(?<![\w-])src" + _ATTR_VALUE, re.IGNORECASE)
+_SRCSET_ATTR = re.compile(r"(?<![\w-])srcset" + _ATTR_VALUE, re.IGNORECASE)
+_SRCSET_SPLIT = re.compile(r",\s+|,(?=https?://)", re.IGNORECASE)
+_MARKDOWN_TARGET = r"(?:[^()\s<>]|\([^()\s<>]*\))+"
+_MARKDOWN_TITLE = r"""(?:\s+(?:"[^"]*"|'[^']*'|\([^)]*\)))?"""
+_MARKDOWN_IMAGE = re.compile(
+    r"!\[[^\]]*\]\(\s*<?(" + _MARKDOWN_TARGET + r")>?" + _MARKDOWN_TITLE + r"\s*\)"
 )
-_MARKDOWN_IMAGE = re.compile(r"""!\[[^\]]*\]\(\s*<?([^)\s>]+)>?(?:\s+"[^"]*")?\s*\)""")
-_BARE_URL = re.compile(r"""https?://[^\s<>"'()\[\]]+""")
-_TITLE = re.compile(r"<title[^>]*>(.*?)</title>", re.IGNORECASE | re.DOTALL)
-_ARIA_LABEL = re.compile(r"""aria-label\s*=\s*"([^"]*)\"""", re.IGNORECASE)
-_SRCSET_SPLIT = re.compile(r",\s+")
+_BARE_URL = re.compile(
+    r"""https?://(?:[^\s<>"'()\[\]]|\([^\s<>"'()\[\]]*\))+""", re.IGNORECASE
+)
+_TITLE = re.compile(r"<title[^>]*>(.{0,400}?)</title>", re.IGNORECASE | re.DOTALL)
+_ARIA_LABEL = re.compile(r"""aria-label\s*=\s*(?:"([^"]*)"|'([^']*)')""", re.IGNORECASE)
+_UNSAFE_REPORT_CHARS = re.compile(r"[^A-Za-z0-9 .,:;()/_'=%&#+\-]")
+_HOST_NAME = re.compile(r"[a-z0-9.-]+")
 
 
 @dataclass(frozen=True)
@@ -93,40 +116,56 @@ def _unique(items) -> tuple[str, ...]:
     return tuple(dict.fromkeys(items))
 
 
-def _is_image_reference(value: str) -> bool:
-    value = value.strip()
-    if not value or value.startswith(("data:", "#", "//", "mailto:")):
-        return False
-    return True
+def _attr_value(match: "re.Match[str]") -> str:
+    return next(group for group in match.groups() if group is not None).strip()
+
+
+def _image_reference(value: str) -> str | None:
+    """Normalise an image target, or None when it is not something to check."""
+    value = html.unescape(value.strip())
+    if not value or value.startswith(("data:", "#", "mailto:")):
+        return None
+    if value.startswith("//"):
+        return "https:" + value
+    return value
 
 
 def extract_urls(markdown: str) -> tuple[tuple[str, ...], tuple[str, ...]]:
     """Return (images, links) in document order, each de-duplicated.
 
-    Images are src/srcset/markdown image targets, absolute or relative.
-    Links are the remaining absolute http(s) URLs. HTML comments are skipped.
+    Images are src/srcset values of <img> and <source> tags plus markdown image
+    targets, absolute or relative. Links are the other absolute http(s) URLs.
+    HTML comments are skipped and HTML entities in URLs are decoded.
     """
     text = _COMMENT.sub("", markdown)
-    found: list[tuple[int, int, str]] = []
-    for match in _SRC_ATTR.finditer(text):
-        found.append((match.start(), 0, match.group(2).strip()))
+    found: list[tuple[int, int, str]] = []  # (position, index, value)
+    spans: list[tuple[int, int]] = []  # image references, hidden from the link scan
+    for tag in _IMG_TAG.finditer(text):
+        for match in _SRC_ATTR.finditer(tag.group(0)):
+            start = tag.start() + match.start()
+            found.append((start, 0, _attr_value(match)))
+            spans.append((start, tag.start() + match.end()))
+        for match in _SRCSET_ATTR.finditer(tag.group(0)):
+            start = tag.start() + match.start()
+            for index, candidate in enumerate(_SRCSET_SPLIT.split(_attr_value(match))):
+                if candidate.split():
+                    found.append((start, index, candidate.split()[0]))
+            spans.append((start, tag.start() + match.end()))
     for match in _MARKDOWN_IMAGE.finditer(text):
-        found.append((match.start(), 0, match.group(1).strip()))
-    for match in _SRCSET_ATTR.finditer(text):
-        for index, candidate in enumerate(_SRCSET_SPLIT.split(match.group(2).strip())):
-            tokens = candidate.split()
-            if tokens:
-                found.append((match.start(), index, tokens[0]))
+        found.append((match.start(), 0, match.group(1)))
+        spans.append((match.start(), match.end()))
+
     images = _unique(
-        value
+        reference
         for _, _, value in sorted(found, key=lambda item: item[:2])
-        if _is_image_reference(value)
+        if (reference := _image_reference(value))
     )
-    image_set = set(images)
+    hidden = list(text)
+    for start, end in spans:
+        hidden[start:end] = " " * (end - start)
     links = _unique(
-        url
-        for url in (raw.rstrip(".,;:!?") for raw in _BARE_URL.findall(text))
-        if url not in image_set
+        html.unescape(raw.rstrip(TRAILING_PUNCTUATION))
+        for raw in _BARE_URL.findall("".join(hidden))
     )
     return images, links
 
@@ -134,6 +173,38 @@ def extract_urls(markdown: str) -> tuple[tuple[str, ...], tuple[str, ...]]:
 def is_soft_host(host: str, soft_hosts: tuple[str, ...]) -> bool:
     host = host.lower()
     return any(host == soft or host.endswith("." + soft) for soft in soft_hosts if soft)
+
+
+def parse_soft_hosts(values) -> tuple[str, ...]:
+    """Normalise --soft-host values; a URL or anything but a host name is rejected."""
+    hosts = []
+    for value in values:
+        host = value.strip().lower()
+        if not host:
+            continue
+        if not _HOST_NAME.fullmatch(host):
+            raise ValueError(f"not a host name: {value!r}")
+        hosts.append(host)
+    return tuple(hosts)
+
+
+def _request_url(url: str) -> str:
+    """Turn a README URL into what goes on the wire (spaces, non-ASCII, IDN host).
+
+    Raises ValueError for anything that is not a usable http(s) URL.
+    """
+    parts = urllib.parse.urlsplit(url)
+    if parts.scheme not in ("http", "https") or not parts.hostname:
+        raise ValueError("not an http(s) URL")
+    netloc = parts.netloc
+    port = parts.port  # validates the port
+    if not netloc.isascii():
+        netloc = parts.hostname.encode("idna").decode("ascii") + (
+            f":{port}" if port else ""
+        )
+    path = urllib.parse.quote(parts.path, safe="/%:@!$&'()*+,;=~-._")
+    query = urllib.parse.quote(parts.query, safe="/?%:@!$&'()*+,;=~-._[]")
+    return urllib.parse.urlunsplit((parts.scheme, netloc, path, query, ""))
 
 
 class _HttpOnlyRedirects(urllib.request.HTTPRedirectHandler):
@@ -183,6 +254,27 @@ def _fetch(url: str, timeout: float) -> _Outcome:
         return _Outcome(None, "", b"", f"connection failed: {error}")
 
 
+def _badge_phrase(sample: bytes, phrases: tuple[str, ...]) -> str | None:
+    """Find a phrase in the message part of an SVG badge (the text after the last colon)."""
+    text = sample.decode("utf-8", errors="replace")
+    labels = [m.group(1) for m in _TITLE.finditer(text)]
+    labels += [
+        m.group(1) if m.group(1) is not None else m.group(2)
+        for m in _ARIA_LABEL.finditer(text)
+    ]
+    messages = [label.rsplit(":", 1)[-1].strip().lower() for label in labels]
+    return next(
+        (
+            phrase
+            for phrase in phrases
+            if any(
+                re.search(r"\b" + re.escape(phrase), message) for message in messages
+            )
+        ),
+        None,
+    )
+
+
 def _is_retryable(outcome: _Outcome) -> bool:
     if outcome.error is not None:
         return outcome.error == "timed out" or outcome.error.startswith(
@@ -193,16 +285,6 @@ def _is_retryable(outcome: _Outcome) -> bool:
         or (outcome.status or 0) >= 500
         or _badge_phrase(outcome.sample, RATE_LIMIT_BADGE_PHRASES) is not None
     )
-
-
-def _badge_phrase(sample: bytes, phrases: tuple[str, ...]) -> str | None:
-    text = sample.decode("utf-8", errors="replace")
-    labels = [
-        *(m.group(1) for m in _TITLE.finditer(text)),
-        *(m.group(1) for m in _ARIA_LABEL.finditer(text)),
-    ]
-    haystack = " ".join(labels).lower()
-    return next((phrase for phrase in phrases if phrase in haystack), None)
 
 
 def _classify(
@@ -258,23 +340,39 @@ def check_url(
     backoff: float = DEFAULT_BACKOFF,
     soft_hosts: tuple[str, ...] = SOFT_HOSTS,
 ) -> Finding:
-    outcome = _fetch(url, timeout)
-    for attempt in range(retries):
-        if not _is_retryable(outcome):
-            break
-        time.sleep(backoff * (2**attempt))
-        outcome = _fetch(url, timeout)
-    return _classify(url, kind, outcome, soft_hosts)
+    """Check one URL. Never raises: any problem becomes a failing Finding."""
+    try:
+        target = _request_url(url)
+    except ValueError:
+        return Finding(url, kind, "fail", "invalid URL")
+    try:
+        outcome = _fetch(target, timeout)
+        for attempt in range(retries):
+            if not _is_retryable(outcome):
+                break
+            time.sleep(backoff * (2**attempt))
+            outcome = _fetch(target, timeout)
+        return _classify(target, kind, outcome, soft_hosts)
+    except Exception as error:  # a checker must report, not crash
+        return Finding(url, kind, "fail", f"unexpected error: {type(error).__name__}")
 
 
 def check_local_image(path: str, root: Path) -> Finding:
-    root = root.resolve()
-    target = (root / path).resolve()
-    if root != target and root not in target.parents:
-        return Finding(path, "image", "fail", "path escapes the repository")
-    if not target.is_file():
-        return Finding(path, "image", "fail", "file not found")
-    return Finding(path, "image", "ok", "file exists")
+    try:
+        cleaned = urllib.parse.unquote(re.split(r"[?#]", path, maxsplit=1)[0])
+        if "\x00" in cleaned:
+            return Finding(path, "image", "fail", "invalid path")
+        root = root.resolve()
+        target = (
+            root / cleaned.lstrip("/")
+        ).resolve()  # a leading "/" means repo root, as on GitHub
+        if root != target and root not in target.parents:
+            return Finding(path, "image", "fail", "path escapes the repository")
+        if not target.is_file():
+            return Finding(path, "image", "fail", "file not found")
+        return Finding(path, "image", "ok", "file exists")
+    except (OSError, ValueError):
+        return Finding(path, "image", "fail", "invalid path")
 
 
 def check_readme(
@@ -287,21 +385,24 @@ def check_readme(
     soft_hosts: tuple[str, ...] = SOFT_HOSTS,
 ) -> tuple[Finding, ...]:
     readme = Path(readme_path)
-    images, links = extract_urls(readme.read_text(encoding="utf-8"))
+    images, links = extract_urls(readme.read_text(encoding="utf-8", errors="replace"))
     jobs = [("image", url) for url in images] + [("link", url) for url in links]
 
     def run(job: tuple[str, str]) -> Finding:
         kind, url = job
-        if kind == "image" and not url.startswith(("http://", "https://")):
-            return check_local_image(url, readme.parent)
-        return check_url(
-            url,
-            kind,
-            timeout=timeout,
-            retries=retries,
-            backoff=backoff,
-            soft_hosts=soft_hosts,
-        )
+        try:
+            if kind == "image" and not url.lower().startswith(("http://", "https://")):
+                return check_local_image(url, readme.parent)
+            return check_url(
+                url,
+                kind,
+                timeout=timeout,
+                retries=retries,
+                backoff=backoff,
+                soft_hosts=soft_hosts,
+            )
+        except Exception as error:  # one bad URL must not sink the whole run
+            return Finding(url, kind, "fail", f"checker error: {type(error).__name__}")
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
         return tuple(pool.map(run, jobs))
@@ -311,11 +412,23 @@ def _plural(count: int, noun: str) -> str:
     return f"{count} {noun}" + ("" if count == 1 else "s")
 
 
+def _detail_cell(text: str) -> str:
+    """Make server-supplied text inert in a markdown table: no links, mentions, HTML or pipes."""
+    cleaned = _UNSAFE_REPORT_CHARS.sub("?", " ".join(text.split()))
+    return cleaned.replace("://", "(:)//")[:MAX_DETAIL_CHARS]
+
+
+def _url_cell(url: str) -> str:
+    safe = " ".join(url.split()).replace("|", "%7C").replace("`", "%60")
+    return safe if len(safe) <= MAX_URL_CHARS else safe[: MAX_URL_CHARS - 3] + "..."
+
+
 def _table(findings: list[Finding]) -> list[str]:
     rows = ["| Kind | URL | Problem |", "|---|---|---|"]
     for finding in findings:
-        url = finding.url.replace("|", "%7C")
-        rows.append(f"| {finding.kind} | `{url}` | {finding.detail} |")
+        rows.append(
+            f"| {finding.kind} | `{_url_cell(finding.url)}` | {_detail_cell(finding.detail)} |"
+        )
     return rows
 
 
@@ -363,23 +476,35 @@ def main(argv: list[str] | None = None) -> int:
     if not readme.is_file():
         print(f"error: {readme} not found", file=sys.stderr)
         return 2
-    soft_hosts = tuple(
-        host
-        for host in (args.soft_host if args.soft_host is not None else SOFT_HOSTS)
-        if host
-    )
+    try:
+        soft_hosts = parse_soft_hosts(
+            args.soft_host if args.soft_host is not None else SOFT_HOSTS
+        )
+    except ValueError as error:
+        print(f"error: --soft-host: {error}", file=sys.stderr)
+        return 2
 
-    findings = check_readme(
-        readme,
-        timeout=args.timeout,
-        retries=args.retries,
-        workers=args.workers,
-        soft_hosts=soft_hosts,
-    )
+    try:
+        findings = check_readme(
+            readme,
+            timeout=args.timeout,
+            retries=args.retries,
+            workers=args.workers,
+            soft_hosts=soft_hosts,
+        )
+    except (
+        Exception
+    ) as error:  # exit 1 means "failures found", so a crash gets its own code
+        print(f"error: checker crashed: {type(error).__name__}", file=sys.stderr)
+        return 3
     report = render_report(findings)
-    if args.report:
-        Path(args.report).write_text(report, encoding="utf-8")
     print(report)
+    if args.report:
+        try:
+            Path(args.report).write_text(report, encoding="utf-8")
+        except OSError as error:
+            print(f"error: cannot write report: {error.strerror}", file=sys.stderr)
+            return 2
     return 1 if any(f.level == "fail" for f in findings) else 0
 
 
