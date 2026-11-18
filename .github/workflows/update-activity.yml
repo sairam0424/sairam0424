@@ -8,6 +8,14 @@ on:
 permissions:
   contents: write
 
+# Blog, activity and track-record workflows all rewrite README.md. One shared
+# group runs them one at a time, so they no longer race each other's push. GitHub
+# keeps at most one waiting run per group (a newer one replaces an older one); a
+# replaced run is simply redone on its next schedule.
+concurrency:
+  group: readme-writes
+  cancel-in-progress: false
+
 jobs:
   update-readme-with-activity:
     runs-on: ubuntu-latest
