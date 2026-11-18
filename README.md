@@ -177,7 +177,7 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 | Metric | Value |
 |---|---|
 | Versioned releases shipped | **195** across 11 projects |
-| PRs merged (career total) | **2,052** |
+| PRs merged (career total) | **2,059** |
 | Repositories contributed to | **62** (all-time, all contribution types) |
 | Contributions (last 12 months) | **12.9K+** |
 <!--END_SECTION:track-record-->
