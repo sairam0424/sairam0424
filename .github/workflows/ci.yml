@@ -1,0 +1,68 @@
+name: CI
+
+# Checks that run on every pull request, so changes to workflows and scripts (including
+# Dependabot's action bumps) are tested before they reach main. Read-only on purpose:
+# no secrets, no write permissions, and nothing here uses pull_request_target.
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    name: Checker tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Run the checker's tests
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+
+  actionlint:
+    name: Lint workflows
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      # rhysd/actionlint 1.7.12 (multi-arch manifest list), pinned by digest. Dependabot's
+      # github-actions ecosystem does not update Docker images: refresh this one by hand.
+      ACTIONLINT_IMAGE: rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Lint every workflow
+        run: docker run --rm --volume "$GITHUB_WORKSPACE:/repo" --workdir /repo "$ACTIONLINT_IMAGE" -color
+
+  readme-links:
+    name: README images and links
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      EVENT_NAME: ${{ github.event_name }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 2 # a pull request is checked out as a merge commit: its first parent is the base
+
+      # A broken image is a failure, bot walls and rate limits only warn (see the checker).
+      # On a pull request it only runs when the README or the checker changed, so an
+      # unrelated change (a Dependabot bump) is not failed by a flaky third-party badge.
+      - name: Check images and links
+        run: |
+          if [ "$EVENT_NAME" = "pull_request" ] && git diff --quiet HEAD^1 HEAD -- README.md scripts/check_readme_links.py; then
+            echo "README and checker unchanged in this pull request: skipping the network check."
+            exit 0
+          fi
+          python3 scripts/check_readme_links.py README.md
