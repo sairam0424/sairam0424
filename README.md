@@ -433,6 +433,36 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
         <br><sub><b>Selenium</b></sub>
       </td>
     </tr>
+    <tr>
+      <td align="center" width="90">
+        <img alt="MCP" width="65" src="./assets/icons/mcp.svg"/>
+        <br><sub><b>MCP</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img alt="Claude Code" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/ae665cf9136a4918916457c1fdb953400ca93967/icons/claude_code.png"/>
+        <br><sub><b>Claude Code</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img alt="OpenTelemetry" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/ae665cf9136a4918916457c1fdb953400ca93967/icons/opentelemetry.png"/>
+        <br><sub><b>OpenTelemetry</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img alt="SQLite" width="65" src="https://skillicons.dev/icons?i=sqlite"/>
+        <br><sub><b>SQLite</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img alt="WebAssembly" width="65" src="https://skillicons.dev/icons?i=wasm"/>
+        <br><sub><b>WebAssembly</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img alt="pnpm" width="65" src="https://skillicons.dev/icons?i=pnpm"/>
+        <br><sub><b>pnpm</b></sub>
+      </td>
+      <td align="center" width="90">
+        <img alt="VS Code" width="65" src="https://skillicons.dev/icons?i=vscode"/>
+        <br><sub><b>VS Code</b></sub>
+      </td>
+    </tr>
 
 </table>
 
