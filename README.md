@@ -493,14 +493,6 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
 
 ---
 
-### 📫 Connect With Me
-
-- 💼 LinkedIn: https://linkedin.com/in/sairam0424
-- 💻 GitHub: https://github.com/sairam0424
-- 📧 Email: uggesairam0000@gmail.com
-
----
-
 ### ⚡ Philosophy
 
 > I build systems that scale, stream in real time, and survive production chaos.
