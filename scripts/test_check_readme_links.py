@@ -45,6 +45,19 @@ ROUTES = {
     "/linkedin": (999, "text/html", b"wall"),
     "/limited": (429, "text/html", b"slow down"),
     "/broken": (500, "text/html", b"boom"),
+    "/ctype-embedded": (200, "application/x-image/png", b"x"),
+    "/ctype-no-slash": (200, "imagefoo/x", b"x"),
+    "/png-with-badge-text": (200, "image/png", SVG_ERROR_BADGE),
+    "/svg-bad-utf8": (
+        200,
+        "image/svg+xml",
+        b"<svg><title>release: ok</title>\xff\xfe\xc3</svg>",
+    ),
+    "/svg-multiline-title": (
+        200,
+        "image/svg+xml",
+        b"<svg><title>\nrelease: invalid\n</title></svg>",
+    ),
     "/created.svg": (201, "image/svg+xml", SVG_OK),
     "/nocontent": (204, "text/html", b""),
     "/upper-badge.svg": (200, "IMAGE/SVG+XML", SVG_ERROR_BADGE),
@@ -122,9 +135,27 @@ class Handler(http.server.BaseHTTPRequestHandler):
             )
         return None
 
+    def _redirect_with_huge_body(self, status=302):
+        """A redirect that carries a 64 MiB body, streamed so the server stays small."""
+        chunk = b"x" * (1024 * 1024)
+        try:
+            self.send_response(status)
+            self.send_header("Location", "/ok.svg")
+            self.send_header("Content-Length", str(64 * len(chunk)))
+            self.end_headers()
+            for _ in range(64):
+                self.wfile.write(chunk)
+        except (BrokenPipeError, ConnectionResetError):
+            pass  # the client stopped reading, which is the behaviour under test
+
     def do_GET(self):
         path = self.path
         count = self._count(path)
+        if path == "/redirect-big" or path.startswith("/redirect-big/"):
+            # "/redirect-big/307" redirects with that status; plain "/redirect-big" uses 302
+            status = 302 if path == "/redirect-big" else int(path.rpartition("/")[2])
+            self._redirect_with_huge_body(status)
+            return
         dynamic = self._dynamic(path)
         if dynamic is not None:
             self._send(*dynamic)

@@ -53,28 +53,35 @@ def quiet_main(argv):
 
 
 @contextlib.contextmanager
-def raw_server(payload):
-    """A TCP server that answers one connection with arbitrary bytes."""
+def raw_server(payload, connections=1):
+    """A TCP server that answers connections with arbitrary bytes.
+
+    Yields (port, served) where served is a list that gets one entry per
+    connection the server handled.
+    """
     listener = socket.socket()
     listener.bind(("127.0.0.1", 0))
-    listener.listen(1)
+    listener.listen(connections)
     listener.settimeout(5)
+    served = []
 
     def serve():
         try:
-            connection, _ = listener.accept()
-            with connection:
-                connection.settimeout(2)
-                with contextlib.suppress(OSError):
-                    connection.recv(4096)
-                connection.sendall(payload)
+            for _ in range(connections):
+                connection, _ = listener.accept()
+                with connection:
+                    connection.settimeout(2)
+                    with contextlib.suppress(OSError):
+                        connection.recv(4096)
+                    connection.sendall(payload)
+                served.append(1)
         except OSError:
             pass
 
     thread = threading.Thread(target=serve, daemon=True)
     thread.start()
     try:
-        yield listener.getsockname()[1]
+        yield listener.getsockname()[1], served
     finally:
         listener.close()
         thread.join(timeout=3)
@@ -182,9 +189,11 @@ class ExtractRobustnessTests(unittest.TestCase):
         )
         self.assertEqual((images, links), ((), ()))
 
-    def test_an_unclosed_comment_swallows_the_rest_like_a_browser(self):
-        images, _ = crl.extract_urls('<!-- <img src="https://hidden.example/b.png">')
-        self.assertEqual(images, ())
+    def test_an_unclosed_comment_marker_is_literal_so_nothing_is_skipped(self):
+        # A browser would swallow the rest of the file, but a "<!--" in prose or a
+        # code span must never make the checker silently stop checking.
+        images, _ = crl.extract_urls('<!-- <img src="https://shown.example/b.png">')
+        self.assertEqual(images, ("https://shown.example/b.png",))
 
     def test_many_unclosed_comments_are_linear_time(self):
         started = time.monotonic()
@@ -287,7 +296,7 @@ class FetchRobustnessTests(unittest.TestCase):
             finding = check("/redirect-ftp-live", "image")
             self.assertEqual(finding.level, "fail")
             self.assertIn("redirect refused", finding.detail)
-            with self.assertRaises((TimeoutError, BlockingIOError)):
+            with self.assertRaises((TimeoutError, BlockingIOError, socket.timeout)):
                 listener.accept()
 
     def test_five_redirects_are_followed_and_six_are_refused(self):
@@ -486,7 +495,9 @@ class ReportSanitisingTests(unittest.TestCase):
         for forbidden in ("[click]", "@octocat", "<img", "line2\n"):
             self.assertNotIn(forbidden, report)
         self.assertEqual(row.count("|"), 4)
-        self.assertEqual(row.count("`"), 2)
+        self.assertEqual(
+            row.count("`"), 4
+        )  # one code span for the URL, one for the detail
 
     def test_details_are_length_limited(self):
         finding = crl.Finding("https://a.example/x", "link", "fail", "x" * 5000)
@@ -497,7 +508,7 @@ class ReportSanitisingTests(unittest.TestCase):
         payload = (
             b"GARBAGE [click](https://evil.example) @octocat | <img src=x>\r\n\r\n"
         )
-        with raw_server(payload) as port:
+        with raw_server(payload) as (port, _):
             finding = crl.check_url(
                 f"http://127.0.0.1:{port}/",
                 "link",

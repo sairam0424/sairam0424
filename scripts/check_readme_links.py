@@ -7,9 +7,11 @@ This finds that the week it happens instead of whenever someone notices.
 
 Rules
 - Images must answer 2xx with an image/* content type. An SVG badge whose message
-  says "inaccessible" or "not found" is a badge service reporting an error with
-  status 200, so it counts as broken too. A badge that says "rate limit" is the
-  service being throttled upstream: retried, then only a warning.
+  (the text after the first colon of its title or aria-label, as in
+  "label: message") says "inaccessible" or "not found" is a badge service
+  reporting an error with status 200, so it counts as broken too. A badge that
+  says "rate limit" is the service being throttled upstream: retried, then only
+  a warning.
 - Links fail on 404/410/5xx and on connection errors. 401/403/999 are bot walls
   (npm, LinkedIn, CodePen and others refuse scripts), so they only warn.
   429 means rate limited, which proves nothing, so it only warns.
@@ -19,7 +21,11 @@ Rules
 Never crashes on one bad URL: every failure becomes a row in the report.
 
 Not recognised (such images are still checked, but as plain links): reference-style
-images (`![alt][ref]`) and image alt text containing square brackets.
+images (`![alt][ref]`) and image alt text containing square brackets. URLs with
+parentheses nested two levels deep are cut at the second "(".
+An unclosed "<!--" is treated as literal text, so a marker in prose or a code span
+never hides the URLs after it. HTML entities in URLs are decoded only when they
+end with a semicolon ("&amp;"), so "?a=1&region=us" is left alone.
 No per-URL wall-clock deadline: the workflow's step timeout bounds a hung host.
 
 Threat model: the input is this repository's own README on a protected branch
@@ -37,6 +43,7 @@ import argparse
 import concurrent.futures
 import html
 import http.client
+import math
 import re
 import socket
 import sys
@@ -63,8 +70,10 @@ BROKEN_BADGE_PHRASES = (
 )
 # A badge service throttled by its own upstream (npm, GitHub) says so with
 # status 200. That proves nothing about the README, so retry and then warn.
-RATE_LIMIT_BADGE_PHRASES = ("rate limit",)
+# Phrases are regular-expression fragments matched on whole words.
+RATE_LIMIT_BADGE_PHRASES = (r"rate limit(?:ed)?",)
 MAX_REDIRECTS = 5
+MAX_REDIRECT_BODY = 65536  # stdlib reads a redirect's body before following it
 SVG_SNIFF_BYTES = 65536
 DEFAULT_TIMEOUT = 20.0
 DEFAULT_RETRIES = 2
@@ -74,10 +83,13 @@ MAX_DETAIL_CHARS = 200
 MAX_URL_CHARS = 300
 TRAILING_PUNCTUATION = ".,;:!?*~`"
 
-# An unclosed comment runs to the end of the file, like in a browser. Written so
-# each position is scanned once: input made of many "<!--" stays linear.
-_COMMENT = re.compile(r"<!--(?:(?!-->).)*(?:-->|\Z)", re.DOTALL)
-_IMG_TAG = re.compile(r"<(?:img|source)\b[^>]*>", re.IGNORECASE)
+# A tag may hold a ">" inside a quoted attribute value. Bounded so that input made of
+# thousands of unclosed "<img" cannot make the scan quadratic.
+_IMG_TAG = re.compile(
+    r"""<(?:img|source)\b(?:"[^"]{0,2000}"|'[^']{0,2000}'|[^>"']){0,500}>""",
+    re.IGNORECASE,
+)
+_ENTITY = re.compile(r"&(?:#[0-9]+|#[xX][0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*);")
 _ATTR_VALUE = r"""\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'>]+))"""
 _SRC_ATTR = re.compile(r"(?<![\w-])src" + _ATTR_VALUE, re.IGNORECASE)
 _SRCSET_ATTR = re.compile(r"(?<![\w-])srcset" + _ATTR_VALUE, re.IGNORECASE)
@@ -90,7 +102,9 @@ _MARKDOWN_IMAGE = re.compile(
 _BARE_URL = re.compile(
     r"""https?://(?:[^\s<>"'()\[\]]|\([^\s<>"'()\[\]]*\))+""", re.IGNORECASE
 )
-_TITLE = re.compile(r"<title[^>]*>(.{0,400}?)</title>", re.IGNORECASE | re.DOTALL)
+_TITLE = re.compile(
+    r"<title[^>]{0,200}>(.{0,2000}?)</title>", re.IGNORECASE | re.DOTALL
+)
 _ARIA_LABEL = re.compile(r"""aria-label\s*=\s*(?:"([^"]*)"|'([^']*)')""", re.IGNORECASE)
 _UNSAFE_REPORT_CHARS = re.compile(r"[^A-Za-z0-9 .,:;()/_'=%&#+\-]")
 _HOST_NAME = re.compile(r"[a-z0-9.-]+")
@@ -120,9 +134,39 @@ def _attr_value(match: "re.Match[str]") -> str:
     return next(group for group in match.groups() if group is not None).strip()
 
 
+def _decode_entities(value: str) -> str:
+    """Decode HTML entities that end with a semicolon.
+
+    html.unescape alone would also decode legacy forms without one, which turns
+    the query "?x=1&region=us" into "?x=1®ion=us".
+    """
+    return _ENTITY.sub(lambda match: html.unescape(match.group(0)), value)
+
+
+def _strip_comments(text: str) -> str:
+    """Remove closed <!-- ... --> comments in a single linear pass.
+
+    An unclosed marker is kept as text: a "<!--" in prose or a code span must never
+    make the checker silently stop checking everything after it.
+    """
+    pieces = []
+    position = 0
+    while True:
+        start = text.find("<!--", position)
+        if start == -1:
+            break
+        end = text.find("-->", start + 4)
+        if end == -1:
+            break
+        pieces.append(text[position:start])
+        position = end + 3
+    pieces.append(text[position:])
+    return "".join(pieces)
+
+
 def _image_reference(value: str) -> str | None:
     """Normalise an image target, or None when it is not something to check."""
-    value = html.unescape(value.strip())
+    value = _decode_entities(value.strip())
     if not value or value.startswith(("data:", "#", "mailto:")):
         return None
     if value.startswith("//"):
@@ -135,9 +179,9 @@ def extract_urls(markdown: str) -> tuple[tuple[str, ...], tuple[str, ...]]:
 
     Images are src/srcset values of <img> and <source> tags plus markdown image
     targets, absolute or relative. Links are the other absolute http(s) URLs.
-    HTML comments are skipped and HTML entities in URLs are decoded.
+    Closed HTML comments are skipped and HTML entities in URLs are decoded.
     """
-    text = _COMMENT.sub("", markdown)
+    text = _strip_comments(markdown)
     found: list[tuple[int, int, str]] = []  # (position, index, value)
     spans: list[tuple[int, int]] = []  # image references, hidden from the link scan
     for tag in _IMG_TAG.finditer(text):
@@ -160,14 +204,31 @@ def extract_urls(markdown: str) -> tuple[tuple[str, ...], tuple[str, ...]]:
         for _, _, value in sorted(found, key=lambda item: item[:2])
         if (reference := _image_reference(value))
     )
-    hidden = list(text)
+    hidden_chars = list(text)
     for start, end in spans:
-        hidden[start:end] = " " * (end - start)
+        hidden_chars[start:end] = " " * (end - start)
+    hidden = "".join(hidden_chars)
     links = _unique(
-        html.unescape(raw.rstrip(TRAILING_PUNCTUATION))
-        for raw in _BARE_URL.findall("".join(hidden))
+        _decode_entities(_without_emphasis(match, hidden))
+        for match in _BARE_URL.finditer(hidden)
     )
     return images, links
+
+
+def _without_emphasis(match: "re.Match[str]", text: str) -> str:
+    """The URL of a bare-URL match without trailing punctuation or markdown emphasis.
+
+    "_https://x/y_" is emphasis: the closing underscore belongs to the markup. A
+    URL that really ends in "_" keeps it, because nothing opened with "_" before it.
+    """
+    url = match.group(0).rstrip(TRAILING_PUNCTUATION)
+    openers = 0
+    while match.start() - openers > 0 and text[match.start() - openers - 1] == "_":
+        openers += 1
+    while openers and url.endswith("_"):
+        url = url[:-1]
+        openers -= 1
+    return url
 
 
 def is_soft_host(host: str, soft_hosts: tuple[str, ...]) -> bool:
@@ -196,19 +257,49 @@ def _request_url(url: str) -> str:
     parts = urllib.parse.urlsplit(url)
     if parts.scheme not in ("http", "https") or not parts.hostname:
         raise ValueError("not an http(s) URL")
-    netloc = parts.netloc
     port = parts.port  # validates the port
-    if not netloc.isascii():
-        netloc = parts.hostname.encode("idna").decode("ascii") + (
-            f":{port}" if port else ""
-        )
+    host = (
+        parts.hostname
+    )  # lower-cased, and without userinfo (credentials are never sent)
+    if not host.isascii():
+        host = host.encode("idna").decode("ascii")
+    if ":" in host:
+        host = f"[{host}]"  # an IPv6 literal needs its brackets back
+    netloc = host + (f":{port}" if port is not None else "")
     path = urllib.parse.quote(parts.path, safe="/%:@!$&'()*+,;=~-._")
     query = urllib.parse.quote(parts.query, safe="/?%:@!$&'()*+,;=~-._[]")
     return urllib.parse.urlunsplit((parts.scheme, netloc, path, query, ""))
 
 
+class _BoundedBody:
+    """A response body that reads at most MAX_REDIRECT_BODY bytes per call.
+
+    stdlib's redirect handler calls fp.read() on a redirect's body before following
+    it. A hostile or broken host could make that load gigabytes into memory.
+    """
+
+    def __init__(self, fp):
+        self._fp = fp
+
+    def read(self, amount=None):
+        limit = (
+            MAX_REDIRECT_BODY
+            if amount is None or amount < 0
+            else min(amount, MAX_REDIRECT_BODY)
+        )
+        return self._fp.read(limit)
+
+    def __getattr__(self, name):
+        return getattr(self._fp, name)
+
+
 class _HttpOnlyRedirects(urllib.request.HTTPRedirectHandler):
     max_redirections = MAX_REDIRECTS
+
+    def http_error_302(self, req, fp, code, msg, headers):
+        return super().http_error_302(req, _BoundedBody(fp), code, msg, headers)
+
+    http_error_301 = http_error_303 = http_error_307 = http_error_308 = http_error_302
 
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         scheme = urllib.parse.urlsplit(newurl).scheme.lower()
@@ -255,21 +346,23 @@ def _fetch(url: str, timeout: float) -> _Outcome:
 
 
 def _badge_phrase(sample: bytes, phrases: tuple[str, ...]) -> str | None:
-    """Find a phrase in the message part of an SVG badge (the text after the last colon)."""
+    """Find a whole-word phrase in the message of an SVG badge.
+
+    Badges read "label: message", so the message is the text after the first colon
+    (a message may itself contain colons: "custom badge: invalid query parameter: url").
+    """
     text = sample.decode("utf-8", errors="replace")
     labels = [m.group(1) for m in _TITLE.finditer(text)]
     labels += [
         m.group(1) if m.group(1) is not None else m.group(2)
         for m in _ARIA_LABEL.finditer(text)
     ]
-    messages = [label.rsplit(":", 1)[-1].strip().lower() for label in labels]
+    messages = [label.split(":", 1)[-1].strip().lower() for label in labels]
     return next(
         (
             phrase
             for phrase in phrases
-            if any(
-                re.search(r"\b" + re.escape(phrase), message) for message in messages
-            )
+            if any(re.search(rf"\b{phrase}\b", message) for message in messages)
         ),
         None,
     )
@@ -371,7 +464,11 @@ def check_local_image(path: str, root: Path) -> Finding:
         if not target.is_file():
             return Finding(path, "image", "fail", "file not found")
         return Finding(path, "image", "ok", "file exists")
-    except (OSError, ValueError):
+    except (
+        OSError,
+        ValueError,
+        RuntimeError,
+    ):  # RuntimeError: symlink loop on Python < 3.13
         return Finding(path, "image", "fail", "invalid path")
 
 
@@ -413,13 +510,18 @@ def _plural(count: int, noun: str) -> str:
 
 
 def _detail_cell(text: str) -> str:
-    """Make server-supplied text inert in a markdown table: no links, mentions, HTML or pipes."""
-    cleaned = _UNSAFE_REPORT_CHARS.sub("?", " ".join(text.split()))
-    return cleaned.replace("://", "(:)//")[:MAX_DETAIL_CHARS]
+    """Make server-supplied text inert in a markdown table.
+
+    Only plain characters survive, the text is length-limited, and it sits inside a
+    code span, where GitHub renders no links, mentions, references or emoji.
+    """
+    cleaned = _UNSAFE_REPORT_CHARS.sub("?", " ".join(text.split()))[:MAX_DETAIL_CHARS]
+    return f"`{cleaned}`"
 
 
 def _url_cell(url: str) -> str:
     safe = " ".join(url.split()).replace("|", "%7C").replace("`", "%60")
+    safe = safe.encode("ascii", "backslashreplace").decode("ascii")
     return safe if len(safe) <= MAX_URL_CHARS else safe[: MAX_URL_CHARS - 3] + "..."
 
 
@@ -458,19 +560,39 @@ def render_report(findings: tuple[Finding, ...]) -> str:
     return "\n".join(lines)
 
 
+def _positive_seconds(text: str) -> float:
+    value = float(text)
+    if not (math.isfinite(value) and value > 0):
+        raise argparse.ArgumentTypeError("must be a finite number above 0")
+    return value
+
+
+def _count(minimum: int):
+    def parse(text: str) -> int:
+        value = int(text)
+        if value < minimum:
+            raise argparse.ArgumentTypeError(f"must be at least {minimum}")
+        return value
+
+    return parse
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Check README images and links.")
     parser.add_argument("readme", help="path to README.md")
     parser.add_argument("--report", help="write a markdown report to this path")
-    parser.add_argument("--timeout", type=float, default=DEFAULT_TIMEOUT)
-    parser.add_argument("--retries", type=int, default=DEFAULT_RETRIES)
-    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS)
+    parser.add_argument("--timeout", type=_positive_seconds, default=DEFAULT_TIMEOUT)
+    parser.add_argument("--retries", type=_count(0), default=DEFAULT_RETRIES)
+    parser.add_argument("--workers", type=_count(1), default=DEFAULT_WORKERS)
     parser.add_argument(
         "--soft-host",
         action="append",
         help="host whose network errors only warn (repeatable; an empty value clears the defaults)",
     )
-    args = parser.parse_args(argv)
+    try:
+        args = parser.parse_args(argv)
+    except SystemExit as request:  # argparse exits for --help (0) and bad usage (2)
+        return request.code if isinstance(request.code, int) else 2
 
     readme = Path(args.readme)
     if not readme.is_file():
