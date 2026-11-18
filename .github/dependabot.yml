@@ -1,0 +1,16 @@
+# Every third-party action in .github/workflows is pinned to a commit SHA with a
+# trailing "# vN" comment. Pins never move on their own; Dependabot rewrites the
+# SHA and the comment together and opens one PR per update.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    # Wait a week after an action release before proposing it, so a compromised
+    # or yanked release has time to be caught before it reaches a workflow.
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: ci
