@@ -186,7 +186,7 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 
 ### 🛡️ Security Posture
 
-Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independent audit (branch protection, pinned dependencies, SAST, vulnerability history, and more) that requires zero setup on my end; it scans any public repo. Shown for every repo across my personal account and the kelvran/mcpsmiths orgs that OSSF has scanned so far, unfiltered — including the ones that score lower, since that's the honest picture:
+Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independent audit (branch protection, pinned dependencies, SAST, vulnerability history, and more) that requires zero setup on my end; it scans any public repo. Shown for every repo featured on this page, across my personal account and the kelvran/mcpsmiths orgs, that OSSF has scanned so far, unfiltered — including the ones that score lower, since that's the honest picture:
 
 | Repo | OSSF Scorecard |
 |---|---|
@@ -201,6 +201,9 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
 | [MindForge](https://github.com/sairam0424/MindForge) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/MindForge/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/MindForge) |
 | [ContextOS](https://github.com/sairam0424/ContextOS) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/ContextOS/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/ContextOS) |
 | [CommandVault](https://github.com/sairam0424/CommandVault) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/CommandVault/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/CommandVault) |
+| [Tombstone](https://github.com/sairam0424/Tombstone) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/Tombstone/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/Tombstone) |
+| [nh-deck](https://github.com/sairam0424/nh-deck) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/nh-deck/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/nh-deck) |
+| [Thunderboard-Labs](https://github.com/sairam0424/Thunderboard-Labs) | [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/sairam0424/Thunderboard-Labs/badge)](https://scorecard.dev/viewer/?uri=github.com/sairam0424/Thunderboard-Labs) |
 
 ---
 
