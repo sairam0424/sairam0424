@@ -231,42 +231,45 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
 <h3 align="left">Connect with me:</h3>
 
 <p align="left">
-  <a href="https://codepen.io/sairam0000" aria-label="Sairam's CodePen profile" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" height="30" alt=""/>
-  </a>
-  <a href="https://dev.to/sai_ram_0000" aria-label="Sairam's Dev.to profile" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" height="30" alt=""/>
-  </a>
-  <a href="https://sairam0000.substack.com" aria-label="Sairam's Substack newsletter" style="display:inline-block; margin: 0 12px;">
-    <img src="https://wsrv.nl/?url=cdn.jsdelivr.net/npm/simple-icons@latest/icons/substack.svg&bg=white" height="30" alt=""/>
-  </a>
-  <a href="https://sairam0000.hashnode.dev" aria-label="Sairam's Hashnode blog" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg" height="30" alt=""/>
-  </a>
-  <a href="https://linkedin.com/in/sairam0424" aria-label="Sairam's LinkedIn profile" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30" alt=""/>
-  </a>
-  <a href="https://stackoverflow.com/users/18016584/sai-ram" aria-label="Sairam's Stack Overflow profile" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" height="30" alt=""/>
-  </a>
-  <a href="https://kaggle.com/sairam0000" aria-label="Sairam's Kaggle profile" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" height="30" alt=""/>
-  </a>
-  <a href="https://medium.com/@uggesairam0000" aria-label="Sairam's Medium blog" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" height="30" alt=""/>
-  </a>
-  <a href="https://www.codechef.com/users/sairam_056" aria-label="Sairam's CodeChef profile" style="display:inline-block; margin: 0 12px;">
-    <img src="https://wsrv.nl/?url=cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg&bg=white" height="30" alt=""/>
-  </a>
-  <a href="https://www.hackerrank.com/uggesairam0000" aria-label="Sairam's HackerRank profile" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" height="30" alt=""/>
-  </a>
-  <a href="https://codeforces.com/profile/sairam_056" aria-label="Sairam's Codeforces profile" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" height="30" alt=""/>
-  </a>
-  <a href="https://www.leetcode.com/sairam_056" aria-label="Sairam's LeetCode profile" style="display:inline-block; margin: 0 12px;">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" height="30" alt=""/>
-  </a>
+  <a href="https://codepen.io/sairam0000" aria-label="Sairam's CodePen profile">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" height="30" alt="CodePen"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://dev.to/sai_ram_0000" aria-label="Sairam's Dev.to profile">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" height="30" alt="Dev.to"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://sairam0000.substack.com" aria-label="Sairam's Substack newsletter">
+    <img src="https://wsrv.nl/?url=cdn.jsdelivr.net/npm/simple-icons@16.38.0/icons/substack.svg&bg=white&w=120" height="30" alt="Substack"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://sairam0000.hashnode.dev" aria-label="Sairam's Hashnode blog">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://wsrv.nl/?url=raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg&filt=negate&w=120" />
+      <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg" height="30" alt="Hashnode"/>
+    </picture>
+  </a>&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/sairam0424" aria-label="Sairam's LinkedIn profile">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30" alt="LinkedIn"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://stackoverflow.com/users/18016584/sai-ram" aria-label="Sairam's Stack Overflow profile">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" height="30" alt="Stack Overflow"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://kaggle.com/sairam0000" aria-label="Sairam's Kaggle profile">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" height="30" alt="Kaggle"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://medium.com/@uggesairam0000" aria-label="Sairam's Medium blog">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" height="30" alt="Medium"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://www.codechef.com/users/sairam_056" aria-label="Sairam's CodeChef profile">
+    <img src="https://wsrv.nl/?url=cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg&bg=white&w=120" height="30" alt="CodeChef"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://www.hackerrank.com/uggesairam0000" aria-label="Sairam's HackerRank profile">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" height="30" alt="HackerRank"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://codeforces.com/profile/sairam_056" aria-label="Sairam's Codeforces profile">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" height="30" alt="Codeforces"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://www.leetcode.com/sairam_056" aria-label="Sairam's LeetCode profile">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" height="30" alt="LeetCode"/>
+  </a>&nbsp;&nbsp;
 </p>
 
 ---
@@ -274,35 +277,35 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
 ### 🛠 Tech Stack
 
 <div>
-<table> <tr> <td align="center" width="96"> <!-- Animated supported --> <img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" height="65" /> <br>Python </td> <td align="center" width="96"> <!-- Possibly animated --> <img src="https://techstack-generator.vercel.app/react-icon.svg" width="65" height="65" /> <br>React </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=github" width="65" height="65" alt="GitHub" /> <br>GitHub </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=go" width="65" height="65" /> <br>Go </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" /> <br>FastAPI </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=flask" width="65" height="65" /> <br>Flask </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=django" width="65" height="65" /> <br>Django </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nodejs" width="65" height="65" /> <br>Node.js </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=graphql" width="65" height="65" /> <br>GraphQL </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=postgres" width="65" height="65" /> <br>PostgreSQL </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=dynamodb" width="65" height="65" /> <br>DynamoDB </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=mongodb" width="65" height="65" /> <br>MongoDB </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=elasticsearch" width="65" height="65" /> <br>Elasticsearch </td> <td align="center" width="96"> <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="65" height="65" /> <br>MySQL </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=redis" width="65" height="65" /> <br>Redis </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=kafka" width="65" height="65" /> <br>Kafka </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=docker" width="65" height="65" /> <br>Docker </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=kubernetes" width="65" height="65" /> <br>Kubernetes </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=terraform" width="65" height="65" /> <br>Terraform </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=aws" width="65" height="65" /> <br>AWS </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=azure" width="65" height="65" /> <br>Azure </td> </tr> <tr> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=prometheus" width="65" height="65" /> <br>Prometheus </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=grafana" width="65" height="65" /> <br>Grafana </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=linux" width="65" height="65" /> <br>Linux </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nginx" width="65" height="65" /> <br>Nginx </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=nextjs" width="65" height="65" /> <br>Next.js </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=angular" width="65" height="65" /> <br>Angular </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=tailwind" width="65" height="65" /> <br>Tailwind CSS </td> </tr>
+<table> <tr> <td align="center" width="96"> <img alt="Python" src="https://skillicons.dev/icons?i=python" width="65" height="65" /> <br>Python </td> <td align="center" width="96"> <img alt="React" src="https://skillicons.dev/icons?i=react" width="65" height="65" /> <br>React </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=github" width="65" height="65" alt="GitHub" /> <br>GitHub </td> <td align="center" width="96"> <img alt="Go" src="https://skillicons.dev/icons?i=go" width="65" height="65" /> <br>Go </td> <td align="center" width="96"> <img alt="FastAPI" src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" /> <br>FastAPI </td> <td align="center" width="96"> <img alt="Flask" src="https://skillicons.dev/icons?i=flask" width="65" height="65" /> <br>Flask </td> <td align="center" width="96"> <img alt="Django" src="https://skillicons.dev/icons?i=django" width="65" height="65" /> <br>Django </td> </tr> <tr> <td align="center" width="96"> <img alt="Node.js" src="https://skillicons.dev/icons?i=nodejs" width="65" height="65" /> <br>Node.js </td> <td align="center" width="96"> <img alt="GraphQL" src="https://skillicons.dev/icons?i=graphql" width="65" height="65" /> <br>GraphQL </td> <td align="center" width="96"> <img alt="PostgreSQL" src="https://skillicons.dev/icons?i=postgres" width="65" height="65" /> <br>PostgreSQL </td> <td align="center" width="96"> <img alt="DynamoDB" src="https://skillicons.dev/icons?i=dynamodb" width="65" height="65" /> <br>DynamoDB </td> <td align="center" width="96"> <img alt="MongoDB" src="https://skillicons.dev/icons?i=mongodb" width="65" height="65" /> <br>MongoDB </td> <td align="center" width="96"> <img alt="Elasticsearch" src="https://skillicons.dev/icons?i=elasticsearch" width="65" height="65" /> <br>Elasticsearch </td> <td align="center" width="96"> <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" width="65" height="65" /> <br>MySQL </td> </tr> <tr> <td align="center" width="96"> <img alt="Redis" src="https://skillicons.dev/icons?i=redis" width="65" height="65" /> <br>Redis </td> <td align="center" width="96"> <img alt="Kafka" src="https://skillicons.dev/icons?i=kafka" width="65" height="65" /> <br>Kafka </td> <td align="center" width="96"> <img alt="Docker" src="https://skillicons.dev/icons?i=docker" width="65" height="65" /> <br>Docker </td> <td align="center" width="96"> <img alt="Kubernetes" src="https://skillicons.dev/icons?i=kubernetes" width="65" height="65" /> <br>Kubernetes </td> <td align="center" width="96"> <img alt="Terraform" src="https://skillicons.dev/icons?i=terraform" width="65" height="65" /> <br>Terraform </td> <td align="center" width="96"> <img alt="AWS" src="https://skillicons.dev/icons?i=aws" width="65" height="65" /> <br>AWS </td> <td align="center" width="96"> <img alt="Azure" src="https://skillicons.dev/icons?i=azure" width="65" height="65" /> <br>Azure </td> </tr> <tr> <td align="center" width="96"> <img alt="Prometheus" src="https://skillicons.dev/icons?i=prometheus" width="65" height="65" /> <br>Prometheus </td> <td align="center" width="96"> <img alt="Grafana" src="https://skillicons.dev/icons?i=grafana" width="65" height="65" /> <br>Grafana </td> <td align="center" width="96"> <img alt="Linux" src="https://skillicons.dev/icons?i=linux" width="65" height="65" /> <br>Linux </td> <td align="center" width="96"> <img alt="Nginx" src="https://skillicons.dev/icons?i=nginx" width="65" height="65" /> <br>Nginx </td> <td align="center" width="96"> <img alt="Next.js" src="https://skillicons.dev/icons?i=nextjs" width="65" height="65" /> <br>Next.js </td> <td align="center" width="96"> <img alt="Angular" src="https://skillicons.dev/icons?i=angular" width="65" height="65" /> <br>Angular </td> <td align="center" width="96"> <img alt="Tailwind CSS" src="https://skillicons.dev/icons?i=tailwind" width="65" height="65" /> <br>Tailwind CSS </td> </tr>
 
 <tr>
  <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="65" height="65" />
+        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" width="65" height="65" />
       <br>JavaScript
     </td>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/webpack-icon.svg" alt="icon" width="65" height="65" />
+        <img src="https://skillicons.dev/icons?i=webpack" alt="Webpack" width="65" height="65" />
       <br>Webpack
     </td>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="65" height="65" />
+        <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" width="65" height="65" />
       <br>TypeScript
     </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/redux.png"/>
+        <img alt="Redux" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/redux.png"/>
         <br><sub><b>Redux</b></sub>
       </td>
     <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/playwright.png"/>
+        <img alt="Playwright" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/playwright.png"/>
         <br><sub><b>Playwright</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/rabbitmq.png"/>
+        <img alt="RabbitMQ" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/rabbitmq.png"/>
         <br><sub><b>RabbitMQ</b></sub>
       </td>
         <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png"/>
+        <img alt="Swagger" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png"/>
         <br><sub><b>Swagger</b></sub>
       </td>
 
@@ -313,41 +316,41 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
         <br><sub><b>WebSocket</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/grpc.png"/>
+        <img alt="gRPC" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/grpc.png"/>
         <br><sub><b>gRPC</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png"/>
+        <img alt="Git" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png"/>
         <br><sub><b>Git</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postman.png"/>
+        <img alt="Postman" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postman.png"/>
         <br><sub><b>Postman</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/jira.png"/>
+        <img alt="Jira" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/jira.png"/>
         <br><sub><b>Jira</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/jupyter_notebook.png"/>
+        <img alt="Jupyter" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/jupyter_notebook.png"/>
         <br><sub><b>Jupyter</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sass.png"/>
+        <img alt="Sass" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sass.png"/>
         <br><sub><b>Sass</b></sub>
       </td>
     </tr>
     <tr>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/firebase.png"/>
+        <img alt="Firebase" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/firebase.png"/>
         <br><sub><b>Firebase</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/supabase.png"/>
+        <img alt="Supabase" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/supabase.png"/>
         <br><sub><b>Supabase</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/material_ui.png"/>
+        <img alt="Material UI" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/material_ui.png"/>
         <br><sub><b>Material UI</b></sub>
       </td>
       <td align="center" width="90">
@@ -358,75 +361,75 @@ Live [OSSF Scorecard](https://scorecard.dev) scores — an automated, independen
         <br><sub><b>ShadCN UI</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vue_js.png"/>
+        <img alt="Vue.js" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vue_js.png"/>
         <br><sub><b>Vue.js</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/npm.png"/>
+        <img alt="npm" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/npm.png"/>
         <br><sub><b>npm</b></sub>
       </td>
         <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/hadoop.png"/>
+        <img alt="Hadoop" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/hadoop.png"/>
         <br><sub><b>Hadoop</b></sub>
       </td>
     </tr>
     <tr>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bun_js.png"/>
+        <img alt="Bun.js" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bun_js.png"/>
         <br><sub><b>Bun.js</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vite.png"/>
+        <img alt="Vite" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vite.png"/>
         <br><sub><b>Vite</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/numpy.png"/>
+        <img alt="NumPy" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/numpy.png"/>
         <br><sub><b>NumPy</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/pandas.png"/>
+        <img alt="Pandas" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/pandas.png"/>
         <br><sub><b>Pandas</b></sub>
       </td>
         <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tensorflow.png"/>
+        <img alt="TensorFlow" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tensorflow.png"/>
         <br><sub><b>TensorFlow</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/neo4j.png"/>
+        <img alt="Neo4j" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/neo4j.png"/>
         <br><sub><b>Neo4j</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/cassandra.png"/>
+        <img alt="Cassandra" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/cassandra.png"/>
         <br><sub><b>Cassandra</b></sub>
       </td>
     </tr>
     <tr>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bash.png"/>
+        <img alt="Bash" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bash.png"/>
         <br><sub><b>Bash</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/loki.png"/>
+        <img alt="Loki" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/loki.png"/>
         <br><sub><b>Loki</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/gcp.png"/>
+        <img alt="GCP" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/gcp.png"/>
         <br><sub><b>GCP</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/langchain_icon.png"/>
+        <img alt="LangChain" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/langchain_icon.png"/>
         <br><sub><b>LangChain</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/apache_spark.png"/>
+        <img alt="Apache Spark" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/apache_spark.png"/>
         <br><sub><b>Apache Spark</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/matlab.png"/>
+        <img alt="MATLAB" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/matlab.png"/>
         <br><sub><b>MATLAB</b></sub>
       </td>
       <td align="center" width="90">
-        <img width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/selenium.png"/>
+        <img alt="Selenium" width="65" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/selenium.png"/>
         <br><sub><b>Selenium</b></sub>
       </td>
     </tr>
