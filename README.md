@@ -136,7 +136,7 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 
 ### 🔥 Recent Highlights
 
-- **MindForge v12.0.0** (2026-09-24) — first release cut for real external users; an independent 8-agent security/production audit closed 1 CRITICAL + 4 HIGH findings before the cutover.
+- **MindForge v12.0.0** (2026-09-24) — described in its changelog as the first release aimed at real external users; a second, self-run 8-agent release-readiness audit found 1 CRITICAL and 4 HIGH findings (a misleading install banner, a script crash and missing regression tests; none a vulnerability), all fixed before the tag.
 - **trelix v3.4.1** (2026-09-27) — closed a CRITICAL symlink-following vulnerability that could leak local secrets to a third-party vision API, alongside shipping new raster-image indexing with LLM vision captioning (v3.4.0).
 - **ag-bash** (2026-09-25) — shipped a 9-phase security-hardening backlog to main and reached a fully green cross-platform CI matrix after root-causing deep Windows/macOS path-handling bugs.
 - **Tombstone v2.0.1** (2026-09-09) — shipped after live E2E testing against a real Postgres/Kubernetes stack surfaced 10 real production bugs, including severe connection-pooling races.
