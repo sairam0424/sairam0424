@@ -140,7 +140,6 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 - **trelix v3.4.1** (2026-09-27) — closed a CRITICAL symlink-following vulnerability that could leak local secrets to a third-party vision API, alongside shipping new raster-image indexing with LLM vision captioning (v3.4.0).
 - **ag-bash** (2026-09-25) — shipped a 9-phase security-hardening backlog to main and reached a fully green cross-platform CI matrix after root-causing deep Windows/macOS path-handling bugs.
 - **Tombstone v2.0.1** (2026-09-09) — shipped after live E2E testing against a real Postgres/Kubernetes stack surfaced 10 real production bugs, including severe connection-pooling races.
-- **ContextOS (@context-os/core v1.13.2)** — shipped a deliberate breaking change eliminating an unfixable critical CVE (optional embedding peer-dependency) with in-band degradation reporting for MCP agents.
 - **kelvran** (2026-09-21 to 09-22) — 5 releases in a week (gateway v0.14.0→v0.14.2, evals v0.10.0→v0.10.1) fixing 2 CRITICAL + a HIGH-severity SSE error-swallowing bug found via back-to-back audits, alongside a live AWS Bedrock production pilot.
 - **mcpsmiths/cost-guard-mcp** — shipped a third query-cost engine (Databricks, 2026-09-13) and, the next day, closed a CRITICAL secret-redaction bug in a full-repo audit, raising coverage to 98.4%.
 - **mcpsmiths/tracehub-mcp v0.5.0** (2026-09-14) — a real end-to-end dry run against a live Jaeger/OTel stack caught a CRITICAL silent-data-loss bug before it reached users.
