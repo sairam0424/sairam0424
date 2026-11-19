@@ -144,7 +144,7 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 - **kelvran** (2026-09-21 to 09-22) — 5 releases in two days (gateway v0.14.0→v0.14.2, evals v0.10.0→v0.10.1) fixing 2 CRITICAL + a HIGH-severity SSE error-swallowing bug found via back-to-back self-run audits, alongside a pilot against real AWS Bedrock.
 - **mcpsmiths/cost-guard-mcp v0.2.0** (2026-09-17) — first release with a third query-cost engine (Databricks) and a fix for a CRITICAL secret-redaction bug (only the first word of a multi-word secret was redacted) found by a full-repo audit, raising coverage to 98.4%.
 - **mcpsmiths/tracehub-mcp v0.2.2** (2026-09-12) — a live end-to-end run against a real Jaeger container and the published package found that spans carrying `gen_ai.response.finish_reasons` were silently dropped from Jaeger and Tempo results; fixed in v0.2.2, 45 minutes after v0.2.1.
-- **CNCF OpenFeature** — contributed Tombstone's [OpenFeature-compatible provider listing](https://github.com/open-feature/community/pull/554) to the CNCF-affiliated OpenFeature project's interested-parties registry (merged 2026-08-18).
+- **CNCF OpenFeature** — added Tombstone to the interested-organizations list in the community repo of OpenFeature, a CNCF Incubating project ([PR #554](https://github.com/open-feature/community/pull/554), merged 2026-08-18).
 
 ---
 
