@@ -136,15 +136,15 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 
 ### 🔥 Recent Highlights
 
-- **MindForge v12.0.0** (2026-09-24) — first release cut for real external users; an independent 8-agent security/production audit closed 1 CRITICAL + 4 HIGH findings before the cutover.
+- **MindForge v12.0.0** (2026-09-24) — described in its changelog as the first release aimed at real external users; a second, self-run 8-agent release-readiness audit found 1 CRITICAL and 4 HIGH findings (a misleading install banner, a script crash and missing regression tests; none a vulnerability), all fixed before the tag.
 - **trelix v3.4.1** (2026-09-27) — closed a CRITICAL symlink-following vulnerability that could leak local secrets to a third-party vision API, alongside shipping new raster-image indexing with LLM vision captioning (v3.4.0).
-- **ag-bash** (2026-09-25) — shipped a 9-phase security-hardening backlog to main and reached a fully green cross-platform CI matrix after root-causing deep Windows/macOS path-handling bugs.
-- **Tombstone v2.0.1** (2026-09-09) — shipped after live E2E testing against a real Postgres/Kubernetes stack surfaced 10 real production bugs, including severe connection-pooling races.
+- **ag-bash** (2026-09-24 to 2026-09-25) — got the Ubuntu, macOS and Windows test jobs green by fixing Windows path-handling bugs and a macOS test-runner memory leak, then merged a 9-phase backlog to main that included MCP tool-output sanitization and a default flip of `destructivePolicy` from warn to block.
+- **Tombstone v2.0.1** (2026-09-09) — shipped after running the full v2.0.0 stack locally (Postgres, PgBouncer, Redis, gateway, evaluator and a headless browser on the dashboard) surfaced 10 previously undiscovered bugs, the most severe being PgBouncer transaction-pooling races under concurrent load.
 - **ContextOS (@context-os/core 1.13.2)** (2026-05-25) — moved the Gemini API key out of the request URL into a header so it no longer appears in URLs or logs, and added MCP prompts, a `graph_query` tool and agent-to-agent messaging (`workspace_notify`).
-- **kelvran** (2026-09-21 to 09-22) — 5 releases in a week (gateway v0.14.0→v0.14.2, evals v0.10.0→v0.10.1) fixing 2 CRITICAL + a HIGH-severity SSE error-swallowing bug found via back-to-back audits, alongside a live AWS Bedrock production pilot.
-- **mcpsmiths/cost-guard-mcp** — shipped a third query-cost engine (Databricks, 2026-09-13) and, the next day, closed a CRITICAL secret-redaction bug in a full-repo audit, raising coverage to 98.4%.
-- **mcpsmiths/tracehub-mcp v0.5.0** (2026-09-14) — a real end-to-end dry run against a live Jaeger/OTel stack caught a CRITICAL silent-data-loss bug before it reached users.
-- **CNCF OpenFeature** — contributed Tombstone's [OpenFeature-compatible provider listing](https://github.com/open-feature/community/pull/554) to the CNCF-affiliated OpenFeature project's interested-parties registry (merged 2026-08-18).
+- **kelvran** (2026-09-21 to 09-22) — 5 releases in two days (gateway v0.14.0→v0.14.2, evals v0.10.0→v0.10.1) fixing 2 CRITICAL + a HIGH-severity SSE error-swallowing bug found via back-to-back self-run audits, alongside a pilot against real AWS Bedrock.
+- **mcpsmiths/cost-guard-mcp v0.2.0** (2026-09-17) — first release with a third query-cost engine (Databricks) and a fix for a CRITICAL secret-redaction bug (only the first word of a multi-word secret was redacted) found by a full-repo audit, raising coverage to 98.4%.
+- **mcpsmiths/tracehub-mcp v0.2.2** (2026-09-12) — a live end-to-end run against a real Jaeger container and the published package found that spans carrying `gen_ai.response.finish_reasons` were silently dropped from Jaeger and Tempo results; fixed in v0.2.2, 45 minutes after v0.2.1.
+- **CNCF OpenFeature** — added Tombstone to the interested-organizations list in the community repo of OpenFeature, a CNCF Incubating project ([PR #554](https://github.com/open-feature/community/pull/554), merged 2026-08-18).
 
 ---
 
