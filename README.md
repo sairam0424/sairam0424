@@ -96,7 +96,7 @@ flowchart LR
 
 | Project | What it is & Tech |
 |---------|-------------------|
-| **[kelvran/gateway](https://github.com/kelvran/gateway)** · `867 commits` | Unified AI infrastructure platform — LLM gateway with an embedded multi-layer cache, plus an independently-versioned `evals` subsystem (currently v0.10.1).<br>`Go` |
+| **[kelvran/gateway](https://github.com/kelvran/gateway)** · `867 commits` | Unified AI infrastructure platform — LLM gateway with an embedded multi-layer cache, plus an independently-versioned `evals` subsystem.<br>`Go` |
 | **[mcpsmiths/tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp)** · `335 commits` | MCP server for querying OpenTelemetry traces across multiple observability backends (Jaeger, Tempo, Traceloop, Datadog) for LLM application debugging.<br>`Python` · `MCP` · `OpenTelemetry` |
 | **[mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)** · `229 commits` | Pre-flight query cost and result-size guardrails for AI agents across BigQuery, Snowflake, and Databricks.<br>`Python` · `MCP` |
 
@@ -106,7 +106,7 @@ flowchart LR
 |---------|-------------------|
 | **[CommandVault](https://github.com/sairam0424/CommandVault)** · `198 commits` | Universal AI command manager — browse/search/organize slash commands, skills, agents, plugins, rules, and hooks across Claude Code, Cursor, Copilot, Windsurf, and Aider. Indexes 350+ items via a VS Code extension, an 18-command CLI, and a three-tier search engine.<br>`TypeScript` · `VS Code Extension` · `CLI` · `SQLite` |
 | **[Inkforge](https://github.com/sairam0424/Inkforge)** · `126 commits` | AI-powered article generation system — notes/topic/code → human-readable Markdown articles, published to Dev.to, Hashnode, Medium & more.<br>`TypeScript` · `Anthropic` · `AWS Bedrock` |
-| **[Not-Humans-Lab](https://github.com/sairam0424/not-humans-lab)** | Umbrella docs tying together the Not-Humans-Lab suite: [daily-dose](https://github.com/sairam0424/daily-dose) (`215 commits`, AI-curated tech digest) and [nh-deck](https://github.com/sairam0424/nh-deck) (`58 commits`, Markdown slide-deck CLI), plus nh-skills *(private)*.<br>`TypeScript` · `Astro` · `CLI` |
+| **[Not-Humans-Lab](https://github.com/sairam0424/not-humans-lab)** | Umbrella docs tying together the Not-Humans-Lab suite: [daily-dose](https://github.com/sairam0424/daily-dose) (`216 commits`, AI-curated tech digest) and [nh-deck](https://github.com/sairam0424/nh-deck) (`58 commits`, Markdown slide-deck CLI), plus nh-skills *(private)*.<br>`TypeScript` · `Astro` · `CLI` |
 | **Not-Humans** · `400 commits` *(private)* | Thin root workspace federating independent AI-infra sub-projects (SkillStack, Deep-Research, Agent-Hub, rate-limit-observatory) — polyglot Turborepo/pnpm + Next.js, Python (uv + Temporal + FastAPI), and Go services with a Qdrant vector store.<br>`TypeScript` · `Python` · `Go` · `Temporal` · `Qdrant` |
 
 #### 🌐 Portfolio & Edge Projects
@@ -141,9 +141,9 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 - **ag-bash** (2026-09-25) — shipped a 9-phase security-hardening backlog to main and reached a fully green cross-platform CI matrix after root-causing deep Windows/macOS path-handling bugs.
 - **Tombstone v2.0.1** (2026-09-09) — shipped after live E2E testing against a real Postgres/Kubernetes stack surfaced 10 real production bugs, including severe connection-pooling races.
 - **ContextOS (@context-os/core v1.13.2)** — shipped a deliberate breaking change eliminating an unfixable critical CVE (optional embedding peer-dependency) with in-band degradation reporting for MCP agents.
-- **kelvran** (2026-09-21 to 09-22) — 5 releases in a week (gateway v0.14.0→v0.14.2, evals v0.10.0→v0.10.1) fixing 2 CRITICAL + a HIGH-severity SSE error-swallowing bug found via back-to-back audits, alongside a live AWS Bedrock production pilot; gateway has since reached v0.20.0.
+- **kelvran** (2026-09-21 to 09-22) — 5 releases in a week (gateway v0.14.0→v0.14.2, evals v0.10.0→v0.10.1) fixing 2 CRITICAL + a HIGH-severity SSE error-swallowing bug found via back-to-back audits, alongside a live AWS Bedrock production pilot.
 - **mcpsmiths/cost-guard-mcp** — shipped a third query-cost engine (Databricks, 2026-09-13) and, the next day, closed a CRITICAL secret-redaction bug in a full-repo audit, raising coverage to 98.4%.
-- **mcpsmiths/tracehub-mcp v0.5.0** (2026-09-14) — a real end-to-end dry run against a live Jaeger/OTel stack caught a CRITICAL silent-data-loss bug before it reached users; now at v0.13.2.
+- **mcpsmiths/tracehub-mcp v0.5.0** (2026-09-14) — a real end-to-end dry run against a live Jaeger/OTel stack caught a CRITICAL silent-data-loss bug before it reached users.
 - **CNCF OpenFeature** — contributed Tombstone's [OpenFeature-compatible provider listing](https://github.com/open-feature/community/pull/554) to the CNCF-affiliated OpenFeature project's interested-parties registry (merged 2026-08-18).
 
 ---
@@ -154,6 +154,28 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
   <a href="https://github.com/sairam0424/Tombstone/releases/latest"><img src="https://img.shields.io/github/v/release/sairam0424/Tombstone?label=Tombstone" alt="Tombstone latest release" /></a>
   <a href="https://github.com/sairam0424/RateCap/releases/latest"><img src="https://img.shields.io/github/v/release/sairam0424/RateCap?label=RateCap" alt="RateCap latest release" /></a>
 </p>
+
+---
+
+### 🏷️ Latest Releases
+
+*Auto-updated weekly by [`update-latest-releases.yml`](.github/workflows/update-latest-releases.yml) from each project's release source: GitHub releases, except ag-bash (one release per package) and ContextOS (releases stop at v1.6.1), which use the npm registry.*
+
+<!--START_SECTION:latest-releases-->
+| Project | Latest release | Released | Source |
+|---|---|---|---|
+| [trelix](https://github.com/sairam0424/trelix) | [v3.5.1](https://github.com/sairam0424/trelix/releases/tag/v3.5.1) | 2026-10-29 | GitHub |
+| [MindForge](https://github.com/sairam0424/MindForge) | [v12.0.0](https://github.com/sairam0424/MindForge/releases/tag/v12.0.0) | 2026-09-24 | GitHub |
+| [ag-bash](https://github.com/sairam0424/ag-bash) | [6.0.5](https://www.npmjs.com/package/@ag-bash/bash/v/6.0.5) | 2026-09-24 | npm |
+| [ContextOS](https://github.com/sairam0424/ContextOS) | [1.13.2](https://www.npmjs.com/package/@context-os/core/v/1.13.2) | 2026-05-25 | npm |
+| [CommandVault](https://github.com/sairam0424/CommandVault) | [v0.1.0](https://github.com/sairam0424/CommandVault/releases/tag/v0.1.0) | 2026-05-02 | GitHub |
+| [Tombstone](https://github.com/sairam0424/Tombstone) | [v2.0.3](https://github.com/sairam0424/Tombstone/releases/tag/v2.0.3) | 2026-10-02 | GitHub |
+| [RateCap](https://github.com/sairam0424/RateCap) | [v2.13.1](https://github.com/sairam0424/RateCap/releases/tag/v2.13.1) | 2026-09-02 | GitHub |
+| [tracehub-mcp](https://github.com/mcpsmiths/tracehub-mcp) | [v0.13.2](https://github.com/mcpsmiths/tracehub-mcp/releases/tag/v0.13.2) | 2026-11-16 | GitHub |
+| [cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp) | [v0.6.0](https://github.com/mcpsmiths/cost-guard-mcp/releases/tag/v0.6.0) | 2026-10-19 | GitHub |
+| [kelvran/gateway](https://github.com/kelvran/gateway) | [v0.20.0](https://github.com/kelvran/gateway/releases/tag/gateway/v0.20.0) | 2026-10-15 | GitHub |
+| [kelvran/evals](https://github.com/kelvran/gateway) | [v0.10.1](https://github.com/kelvran/gateway/releases/tag/evals/v0.10.1) | 2026-09-22 | GitHub |
+<!--END_SECTION:latest-releases-->
 
 ---
 
