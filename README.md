@@ -182,11 +182,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#85](https://github.com/sairam0424/Inkforge/pull/85) in [sairam0424/Inkforge](https://github.com/sairam0424/Inkforge)
-2. 💪 Opened PR [#85](https://github.com/sairam0424/Inkforge/pull/85) in [sairam0424/Inkforge](https://github.com/sairam0424/Inkforge)
-3. 💪 Opened PR [#220](https://github.com/sairam0424/ag-bash/pull/220) in [sairam0424/ag-bash](https://github.com/sairam0424/ag-bash)
-4. 🎉 Merged PR [#133](https://github.com/sairam0424/ContextOS/pull/133) in [sairam0424/ContextOS](https://github.com/sairam0424/ContextOS)
-5. 💪 Opened PR [#133](https://github.com/sairam0424/ContextOS/pull/133) in [sairam0424/ContextOS](https://github.com/sairam0424/ContextOS)
+1. 🚀 Published release [nh-skills v0.1.0](https://github.com/sairam0424/nh-skills/releases/tag/v0.1.0) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
+2. ℹ️ Labeled issue [#25](https://github.com/sairam0424/nh-skills/issues/25) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
+3. ❗ Opened issue [#25](https://github.com/sairam0424/nh-skills/issues/25) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
+4. 🎉 Merged PR [#85](https://github.com/sairam0424/Inkforge/pull/85) in [sairam0424/Inkforge](https://github.com/sairam0424/Inkforge)
+5. 💪 Opened PR [#85](https://github.com/sairam0424/Inkforge/pull/85) in [sairam0424/Inkforge](https://github.com/sairam0424/Inkforge)
 <!--END_SECTION:activity-->
 
 ---
