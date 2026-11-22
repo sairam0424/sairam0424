@@ -32,7 +32,7 @@
 ### 🔭 Now
 
 - Pushing trelix, ag-bash, and MindForge through their next hardening + release cycle
-- Growing kelvran's gateway/evals and mcpsmiths' MCP servers past solo-maintainer scale
+- Growing kelvran's gateway/evals and mcpsmiths' MCP servers past solo-maintainer scale.
 
 ---
 
