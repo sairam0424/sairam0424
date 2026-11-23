@@ -90,7 +90,7 @@ flowchart LR
 |---------|-------------------|
 | **[MindForge](https://github.com/sairam0424/MindForge)** · `1,829 commits` | Agentic-intelligence framework for Claude Code — v12.0.0 ships 221 slash commands, 164 specialized subagents, 354 skills, 216 personas, and 35 dynamic workflows, plus hooks, governance, cost-aware model routing, and true wave (parallel) execution. Streaming WebSocket SDK. Ships as `npx mindforge-cc` (3K+ monthly npm downloads).<br>`Node.js` · `TypeScript` · `MCP` · `sql.js` |
 | **Agent-Forge** · `209 commits` *(private)* | Framework-agnostic, self-improving AI agent infrastructure — a Karpathy-style propose/eval/score/commit-or-revert loop over a mutable markdown agent spec (`AGENT.md`), git-versioned, with an LLM-judge eval harness and held-out validation to guard against overfitting.<br>`Python` · `FastAPI` · `pgvector` · `Celery` · `MCP` · `Docker` |
-| **[ContextOS](https://github.com/sairam0424/ContextOS)** · `234 commits` | Intelligence layer for autonomous AI agents — SQLite/vector indexing, multi-agent orchestration, and resilience. Ships as core/CLI/MCP npm packages (`@context-os/*`) plus a spatial dashboard.<br>`TypeScript` · `SQLite` · `vector search` · `MCP` · `React` · `Three.js` |
+| **[ContextOS](https://github.com/sairam0424/ContextOS)** · `235 commits` | Intelligence layer for autonomous AI agents — SQLite/vector indexing, multi-agent orchestration, and resilience. Ships as core/CLI/MCP npm packages (`@context-os/*`) plus a spatial dashboard.<br>`TypeScript` · `SQLite` · `vector search` · `MCP` · `React` · `Three.js` |
 
 #### 🏢 Organization Projects — [kelvran](https://github.com/kelvran) & [mcpsmiths](https://github.com/mcpsmiths)
 
@@ -105,8 +105,8 @@ flowchart LR
 | Project | What it is & Tech |
 |---------|-------------------|
 | **[CommandVault](https://github.com/sairam0424/CommandVault)** · `198 commits` | Universal AI command manager — browse/search/organize slash commands, skills, agents, plugins, rules, and hooks across Claude Code, Cursor, Copilot, Windsurf, and Aider. Indexes 350+ items via a VS Code extension, an 18-command CLI, and a three-tier search engine.<br>`TypeScript` · `VS Code Extension` · `CLI` · `SQLite` |
-| **[Inkforge](https://github.com/sairam0424/Inkforge)** · `126 commits` | AI-powered article generation system — notes/topic/code → human-readable Markdown articles, published to Dev.to, Hashnode, Medium & more.<br>`TypeScript` · `Anthropic` · `AWS Bedrock` |
-| **[Not-Humans-Lab](https://github.com/sairam0424/not-humans-lab)** | Umbrella docs tying together the Not-Humans-Lab suite: [daily-dose](https://github.com/sairam0424/daily-dose) (`216 commits`, AI-curated tech digest) and [nh-deck](https://github.com/sairam0424/nh-deck) (`58 commits`, Markdown slide-deck CLI), plus nh-skills *(private)*.<br>`TypeScript` · `Astro` · `CLI` |
+| **[Inkforge](https://github.com/sairam0424/Inkforge)** · `127 commits` | AI-powered article generation system — notes/topic/code → human-readable Markdown articles, published to Dev.to, Hashnode, Medium & more.<br>`TypeScript` · `Anthropic` · `AWS Bedrock` |
+| **[Not-Humans-Lab](https://github.com/sairam0424/not-humans-lab)** | Umbrella docs tying together the Not-Humans-Lab suite: [daily-dose](https://github.com/sairam0424/daily-dose) (`220 commits`, AI-curated tech digest) and [nh-deck](https://github.com/sairam0424/nh-deck) (`58 commits`, Markdown slide-deck CLI), plus nh-skills *(private)*.<br>`TypeScript` · `Astro` · `CLI` |
 | **Not-Humans** · `400 commits` *(private)* | Thin root workspace federating independent AI-infra sub-projects (SkillStack, Deep-Research, Agent-Hub, rate-limit-observatory) — polyglot Turborepo/pnpm + Next.js, Python (uv + Temporal + FastAPI), and Go services with a Qdrant vector store.<br>`TypeScript` · `Python` · `Go` · `Temporal` · `Qdrant` |
 
 #### 🌐 Portfolio & Edge Projects
