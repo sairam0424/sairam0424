@@ -182,11 +182,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#32](https://github.com/sairam0424/nh-skills/pull/32) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
-2. 💪 Opened PR [#32](https://github.com/sairam0424/nh-skills/pull/32) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
-3. 🚀 Published release [nh-skills v0.2.2](https://github.com/sairam0424/nh-skills/releases/tag/v0.2.2) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
-4. 🎉 Merged PR [#31](https://github.com/sairam0424/nh-skills/pull/31) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
-5. 💪 Opened PR [#31](https://github.com/sairam0424/nh-skills/pull/31) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
+1. 🚀 Published release [nh-skills v0.2.3](https://github.com/sairam0424/nh-skills/releases/tag/v0.2.3) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
+2. 🎉 Merged PR [#34](https://github.com/sairam0424/nh-skills/pull/34) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
+3. 💪 Opened PR [#34](https://github.com/sairam0424/nh-skills/pull/34) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
+4. 🎉 Merged PR [#33](https://github.com/sairam0424/nh-skills/pull/33) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
+5. 💪 Opened PR [#33](https://github.com/sairam0424/nh-skills/pull/33) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
 <!--END_SECTION:activity-->
 
 ---
