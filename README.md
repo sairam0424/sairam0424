@@ -182,11 +182,11 @@ Full details (versions, downloads, license) are in the Open Source Packages tabl
 ### 📡 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🚀 Published release [nh-skills v0.2.5](https://github.com/sairam0424/nh-skills/releases/tag/v0.2.5) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
-2. 🎉 Merged PR [#39](https://github.com/sairam0424/nh-skills/pull/39) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
-3. 💪 Opened PR [#39](https://github.com/sairam0424/nh-skills/pull/39) in [sairam0424/nh-skills](https://github.com/sairam0424/nh-skills)
-4. 🎉 Merged PR [#87](https://github.com/sairam0424/Inkforge/pull/87) in [sairam0424/Inkforge](https://github.com/sairam0424/Inkforge)
-5. 🎉 Merged PR [#15](https://github.com/sairam0424/sairam0424/pull/15) in [sairam0424/sairam0424](https://github.com/sairam0424/sairam0424)
+1. 🎉 Merged PR [#152](https://github.com/mcpsmiths/cost-guard-mcp/pull/152) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+2. 🎉 Merged PR [#151](https://github.com/mcpsmiths/cost-guard-mcp/pull/151) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+3. ℹ️ Labeled PR [#152](https://github.com/mcpsmiths/cost-guard-mcp/pull/152) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+4. ℹ️ Labeled PR [#152](https://github.com/mcpsmiths/cost-guard-mcp/pull/152) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
+5. 💪 Opened PR [#152](https://github.com/mcpsmiths/cost-guard-mcp/pull/152) in [mcpsmiths/cost-guard-mcp](https://github.com/mcpsmiths/cost-guard-mcp)
 <!--END_SECTION:activity-->
 
 ---
